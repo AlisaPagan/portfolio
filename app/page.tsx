@@ -1,7 +1,7 @@
 "use client";
-import Tag from "@/components/Tag/Tag";
+import Tag from "@/components/UI/Tag/Tag";
 import styles from "./page.module.css";
-import Button from "@/components/Button/Button";
+import Button from "@/components/UI/Button/Button";
 
 export default function Home() {
   const handleOnClick = () => {
