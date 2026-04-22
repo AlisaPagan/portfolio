@@ -27,7 +27,9 @@
   background-color: var(--primary-btn);
   color: var(--primary-btn-text);
   border: transparent;
-  transition: background-color 0.35s ease-in-out;
+  transition:
+    background-color 0.35s ease-in-out,
+    box-shadow 0.35s ease-in-out;
 }
 
 .primary:hover,
@@ -39,7 +41,9 @@
   background-color: var(--secondary-btn);
   color: var(--secondary-btn-text);
   border: 1px solid var(--secondary-btn-border);
-  transition: border-color 0.35s ease-in-out;
+  transition:
+    border-color 0.35s ease-in-out,
+    box-shadow 0.35s ease-in-out;
 }
 
 .secondary:hover,
