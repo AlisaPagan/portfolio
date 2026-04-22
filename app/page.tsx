@@ -48,11 +48,13 @@ export default function Home() {
           >
             Documentation
           </a> */}
+
           <div className={styles.btns}>
             <Button
               variant="primary"
               onClick={handleOnClick}
               className={styles.btn}
+              disabled={true}
             >
               Click me very much
             </Button>

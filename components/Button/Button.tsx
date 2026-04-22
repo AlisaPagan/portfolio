@@ -5,7 +5,7 @@ type ButtonVariant = "primary" | "secondary" | "text" | "reset";
 
 type ButtonProps = {
   children: React.ReactNode;
-  variant: ButtonVariant;
+  variant?: ButtonVariant;
   disabled?: boolean;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
   type?: "button" | "submit" | "reset";
@@ -25,7 +25,7 @@ function Button({
       type={type}
       disabled={disabled}
       onClick={onClick}
-      className={`${styles.btn}  ${styles[variant]} ${className} ?? ""`}
+      className={`${styles.btn}  ${styles[variant]} ${className ?? ""}`}
     >
       {children}
     </button>

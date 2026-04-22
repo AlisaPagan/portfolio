@@ -14,6 +14,15 @@
   letter-spacing: -0.01em;
 }
 
+.btn:disabled,
+.btn:disabled:hover,
+.btn:disabled:focus {
+  background-color: var(--btn-disabled-fill);
+  border: 1px solid var(--btn-disabled-stroke);
+  color: var(--btn-disabled-text);
+  cursor: not-allowed;
+}
+
 .primary {
   background-color: var(--primary-btn);
   color: var(--primary-btn-text);
