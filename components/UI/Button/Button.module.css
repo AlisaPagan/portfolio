@@ -12,6 +12,12 @@
   cursor: pointer;
   padding: 12px;
   letter-spacing: -0.01em;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.btn:focus,
+.btn:focus-visible {
+  outline: none;
 }
 
 .btn:disabled,
@@ -32,8 +38,9 @@
     box-shadow 0.35s ease-in-out;
 }
 
-.primary:hover,
-.primary:focus {
+.primary:focus-visible,
+.primary:active {
+  outline: none;
   background-color: var(--hover-primary-btn);
 }
 
@@ -46,7 +53,18 @@
     box-shadow 0.35s ease-in-out;
 }
 
-.secondary:hover,
-.secondary:focus {
+.secondary:focus-visible,
+.secondary:active {
+  outline: none;
   border-color: var(--hover-secondary-btn-border);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .primary:hover {
+    background-color: var(--hover-primary-btn);
+  }
+
+  .secondary:hover {
+    border-color: var(--hover-secondary-btn-border);
+  }
 }

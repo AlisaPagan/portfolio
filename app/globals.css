@@ -18,6 +18,9 @@
   --btn-disabled-text: rgba(23, 30, 56, 0.6);
 
   --border: rgba(0, 0, 23, 0.6);
+
+  --small-accent: #ef772d;
+  --accent: #6b3bd8;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -40,6 +43,10 @@
     --btn-disabled-text: rgba(23, 30, 56, 0.65);
 
     --border: rgba(234, 234, 234, 0.6);
+
+    --small-accent: #e66e23;
+
+    --accent: #6d43cd;
   }
 }
 
@@ -60,7 +67,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-roboto), sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
   line-height: 1.5;
 }
@@ -117,8 +124,68 @@ h4 {
   line-height: 1.1;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
+.section {
+  padding: 0 20px;
+}
+
+.container {
+  width: 100%;
+  max-width: 375px;
+  margin: 0 auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+
+  .section {
+    padding: 0 32px;
+  }
+
+  h1 {
+    font-size: 56px;
+  }
+
+  h2 {
+    font-size: 40px;
+  }
+
+  h3 {
+    font-size: 28px;
+  }
+
+  h4 {
+    font-size: 22px;
+  }
+
+  body {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .section {
+    padding: 0 64px;
+  }
+
+  .container {
+    max-width: 1440px;
+  }
+
+  h1 {
+    font-size: 72px;
+  }
+
+  h2 {
+    font-size: 52px;
+  }
+
+  h3 {
+    font-size: 32px;
+  }
+
+  h4 {
+    font-size: 26px;
   }
 }
