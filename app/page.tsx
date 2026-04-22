@@ -1,6 +1,11 @@
+"use client";
 import styles from "./page.module.css";
+import Button from "@/components/Button/Button";
 
 export default function Home() {
+  const handleOnClick = () => {
+    console.log("clicked");
+  };
   return (
     <div className={styles.page}>
       <main className={styles.main}>
@@ -27,7 +32,7 @@ export default function Home() {
           </p>
         </div>
         <div className={styles.ctas}>
-          <a
+          {/* <a
             className={styles.primary}
             href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
             target="_blank"
@@ -42,7 +47,24 @@ export default function Home() {
             rel="noopener noreferrer"
           >
             Documentation
-          </a>
+          </a> */}
+          <div className={styles.btns}>
+            <Button
+              variant="primary"
+              onClick={handleOnClick}
+              className={styles.btn}
+            >
+              Click me very much
+            </Button>
+
+            <Button
+              variant="secondary"
+              onClick={handleOnClick}
+              className={styles.btn}
+            >
+              Click me
+            </Button>
+          </div>
         </div>
       </main>
     </div>

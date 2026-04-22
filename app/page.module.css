@@ -94,6 +94,15 @@ a.secondary {
   border-color: var(--button-secondary-border);
 }
 
+.btn {
+  width: 220px;
+}
+
+.btns {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   a.primary:hover {
