@@ -1,11 +1,13 @@
 "use client";
 
+import Icon from "@/components/UI/Icon/Icon";
 import styles from "./Hero.module.css";
 import { particles } from "./particles";
+import { PiArrowDownThin } from "react-icons/pi";
 
 function Hero() {
   return (
-    <section className={`section ${styles.hero}`}>
+    <section className={`${styles.hero} section`}>
       <div className={styles.particles}>
         {particles.map((particle) => (
           <span
@@ -47,6 +49,8 @@ function Hero() {
             <li className={styles.tag}>Next.js</li>
           </ul>
         </div>
+
+        <Icon icon={PiArrowDownThin} className={styles.arrowIcon} size={28} />
       </div>
     </section>
   );

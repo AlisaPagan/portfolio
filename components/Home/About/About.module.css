@@ -1,0 +1,155 @@
+.about {
+  background-color: var(--background-secondary);
+  width: 100%;
+}
+
+.sectionWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.sectionInner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.imageContainer {
+  position: relative;
+  display: inline-block;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.imageContainer::after {
+  content: "";
+  position: absolute;
+  inset: clamp(12px, 4vw, 28px);
+  border: 1px solid var(--foreground);
+  pointer-events: none;
+  border-radius: 4px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.descriptionWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.heading {
+  text-transform: uppercase;
+}
+
+.img {
+  object-fit: cover;
+  transform: scaleX(-1);
+  width: 100%;
+  display: block;
+}
+
+.divider {
+  width: 100%;
+  color: var(--divider);
+}
+
+.highlightsLIst {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 10px;
+}
+
+.highlightsItem {
+  display: grid;
+  grid-template-columns: 120px 1fr;
+  gap: 1rem;
+  align-items: start;
+  border-bottom: 1px solid var(--divider);
+  padding-bottom: 12px;
+}
+
+.itemLabel {
+  text-transform: uppercase;
+}
+
+.itemValue {
+  font-weight: 400;
+}
+
+@media only screen and (min-width: 768px) {
+  .sectionWrapper {
+    padding-top: 90px;
+    padding-bottom: 90px;
+    gap: 40px;
+  }
+
+  .imageContainer,
+  .info {
+    width: 100%;
+  }
+
+  .infoWrapper {
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+  }
+
+  .highlightsLIst,
+  .descriptionWrapper {
+    width: 50%;
+  }
+  .img {
+    height: 650px;
+  }
+
+  .sectionInner {
+    gap: 32px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .sectionWrapper {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .infoWrapper {
+    flex-direction: row;
+  }
+
+  .imageContainer,
+  .info {
+    width: 100%;
+  }
+
+  .sectionInner {
+    align-items: center;
+    gap: 60px;
+    justify-content: space-between;
+  }
+
+  .img {
+    width: 620px;
+    height: 700px;
+  }
+
+  .infoWrapper {
+    flex-direction: column;
+  }
+
+  .highlightsLIst,
+  .descriptionWrapper {
+    width: 100%;
+  }
+}

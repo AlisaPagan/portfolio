@@ -68,14 +68,13 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 32px;
+  gap: 24px;
   width: 100%;
   min-height: 100vh;
   z-index: 1;
 }
 
 .homeHeading {
-  font-size: 52px;
   text-align: center;
   text-transform: uppercase;
   animation:
@@ -150,22 +149,37 @@
 .scroller:hover .scrollerInner {
   animation-play-state: paused;
 }
-@media only screen and (min-width: 768px) {
-  .homeHeading {
-    font-size: 82px;
-  }
 
+.arrowIcon {
+  margin-top: 24px;
+  animation: float 1.3s ease-in-out infinite alternate;
+}
+
+@keyframes float {
+  from {
+    transform: translateY(0);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+
+@media only screen and (min-width: 768px) {
   .scroller {
     max-width: 480px;
+  }
+
+  .sectionWrapper {
+    gap: 32px;
+  }
+  .arrowIcon {
+    width: 35px;
+    height: 35px;
   }
 }
 
 @media only screen and (min-width: 1440px) {
-  .homeHeading {
-    font-size: 105px;
-  }
-
   .scroller {
-    max-width: 520px;
+    max-width: 600px;
   }
 }

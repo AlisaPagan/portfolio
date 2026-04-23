@@ -2,6 +2,8 @@
   --background: #edebf5;
   --foreground: #0e0e1f;
 
+  --background-secondary: #e3e2f0;
+
   --primary-btn: #966df2;
 
   --hover-primary-btn: #7d51e2;
@@ -18,6 +20,7 @@
   --btn-disabled-text: rgba(23, 30, 56, 0.6);
 
   --border: rgba(0, 0, 23, 0.6);
+  --divider: rgba(0, 0, 23, 0.3);
 
   --small-accent: #ef772d;
   --accent: #6b3bd8;
@@ -25,12 +28,18 @@
   --grid-color: rgba(212, 212, 212, 0.2);
 
   --particle-color: rgba(28, 37, 69, 0.2);
+
+  --icon: #0e0e1f;
+
+  --highlight: rgba(107, 59, 216, 0.1);
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0e0e1f;
     --foreground: #e2dee3;
+
+    --background-secondary: #050114;
 
     --primary-btn: #8b5cf6;
 
@@ -47,6 +56,7 @@
     --btn-disabled-text: rgba(23, 30, 56, 0.65);
 
     --border: rgba(234, 234, 234, 0.6);
+    --divider: rgba(234, 234, 234, 0.3);
 
     --small-accent: #e66e23;
 
@@ -55,6 +65,10 @@
     --grid-color: rgba(217, 217, 217, 0.05);
 
     --particle-color: rgba(234, 234, 234, 0.4);
+
+    --icon: #e2dee3;
+
+    --highlight: rgba(109, 67, 205, 0.2);
   }
 }
 
@@ -100,7 +114,7 @@ ol {
 
 h1 {
   font-family: var(--font-poppins);
-  font-size: 48px;
+  font-size: 52px;
   font-weight: 500;
   color: var(--foreground);
   letter-spacing: -0.03em;
@@ -109,7 +123,7 @@ h1 {
 
 h2 {
   font-family: var(--font-poppins);
-  font-size: 32px;
+  font-size: 48px;
   font-weight: 500;
   color: var(--foreground);
   letter-spacing: -0.03em;
@@ -118,7 +132,7 @@ h2 {
 
 h3 {
   font-family: var(--font-poppins);
-  font-size: 26px;
+  font-size: 32px;
   font-weight: 500;
   color: var(--foreground);
   line-height: 1.15;
@@ -152,15 +166,15 @@ h4 {
   }
 
   h1 {
-    font-size: 56px;
+    font-size: 82px;
   }
 
   h2 {
-    font-size: 40px;
+    font-size: 60px;
   }
 
   h3 {
-    font-size: 28px;
+    font-size: 48px;
   }
 
   h4 {
@@ -182,15 +196,15 @@ h4 {
   }
 
   h1 {
-    font-size: 72px;
+    font-size: 105px;
   }
 
   h2 {
-    font-size: 52px;
+    font-size: 78px;
   }
 
   h3 {
-    font-size: 32px;
+    font-size: 52px;
   }
 
   h4 {
