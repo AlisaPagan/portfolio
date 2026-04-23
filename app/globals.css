@@ -21,6 +21,10 @@
 
   --small-accent: #ef772d;
   --accent: #6b3bd8;
+
+  --grid-color: rgba(212, 212, 212, 0.2);
+
+  --particle-color: rgba(28, 37, 69, 0.2);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -47,6 +51,10 @@
     --small-accent: #e66e23;
 
     --accent: #6d43cd;
+
+    --grid-color: rgba(217, 217, 217, 0.05);
+
+    --particle-color: rgba(234, 234, 234, 0.4);
   }
 }
 

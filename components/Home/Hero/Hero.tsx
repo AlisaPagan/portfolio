@@ -1,11 +1,28 @@
 "use client";
 
 import styles from "./Hero.module.css";
-import Tag from "@/components/UI/Tag/Tag";
+import { particles } from "./particles";
 
 function Hero() {
   return (
-    <section className="section">
+    <section className={`section ${styles.hero}`}>
+      <div className={styles.particles}>
+        {particles.map((particle) => (
+          <span
+            key={particle.id}
+            className={styles.particle}
+            style={{
+              top: particle.top,
+              left: particle.left,
+              width: `${particle.size}px`,
+              height: `${particle.size}px`,
+              animationDelay: particle.delay,
+              animationDuration: particle.duration,
+            }}
+          />
+        ))}
+      </div>
+      <div className={styles.grid}></div>
       <div className={`container ${styles.sectionWrapper}`}>
         <h1 className={styles.homeHeading}>Alisa Pagan</h1>
         <h4 className={styles.homeSubheading}>
