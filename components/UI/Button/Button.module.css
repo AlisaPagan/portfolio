@@ -59,6 +59,20 @@
   border-color: var(--hover-secondary-btn-border);
 }
 
+.text {
+  background-color: transparent;
+  color: var(--foreground);
+  border: 1px solid transparent;
+  border-radius: 0;
+  padding-bottom: 18px;
+  transition: border-color 0.35s ease-in-out;
+}
+
+.text:focus-visible,
+.text:active {
+  border-bottom: 1px solid var(--foreground);
+}
+
 @media (hover: hover) and (pointer: fine) {
   .primary:hover {
     background-color: var(--hover-primary-btn);
@@ -66,5 +80,9 @@
 
   .secondary:hover {
     border-color: var(--hover-secondary-btn-border);
+  }
+
+  .text:hover {
+    border-bottom: 1px solid var(--foreground);
   }
 }

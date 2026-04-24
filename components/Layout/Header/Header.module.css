@@ -1,14 +1,17 @@
 .header {
-  padding-top: 12px;
-  padding-bottom: 12px;
+  padding-top: 8px;
+  padding-bottom: 8px;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 24px;
+  left: 50%;
+  transform: translateX(-50%);
   z-index: 9999;
-  width: 100%;
+  width: 90%;
+  margin: 0 auto;
   background: var(--header);
   backdrop-filter: blur(2.5px);
-  border-bottom: 1px solid var(--secondary-btn-border);
+  border: 1px solid var(--secondary-btn-border);
+  border-radius: 25px;
 }
 
 .headerWrapper {
@@ -24,27 +27,43 @@
 }
 
 .logo {
-  color: var(--accent);
+  color: var(--nav-link);
   font-family: var(--font-poppins);
   font-size: 40px;
   font-weight: 600;
   letter-spacing: -0.04em;
+  transition: color 0.35s ease-in-out;
+}
+
+.logo:hover,
+.logo:focus-visible {
+  color: var(--nav-link-hover);
 }
 
 .link {
   font-family: var(--font-roboto-mono);
   font-size: 20px;
-  color: var(--accent);
+  color: var(--nav-link);
   font-weight: 500;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  transition:
+    border-color 0.35s ease-in-out,
+    color 0.35s ease-in-out;
 }
 
 .link:hover,
 .link:focus-visible {
-  color: var(--small-accent);
+  color: var(--nav-link-hover);
+  border-bottom: 1px solid var(--nav-link-hover);
 }
 
 .themeButton {
+  background-color: transparent;
+  border: var(--foreground);
 }
 
 .themeIcon {
+  fill: var(--foreground);
 }

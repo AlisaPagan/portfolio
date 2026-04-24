@@ -27,6 +27,7 @@ function Hero() {
           />
         ))}
       </div>
+      <div className={styles.glow}></div>
       <div className={styles.grid}></div>
       <div className={`container ${styles.sectionWrapper}`}>
         <h1 className={styles.homeHeading}>Alisa Pagan</h1>

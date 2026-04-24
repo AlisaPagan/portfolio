@@ -34,6 +34,9 @@
   --highlight: rgba(107, 59, 216, 0.1);
 
   --header: rgba(243, 244, 246, 0.75);
+
+  --nav-link: rgba(0, 0, 23, 0.6);
+  --nav-link-hover: #0e0e1f;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -73,6 +76,9 @@
     --highlight: rgba(109, 67, 205, 0.2);
 
     --header: rgba(23, 30, 56, 0.75);
+
+    --nav-link: rgba(234, 234, 234, 0.6);
+    --nav-link-hover: #e2dee3;
   }
 }
 

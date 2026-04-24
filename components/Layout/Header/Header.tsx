@@ -29,7 +29,7 @@ function Header() {
             Ongoing works & Learning
           </Link>
         </nav>
-        <Button className={styles.themeButton}>
+        <Button className={styles.themeButton} variant="text">
           <Icon
             icon={PiSunDimThin}
             size={24}
