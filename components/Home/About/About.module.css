@@ -24,6 +24,8 @@
   display: inline-block;
   border: 1px solid var(--border);
   border-radius: 4px;
+  align-items: center;
+  margin: 0 auto;
 }
 
 .imageContainer::after {
@@ -41,6 +43,11 @@
   gap: 32px;
 }
 
+.infoWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
 .descriptionWrapper {
   display: flex;
   flex-direction: column;
@@ -99,8 +106,13 @@
     width: 100%;
   }
 
+  .imageContainer {
+    justify-content: center;
+    align-items: center;
+  }
+
   .infoWrapper {
-    display: flex;
+    flex-direction: row;
     gap: 32px;
     justify-content: space-between;
   }
@@ -110,7 +122,8 @@
     width: 50%;
   }
   .img {
-    height: 650px;
+    width: 500px;
+    height: 500px;
   }
 
   .sectionInner {
@@ -125,7 +138,7 @@
   }
 
   .infoWrapper {
-    flex-direction: row;
+    flex-direction: column;
   }
 
   .imageContainer,
@@ -137,6 +150,7 @@
     align-items: center;
     gap: 60px;
     justify-content: space-between;
+    flex-direction: row;
   }
 
   .img {

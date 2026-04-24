@@ -5,9 +5,12 @@ import styles from "./Hero.module.css";
 import { particles } from "./particles";
 import { PiArrowDownThin } from "react-icons/pi";
 
+const tags = ["JavaScript", "TypeScript", "Node.js", "React", "Next.js"];
+const copies = [0, 1, 2, 3];
+
 function Hero() {
   return (
-    <section className={`${styles.hero} section`}>
+    <section className={`${styles.hero} section`} id="hero">
       <div className={styles.particles}>
         {particles.map((particle) => (
           <span
@@ -35,19 +38,21 @@ function Hero() {
           data-direction="left"
           data-speed="fast"
         >
-          <ul className={`${styles.scrollerInner} ${styles.homeTagList}`}>
-            <li className={styles.tag}>JavaScript</li>
-            <li className={styles.tag}>TypeScript</li>
-            <li className={styles.tag}>Node.js</li>
-            <li className={styles.Ttg}>React</li>
-            <li className={styles.tag}>Next.js</li>
-
-            <li className={styles.tag}>JavaScript</li>
-            <li className={styles.tag}>TypeScript</li>
-            <li className={styles.tag}>Node.js</li>
-            <li className={styles.Ttg}>React</li>
-            <li className={styles.tag}>Next.js</li>
-          </ul>
+          <div className={styles.scrollerTrack}>
+            {copies.map((copyIndex) => (
+              <ul
+                key={copyIndex}
+                className={styles.tagGroup}
+                aria-hidden={copyIndex === 0 ? undefined : "true"}
+              >
+                {tags.map((tag) => (
+                  <li key={`${copyIndex}-${tag}`} className={styles.tag}>
+                    {tag}
+                  </li>
+                ))}
+              </ul>
+            ))}
+          </div>
         </div>
 
         <Icon icon={PiArrowDownThin} className={styles.arrowIcon} size={28} />

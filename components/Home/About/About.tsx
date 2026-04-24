@@ -3,7 +3,7 @@ import styles from "./About.module.css";
 
 function About() {
   return (
-    <section className={`${styles.about} section`}>
+    <section className={`${styles.about} section`} id="about">
       <div className={`${styles.sectionWrapper} container`}>
         <h2 className={styles.heading}>About me</h2>
         <div className={styles.sectionInner}>

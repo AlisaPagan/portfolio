@@ -32,6 +32,8 @@
   --icon: #0e0e1f;
 
   --highlight: rgba(107, 59, 216, 0.1);
+
+  --header: rgba(243, 244, 246, 0.75);
 }
 
 @media (prefers-color-scheme: dark) {
@@ -64,11 +66,13 @@
 
     --grid-color: rgba(217, 217, 217, 0.05);
 
-    --particle-color: rgba(234, 234, 234, 0.4);
+    --particle-color: rgba(234, 234, 234, 0.2);
 
     --icon: #e2dee3;
 
     --highlight: rgba(109, 67, 205, 0.2);
+
+    --header: rgba(23, 30, 56, 0.75);
   }
 }
 

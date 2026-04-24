@@ -12,7 +12,7 @@
   background-image:
     linear-gradient(var(--grid-color) 1px, transparent 1px),
     linear-gradient(90deg, var(--grid-color) 1px, transparent 1px);
-  background-size: 75px 75px;
+  background-size: 45px 45px;
   opacity: 0;
   animation: fade-in 1s ease-in-out forwards;
 }
@@ -74,6 +74,14 @@
   z-index: 1;
 }
 
+@media only screen and (max-width: 1439px) {
+  .hero,
+  .sectionWrapper {
+    height: 100svh;
+    min-height: 100svh;
+  }
+}
+
 .homeHeading {
   text-align: center;
   text-transform: uppercase;
@@ -113,22 +121,27 @@
     var(--background) 80%,
     transparent
   );
-}
-
-.scrollerInner {
-  display: flex;
-  flex-wrap: nowrap;
-  width: max-content;
   animation:
-    scroll 20s 1.3s linear infinite,
     moveUp 1s ease-in-out,
     fade-in 1s ease-in-out forwards;
 }
 
-.homeTagList {
-  gap: 16px;
-  justify-content: center;
+.scrollerTrack {
+  display: flex;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+.tagGroup {
+  display: flex;
   align-items: center;
+  gap: 16px;
+  flex-shrink: 0;
+  padding-right: 16px;
+}
+
+.tag {
+  flex: 0 0 auto;
 }
 
 @keyframes moveUp {
@@ -142,11 +155,11 @@
 
 @keyframes scroll {
   to {
-    transform: translate(calc(-50% - 0.5rem));
+    transform: translateX(-25%);
   }
 }
 
-.scroller:hover .scrollerInner {
+.scroller:hover .scrollerTrack {
   animation-play-state: paused;
 }
 
@@ -176,10 +189,18 @@
     width: 35px;
     height: 35px;
   }
+
+  .grid {
+    background-size: 55px 55px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
   .scroller {
     max-width: 600px;
+  }
+
+  .grid {
+    background-size: 85px 85px;
   }
 }
