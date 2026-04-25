@@ -6,7 +6,7 @@
   left: 50%;
   transform: translateX(-50%);
   z-index: 9999;
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   background: var(--header);
   backdrop-filter: blur(2.5px);
@@ -14,13 +14,14 @@
   border-radius: 25px;
 }
 
-.headerWrapper {
+.topBar {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  width: 100%;
 }
 
-.nav {
+.desktopNav {
   display: flex;
   justify-content: center;
   gap: 28px;
@@ -32,7 +33,7 @@
   font-size: 40px;
   font-weight: 600;
   letter-spacing: -0.04em;
-  transition: color 0.35s ease-in-out;
+  transition: color var(--transition);
 }
 
 .logo:hover,
@@ -40,7 +41,7 @@
   color: var(--nav-link-hover);
 }
 
-.link {
+.navLink {
   font-family: var(--font-roboto-mono);
   font-size: 20px;
   color: var(--nav-link);
@@ -49,21 +50,53 @@
   padding-top: 10px;
   padding-bottom: 10px;
   transition:
-    border-color 0.35s ease-in-out,
-    color 0.35s ease-in-out;
+    border-color var(--transition),
+    color var(--transition);
 }
 
-.link:hover,
-.link:focus-visible {
+.navLink:focus-visible {
   color: var(--nav-link-hover);
   border-bottom: 1px solid var(--nav-link-hover);
 }
 
-.themeButton {
+.themeButton.themeButton {
   background-color: transparent;
-  border: var(--foreground);
+  border: 1px solid var(--foreground);
+  border-radius: 4px;
+  transition:
+    background-color 0.35s ease-in-out,
+    border-color 0.35s ease-in-out,
+    transform var(--transition);
 }
 
-.themeIcon {
+.themeButton .themeIcon {
   fill: var(--foreground);
+}
+
+.themeButton.themeButton:focus-visible {
+  background-color: var(--accent);
+  border: 1px solid transparent;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .navLink:hover {
+    color: var(--nav-link-hover);
+    border-bottom: 1px solid var(--nav-link-hover);
+  }
+
+  .themeButton.themeButton:hover {
+    background-color: var(--foreground);
+    border: 1px solid transparent;
+    transform: rotate(0.5turn);
+  }
+
+  .themeButton:hover .themeIcon {
+    fill: var(--background);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+}
+
+@media only screen and (min-width: 1440px) {
 }

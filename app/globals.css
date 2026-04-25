@@ -1,4 +1,46 @@
 :root {
+  --background: #0e0e1f;
+  --foreground: #e2dee3;
+
+  --background-secondary: #000017;
+
+  --primary-btn: #8b5cf6;
+
+  --hover-primary-btn: #663fbf;
+
+  --primary-btn-text: #d9d9d9;
+
+  --secondary-btn: #1c2545;
+  --secondary-btn-border: rgba(139, 92, 246, 0.6);
+  --secondary-btn-text: #d9d9d9;
+  --hover-secondary-btn-border: rgba(139, 92, 246, 1);
+  --btn-disabled-fill: rgba(212, 212, 212, 0.7);
+  --btn-disabled-stroke: rgba(234, 234, 234, 0.4);
+  --btn-disabled-text: rgba(23, 30, 56, 0.65);
+
+  --border: rgba(234, 234, 234, 0.6);
+  --divider: rgba(234, 234, 234, 0.3);
+
+  --small-accent: #e66e23;
+
+  --accent: #6d43cd;
+
+  --grid-color: rgba(217, 217, 217, 0.05);
+
+  --particle-color: rgba(234, 234, 234, 0.2);
+
+  --icon: #e2dee3;
+
+  --highlight: rgba(109, 67, 205, 0.2);
+
+  --header: rgba(23, 30, 56, 0.75);
+
+  --nav-link: rgba(234, 234, 234, 0.6);
+  --nav-link-hover: #e2dee3;
+  --transition: 0.5s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
+html[data-theme="light"] {
   --background: #edebf5;
   --foreground: #0e0e1f;
 
@@ -39,51 +81,9 @@
   --nav-link-hover: #0e0e1f;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0e0e1f;
-    --foreground: #e2dee3;
-
-    --background-secondary: #050114;
-
-    --primary-btn: #8b5cf6;
-
-    --hover-primary-btn: #663fbf;
-
-    --primary-btn-text: #d9d9d9;
-
-    --secondary-btn: #1c2545;
-    --secondary-btn-border: rgba(139, 92, 246, 0.6);
-    --secondary-btn-text: #d9d9d9;
-    --hover-secondary-btn-border: rgba(139, 92, 246, 1);
-    --btn-disabled-fill: rgba(212, 212, 212, 0.7);
-    --btn-disabled-stroke: rgba(234, 234, 234, 0.4);
-    --btn-disabled-text: rgba(23, 30, 56, 0.65);
-
-    --border: rgba(234, 234, 234, 0.6);
-    --divider: rgba(234, 234, 234, 0.3);
-
-    --small-accent: #e66e23;
-
-    --accent: #6d43cd;
-
-    --grid-color: rgba(217, 217, 217, 0.05);
-
-    --particle-color: rgba(234, 234, 234, 0.2);
-
-    --icon: #e2dee3;
-
-    --highlight: rgba(109, 67, 205, 0.2);
-
-    --header: rgba(23, 30, 56, 0.75);
-
-    --nav-link: rgba(234, 234, 234, 0.6);
-    --nav-link-hover: #e2dee3;
-  }
-}
-
 html {
   height: 100%;
+  scroll-behavior: smooth;
 }
 
 html,
