@@ -1,6 +1,5 @@
 .header {
-  padding-top: 8px;
-  padding-bottom: 8px;
+  padding: 8px 20px;
   position: fixed;
   top: 24px;
   left: 50%;
@@ -8,10 +7,9 @@
   z-index: 9999;
   width: 95%;
   margin: 0 auto;
-  background: var(--header);
   backdrop-filter: blur(2.5px);
-  border: 1px solid var(--secondary-btn-border);
   border-radius: 25px;
+  background: var(--header);
 }
 
 .topBar {
@@ -22,9 +20,37 @@
 }
 
 .desktopNav {
+  display: none;
+}
+
+.navIcon {
+  fill: var(--foreground);
+}
+.navIcon:focus-visible,
+.navIcon:active {
+  fill: var(--nav-link-hover);
+}
+
+.mobileBottomBar {
+  background: var(--header);
+  backdrop-filter: blur(2.5px);
+  border: 1px solid var(--secondary-btn-border);
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 95%;
+  position: fixed;
+  top: 90%;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  padding: 8px 20px;
+}
+
+.mobileNav {
   display: flex;
-  justify-content: center;
-  gap: 28px;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
 }
 
 .logo {
@@ -99,4 +125,13 @@
 }
 
 @media only screen and (min-width: 1440px) {
+  .desktopNav {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+  }
+
+  .mobileBottomBar {
+    display: none;
+  }
 }
