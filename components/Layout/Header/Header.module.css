@@ -1,15 +1,12 @@
 .header {
   padding: 8px 20px;
   position: fixed;
-  top: 24px;
+  top: 16px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 9999;
-  width: 95%;
+  width: 100%;
   margin: 0 auto;
-  backdrop-filter: blur(2.5px);
-  border-radius: 25px;
-  background: var(--header);
 }
 
 .topBar {
@@ -23,72 +20,34 @@
   display: none;
 }
 
-.navIcon {
-  fill: var(--foreground);
-}
-.navIcon:focus-visible,
-.navIcon:active {
-  fill: var(--nav-link-hover);
-}
-
-.mobileBottomBar {
-  background: var(--header);
-  backdrop-filter: blur(2.5px);
-  border: 1px solid var(--secondary-btn-border);
-  border-radius: 10px;
-  margin: 0 auto;
-  width: 95%;
-  position: fixed;
-  top: 90%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 9999;
-  padding: 8px 20px;
-}
-
-.mobileNav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-}
-
 .logo {
-  color: var(--nav-link);
+  color: var(--foreground);
   font-family: var(--font-poppins);
-  font-size: 40px;
-  font-weight: 600;
+  font-size: 25px;
+  font-weight: 300;
   letter-spacing: -0.04em;
   transition: color var(--transition);
+  background-color: var(--header);
+  border: 1px solid var(--secondary-btn-border);
+  border-radius: 4px;
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
 }
 
-.logo:hover,
 .logo:focus-visible {
   color: var(--nav-link-hover);
-}
-
-.navLink {
-  font-family: var(--font-roboto-mono);
-  font-size: 20px;
-  color: var(--nav-link);
-  font-weight: 500;
-
-  padding-top: 10px;
-  padding-bottom: 10px;
-  transition:
-    border-color var(--transition),
-    color var(--transition);
-}
-
-.navLink:focus-visible {
-  color: var(--nav-link-hover);
-  border-bottom: 1px solid var(--nav-link-hover);
+  outline: none;
+  border: 1px solid var(--hover-secondary-btn-border);
 }
 
 .themeButton.themeButton {
-  background-color: transparent;
-  border: 1px solid var(--foreground);
+  background-color: var(--header);
+  border: 1px solid var(--secondary-btn-border);
   border-radius: 4px;
+  width: 50px;
+  height: 50px;
   transition:
     background-color 0.35s ease-in-out,
     border-color 0.35s ease-in-out,
@@ -100,14 +59,168 @@
 }
 
 .themeButton.themeButton:focus-visible {
-  background-color: var(--accent);
+  background-color: var(--foreground);
   border: 1px solid transparent;
+}
+
+.themeButton:focus-visible .themeIcon {
+  fill: var(--background);
+}
+
+.mobileBottomBar {
+  background: var(--header);
+  backdrop-filter: blur(2.5px);
+  border: 1px solid var(--secondary-btn-border);
+  border-radius: 10px;
+  margin: 0 auto;
+  width: 95%;
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  padding: 8px 20px;
+  max-width: 375px;
+}
+
+.mobileNav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.mobileLink {
+  display: grid;
+  place-items: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  line-height: 0;
+  text-decoration: none;
+  background: transparent;
+  border: 0;
+  transition:
+    background-color var(--transition),
+    color var(--transition),
+    transform var(--transition);
+}
+
+.activeLink {
+  background-color: var(--secondary-btn-border);
+  outline: none;
+  border-radius: 4px;
+  transform: translateY(-2px);
+}
+
+.navIcon {
+  transition:
+    transform var(--transition),
+    color var(--transition),
+    fill var(--transition);
+}
+
+.activeLink .navIcon {
+  transform: scale(1.08);
+}
+
+.mobileLink .navIcon {
+  fill: var(--foreground);
+  display: block;
+  padding: 0;
+}
+
+.mobileLink:focus-visible .navIcon,
+.mobileLink:active .navIcon {
+  outline: none;
+  transform: scale(1.08);
+}
+
+@media only screen and (min-width: 768px) {
+  .mobileBottomBar {
+    width: fit-content;
+    max-width: 768px;
+  }
+
+  .mobileNav {
+    justify-content: center;
+    gap: 40px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .header {
+    backdrop-filter: blur(2.5px);
+    border-radius: 25px;
+    background: var(--header);
+    border: 1px solid var(--secondary-btn-border);
+    top: 24px;
+    width: 90%;
+  }
+
+  .desktopNav {
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+  }
+
+  .mobileBottomBar {
+    display: none;
+  }
+
+  .mobileNav {
+    display: none;
+  }
+
+  .navIcon {
+    display: none;
+  }
+
+  .navLink {
+    font-family: var(--font-roboto-mono);
+    font-size: 20px;
+    color: var(--nav-link);
+    font-weight: 500;
+    padding: 10px;
+    padding-bottom: 10px;
+    transition:
+      background-color var(--transition),
+      color var(--transition);
+  }
+
+  .navLinkActive {
+    color: var(--nav-link-hover);
+    background-color: var(--secondary-btn-border);
+    border-radius: 4px;
+  }
+
+  .logo {
+    background-color: transparent;
+    border: none;
+    color: var(--nav-link);
+    transition: color var(--transition);
+  }
+
+  .logo:focus-visible {
+    color: var(--nav-link-hover);
+  }
+
+  .navLink:focus-visible {
+    color: var(--nav-link-hover);
+    border-bottom: 1px solid var(--nav-link-hover);
+  }
+
+  .themeButton.themeButton {
+    background-color: transparent;
+    border: 1px solid var(--nav-link);
+  }
 }
 
 @media (hover: hover) and (pointer: fine) {
   .navLink:hover {
     color: var(--nav-link-hover);
-    border-bottom: 1px solid var(--nav-link-hover);
   }
 
   .themeButton.themeButton:hover {
@@ -119,19 +232,8 @@
   .themeButton:hover .themeIcon {
     fill: var(--background);
   }
-}
 
-@media only screen and (min-width: 768px) {
-}
-
-@media only screen and (min-width: 1440px) {
-  .desktopNav {
-    display: flex;
-    justify-content: center;
-    gap: 28px;
-  }
-
-  .mobileBottomBar {
-    display: none;
+  .logo:hover {
+    color: var(--nav-link-hover);
   }
 }
