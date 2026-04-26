@@ -2,6 +2,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
   font-family: var(--font-roboto-mono);
   font-weight: 600;
   font-size: 18px;
@@ -80,5 +81,11 @@
 
   .text:hover {
     border-bottom: 1px solid var(--foreground);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .btn {
+    width: 220px;
   }
 }

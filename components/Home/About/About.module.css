@@ -89,12 +89,46 @@
 
 .itemLabel {
   text-transform: uppercase;
+  opacity: 0.7;
 }
 
 .itemValue {
   font-weight: 400;
 }
 
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  font-family: var(--font-roboto-mono);
+  font-weight: 600;
+  font-size: 18px;
+  height: 50px;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 1;
+  cursor: pointer;
+  padding: 12px;
+  letter-spacing: -0.01em;
+  -webkit-tap-highlight-color: transparent;
+  background-color: var(--primary-btn);
+  color: var(--primary-btn-text);
+  border: transparent;
+  transition: background-color var(--transition);
+}
+
+.btn:focus-visible,
+.btn:active {
+  outline: none;
+  background-color: var(--hover-primary-btn);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .btn:hover {
+    background-color: var(--hover-primary-btn);
+  }
+}
 @media only screen and (min-width: 768px) {
   .sectionWrapper {
     padding-top: 90px;
@@ -129,6 +163,9 @@
 
   .sectionInner {
     gap: 32px;
+  }
+  .btn {
+    width: 220px;
   }
 }
 
