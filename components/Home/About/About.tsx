@@ -21,7 +21,7 @@ function About() {
           <div className={styles.info}>
             <h3 className={styles.subheading}>Key highlights</h3>
             <div className={styles.infoWrapper}>
-              <ul className={styles.highlightsLIst}>
+              <ul className={styles.highlightsList}>
                 <li className={styles.highlightsItem}>
                   <p className={styles.itemLabel}>Location:</p>
                   <p className={styles.itemValue}>Artesia, NM</p>
@@ -77,15 +77,14 @@ function About() {
                   publishing software like Aldus PageMaker including versions of
                   Lorem Ipsum.
                 </p>
-
-                <a
-                  href="/Alisa_Pagan_Fullstack_Developer.pdf"
-                  download="Alisa_Pagan_Fullstack_Developer.pdf"
-                  className={styles.btn}
-                >
-                  Download resume
-                </a>
               </div>
+              <a
+                href="/Alisa_Pagan_Fullstack_Developer.pdf"
+                download="Alisa_Pagan_Fullstack_Developer.pdf"
+                className={styles.btn}
+              >
+                Download resume
+              </a>
             </div>
           </div>
         </div>

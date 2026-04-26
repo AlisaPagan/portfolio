@@ -71,7 +71,7 @@
   color: var(--divider);
 }
 
-.highlightsLIst {
+.highlightsList {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -152,7 +152,7 @@
     justify-content: space-between;
   }
 
-  .highlightsLIst,
+  .highlightsList,
   .descriptionWrapper {
     width: 50%;
   }
@@ -200,7 +200,7 @@
     flex-direction: column;
   }
 
-  .highlightsLIst,
+  .highlightsList,
   .descriptionWrapper {
     width: 100%;
   }

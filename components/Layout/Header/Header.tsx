@@ -19,7 +19,7 @@ import { useEffect, useState } from "react";
 const sectionIds = [
   "about",
   "skills",
-  "works",
+  "projects",
   "experience",
   "ongoing-and-learning",
   "contact",
@@ -150,11 +150,11 @@ function Header() {
               Skills
             </Link>
             <Link
-              href={"/#works"}
-              onClick={() => handleSectionClick("works")}
-              className={getDesktopLinkClassName("works")}
+              href={"/#projects"}
+              onClick={() => handleSectionClick("projects")}
+              className={getDesktopLinkClassName("projects")}
             >
-              Works
+              Projects
             </Link>
             <Link
               href={"/#experience"}
@@ -229,10 +229,10 @@ function Header() {
           </Link>
 
           <Link
-            href="/#works"
-            aria-label="Works"
-            onClick={() => handleSectionClick("works")}
-            className={getMobileLinkClassName("works")}
+            href="/#projects"
+            aria-label="projects"
+            onClick={() => handleSectionClick("projects")}
+            className={getMobileLinkClassName("projects")}
           >
             <Icon
               size={30}
