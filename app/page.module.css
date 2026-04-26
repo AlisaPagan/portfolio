@@ -2,6 +2,12 @@
   padding-bottom: 32px;
 }
 
+@media only screen and (min-width: 768px) {
+  .main {
+    padding-bottom: 40px;
+  }
+}
+
 @media only screen and (min-width: 1440px) {
   .main {
     padding-bottom: 0;

@@ -1,4 +1,11 @@
+.skillsSection {
+  position: relative;
+  overflow: hidden;
+  min-height: 100vh;
+}
+
 .sectionWrapper {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 24px;
@@ -8,6 +15,18 @@
   justify-content: center;
 }
 
+.glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    radial-gradient(circle at top left, var(--accent) 0%, transparent 45%),
+    radial-gradient(circle at bottom right, var(--accent) 0%, transparent 45%);
+  background-size: 100%;
+  opacity: 0.25;
+}
+
 .heading {
   text-align: center;
   text-transform: uppercase;
@@ -15,9 +34,10 @@
 }
 
 .skillsGridWrapper {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
   gap: 18px;
+  align-items: stretch;
 }
 
 .listWrapper {
@@ -69,10 +89,7 @@
   }
 
   .skillsGridWrapper {
-    display: grid;
     grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 18px;
-    align-items: stretch;
   }
 
   .listWrapper {
@@ -85,5 +102,9 @@
   .sectionWrapper {
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+
+  .skillsGridWrapper {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
