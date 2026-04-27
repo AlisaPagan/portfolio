@@ -6,9 +6,14 @@
 .sectionWrapper {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 40px;
   padding-top: 60px;
   padding-bottom: 60px;
   justify-content: center;
   align-items: flex-start;
+}
+
+.heading {
+  text-transform: uppercase;
+  align-self: center;
 }

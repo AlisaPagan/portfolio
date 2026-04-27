@@ -10,10 +10,11 @@
 
   --primary-btn-text: #d9d9d9;
 
-  --secondary-btn: #1c2545;
-  --secondary-btn-border: rgba(139, 92, 246, 0.6);
+  --secondary-back: #1c2545;
+  --secondary-back-border: rgba(139, 92, 246, 0.6);
   --secondary-btn-text: #d9d9d9;
-  --hover-secondary-btn-border: rgba(139, 92, 246, 1);
+  --secondary-btn: rgba(0, 0, 0, 0.25);
+  --hover-secondary-back-border: rgba(139, 92, 246, 1);
   --btn-disabled-fill: rgba(212, 212, 212, 0.7);
   --btn-disabled-stroke: rgba(234, 234, 234, 0.4);
   --btn-disabled-text: rgba(23, 30, 56, 0.65);
@@ -53,9 +54,9 @@ html[data-theme="light"] {
   --primary-btn-text: #ffffff;
 
   --secondary-btn: #f3f4f6;
-  --secondary-btn-border: rgba(148, 109, 239, 0.4);
-  --secondary-btn-text: #000017;
-  --hover-secondary-btn-border: rgba(148, 109, 239, 1);
+  --secondary-back-border: rgba(148, 109, 239, 0.4);
+  --secondary-back-text: #000017;
+  --hover-secondary-back-border: rgba(148, 109, 239, 1);
 
   --btn-disabled-fill: rgba(184, 184, 184, 0.7);
   --btn-disabled-stroke: rgba(161, 161, 161, 0.6);

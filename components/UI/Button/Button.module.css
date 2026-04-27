@@ -46,14 +46,14 @@
 .secondary {
   background-color: var(--secondary-btn);
   color: var(--secondary-btn-text);
-  border: 1px solid var(--secondary-btn-border);
+  border: 1px solid var(--secondary-back-border);
   transition: border-color var(--transition);
 }
 
 .secondary:focus-visible,
 .secondary:active {
   outline: none;
-  border-color: var(--hover-secondary-btn-border);
+  border-color: var(--hover-secondary-back-border);
 }
 
 .text {
@@ -76,7 +76,7 @@
   }
 
   .secondary:hover {
-    border-color: var(--hover-secondary-btn-border);
+    border-color: var(--hover-secondary-back-border);
   }
 
   .text:hover {

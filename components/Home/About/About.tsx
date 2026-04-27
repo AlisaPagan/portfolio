@@ -77,14 +77,14 @@ function About() {
                   publishing software like Aldus PageMaker including versions of
                   Lorem Ipsum.
                 </p>
+                <a
+                  href="/Alisa_Pagan_Fullstack_Developer.pdf"
+                  download="Alisa_Pagan_Fullstack_Developer.pdf"
+                  className={styles.btn}
+                >
+                  Download resume
+                </a>
               </div>
-              <a
-                href="/Alisa_Pagan_Fullstack_Developer.pdf"
-                download="Alisa_Pagan_Fullstack_Developer.pdf"
-                className={styles.btn}
-              >
-                Download resume
-              </a>
             </div>
           </div>
         </div>

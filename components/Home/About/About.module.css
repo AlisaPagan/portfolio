@@ -101,6 +101,7 @@
   align-items: center;
   justify-content: center;
   width: 100%;
+  margin-top: 14px;
   font-family: var(--font-roboto-mono);
   font-weight: 600;
   font-size: 18px;

@@ -1,17 +1,7 @@
 .tag {
-  padding: 4px;
+  padding: 4px 8px;
   border: 0.5px solid var(--border);
   border-radius: 4px;
   font-size: 14px;
   letter-spacing: 0.2em;
-}
-
-@media only screen and (min-width: 768px) {
-  .tag {
-    padding: 8px;
-    border: 0.5px solid var(--border);
-    border-radius: 4px;
-    font-size: 16px;
-    letter-spacing: 0.2em;
-  }
 }

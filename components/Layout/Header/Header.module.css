@@ -28,7 +28,7 @@
   letter-spacing: -0.04em;
   transition: color var(--transition);
   background-color: var(--header);
-  border: 1px solid var(--secondary-btn-border);
+  border: 1px solid var(--secondary-back-border);
   border-radius: 4px;
   padding: 5px;
   width: 50px;
@@ -39,12 +39,12 @@
 .logo:focus-visible {
   color: var(--nav-link-hover);
   outline: none;
-  border: 1px solid var(--hover-secondary-btn-border);
+  border: 1px solid var(--hover-secondary-back-border);
 }
 
 .themeButton.themeButton {
   background-color: var(--header);
-  border: 1px solid var(--secondary-btn-border);
+  border: 1px solid var(--secondary-back-border);
   border-radius: 4px;
   width: 50px;
   height: 50px;
@@ -70,7 +70,7 @@
 .mobileBottomBar {
   background: var(--header);
   backdrop-filter: blur(2.5px);
-  border: 1px solid var(--secondary-btn-border);
+  border: 1px solid var(--secondary-back-border);
   border-radius: 10px;
   margin: 0 auto;
   width: 95%;
@@ -109,7 +109,7 @@
 }
 
 .activeLink {
-  background-color: var(--secondary-btn-border);
+  background-color: var(--secondary-back-border);
   outline: none;
   border-radius: 4px;
   transform: translateY(-2px);
@@ -155,7 +155,7 @@
     backdrop-filter: blur(2.5px);
     border-radius: 25px;
     background: var(--header);
-    border: 1px solid var(--secondary-btn-border);
+    border: 1px solid var(--secondary-back-border);
     top: 24px;
     width: 90%;
   }
@@ -192,7 +192,7 @@
 
   .navLinkActive {
     color: var(--nav-link-hover);
-    background-color: var(--secondary-btn-border);
+    background-color: var(--secondary-back-border);
     border-radius: 4px;
   }
 

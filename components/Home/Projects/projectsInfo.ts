@@ -40,7 +40,19 @@ export const projects: Project[] = [
       "Profile update functionality",
     ],
 
-    techStack: ["Node.js", "Express.js", "Next.js", "React", "TypeScript"],
+    techStack: [
+      "Node.js",
+      "Next.js",
+      "React",
+      "TypeScript",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "REST APIs",
+      "Axios",
+      "Vercel",
+      "Render",
+    ],
 
     image: "/relax-map.webp",
     imageAlt: "Relax Map project preview",
@@ -93,11 +105,17 @@ export const projects: Project[] = [
     ],
 
     techStack: [
+      "Node.js",
       "Next.js",
       "React",
       "TypeScript",
-      "Node.js",
+      "CSS Modules",
+      "Zustand",
+      "TanStack Query",
+      "Axios",
       "Express.js",
+      "MongoDB",
+      "Mongoose",
       "Figma",
     ],
 
@@ -146,7 +164,19 @@ export const projects: Project[] = [
       "Responsive layout",
     ],
 
-    techStack: ["HTML5", "CSS3", "JavaScript", "REST API", "Axios"],
+    techStack: [
+      "JavaScript",
+      "REST API",
+      "HTML5",
+      "CSS3",
+      "SCSS",
+      "Vite",
+      "Axios",
+      "Swiper.js",
+      "iziToast",
+      "Accordion.js",
+      "Raty.js",
+    ],
 
     image: "/mebleria.webp",
     imageAlt: "Mebleria furniture store project preview",
@@ -194,7 +224,15 @@ export const projects: Project[] = [
       "Footer subscription form",
     ],
 
-    techStack: ["HTML5", "CSS3", "JavaScript", "Responsive Design"],
+    techStack: [
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "modern-normalize",
+      "Prettier",
+      "SVG Sprite",
+      "Responsive Design",
+    ],
 
     image: "/flowbloom.webp",
     imageAlt: "FlowBloom yoga studio landing page preview",
@@ -285,7 +323,7 @@ export const projects: Project[] = [
     ],
 
     techStack: [
-      "ADobe XD",
+      "Adobe XD",
       "UX Research",
       "UI Design",
       "Product Planning",
