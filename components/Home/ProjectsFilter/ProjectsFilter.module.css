@@ -1,0 +1,17 @@
+.filtersWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 16px;
+}
+
+.filterBtn {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.activeFilter {
+  background-color: var(--secondary-back);
+  border: 1px solid var(--secondary-back-border);
+}

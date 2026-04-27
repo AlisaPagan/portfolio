@@ -1,6 +1,6 @@
 import type { Project } from "./project";
 
-export const projects: Project[] = [
+const projects: Project[] = [
   {
     id: "relax-map",
     title: "Relax Map",
@@ -348,3 +348,5 @@ export const uxProjects = projects.filter((project) =>
 export const ongoingProjects = projects.filter((project) =>
   project.categories.includes("ongoing"),
 );
+
+export default projects;
