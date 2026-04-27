@@ -61,6 +61,13 @@
   padding: 8px;
   border-radius: 50px;
   box-shadow: 0 2px 2px var(--secondary-btn);
+  transition: backround-color var(--transition);
+}
+
+.iconLink:focus-visible,
+.iconLink:active {
+  background-color: var(--hover-primary-btn);
+  outline: none;
 }
 
 .projectInfoWrapper {
@@ -101,4 +108,10 @@
 
 .btn {
   width: 100%;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .iconLink:hover {
+    background-color: var(--hover-primary-btn);
+  }
 }

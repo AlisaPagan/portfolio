@@ -10,10 +10,24 @@
   padding-top: 60px;
   padding-bottom: 60px;
   justify-content: center;
-  align-items: flex-start;
+  align-items: center;
 }
 
 .heading {
   text-transform: uppercase;
   align-self: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .sectionWrapper {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .sectionWrapper {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
 }
