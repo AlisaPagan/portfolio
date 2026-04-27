@@ -1,0 +1,14 @@
+.projects {
+  background-color: var(--background-secondary);
+  width: 100%;
+}
+
+.sectionWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  justify-content: center;
+  align-items: flex-start;
+}
