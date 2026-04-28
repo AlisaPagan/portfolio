@@ -36,7 +36,8 @@
   border: 1px solid var(--secondary-back-border);
   padding: 4px 8px;
   border-radius: 50px;
-  box-shadow: 0 2px 2px var(--secondary-btn);
+  box-shadow: 0 2px 2px var(--highlight);
+  color: var(--primary-btn-text);
 }
 
 .iconsWrapper {
@@ -60,8 +61,14 @@
   border: 1px solid var(--secondary-back-border);
   padding: 8px;
   border-radius: 50px;
-  box-shadow: 0 2px 2px var(--secondary-btn);
-  transition: backround-color var(--transition);
+  box-shadow: 0 2px 2px var(--highlight);
+  transition:
+    backround-color var(--transition),
+    fill var(--transition);
+}
+
+.icon {
+  fill: var(--icon);
 }
 
 .iconLink:focus-visible,
@@ -110,8 +117,24 @@
   width: 100%;
 }
 
+.iconLink:focus-visible .icon,
+.iconLink:active .icon {
+  fill: var(--primary-btn-text);
+}
+
 @media (hover: hover) and (pointer: fine) {
   .iconLink:hover {
     background-color: var(--hover-primary-btn);
+    fill: var(--secondary-btn-text);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .projectCard {
+    max-width: 500px;
+  }
+
+  .iconLink:hover .icon {
+    fill: var(--primary-btn-text);
   }
 }

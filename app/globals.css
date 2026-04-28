@@ -53,9 +53,10 @@ html[data-theme="light"] {
 
   --primary-btn-text: #ffffff;
 
-  --secondary-btn: #f3f4f6;
+  --secondary-back: #f3f4f6;
   --secondary-back-border: rgba(148, 109, 239, 0.4);
-  --secondary-back-text: #000017;
+  --secondary-btn-text: #000017;
+  --secondary-btn: #f3f4f6;
   --hover-secondary-back-border: rgba(148, 109, 239, 1);
 
   --btn-disabled-fill: rgba(184, 184, 184, 0.7);

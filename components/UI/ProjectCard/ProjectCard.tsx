@@ -6,6 +6,8 @@ import Button from "../Button/Button";
 import Icon from "../Icon/Icon";
 import { GoLinkExternal } from "react-icons/go";
 import { PiGithubLogo } from "react-icons/pi";
+import { CiServer } from "react-icons/ci";
+import { PiBrowser } from "react-icons/pi";
 import Link from "next/link";
 
 type projectCardProps = {
@@ -34,7 +36,29 @@ export function ProjectCard({ project }: projectCardProps) {
               aria-label="View GitHub repo"
               className={styles.iconLink}
             >
-              <Icon icon={PiGithubLogo} size={22} />
+              <Icon icon={PiGithubLogo} size={22} className={styles.icon} />
+            </Link>
+          )}
+
+          {project.links?.frontend && (
+            <Link
+              href={project.links.frontend}
+              target="_blank"
+              aria-label="View GitHub repo frontend"
+              className={styles.iconLink}
+            >
+              <Icon icon={PiBrowser} size={22} className={styles.icon} />
+            </Link>
+          )}
+
+          {project.links?.backend && (
+            <Link
+              href={project.links.backend}
+              target="_blank"
+              aria-label="View GitHub repo backend"
+              className={styles.iconLink}
+            >
+              <Icon icon={CiServer} size={22} className={styles.icon} />
             </Link>
           )}
 
@@ -45,7 +69,7 @@ export function ProjectCard({ project }: projectCardProps) {
               aria-label="View live project"
               className={styles.iconLink}
             >
-              <Icon icon={GoLinkExternal} size={22} />
+              <Icon icon={GoLinkExternal} size={22} className={styles.icon} />
             </Link>
           )}
         </div>

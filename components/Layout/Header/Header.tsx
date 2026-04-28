@@ -14,7 +14,7 @@ import {
   PiGraduationCapThin,
   PiPhoneCallThin,
 } from "react-icons/pi";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const sectionIds = [
   "about",
@@ -29,12 +29,15 @@ type SectionId = (typeof sectionIds)[number];
 
 function Header() {
   //theme toggle
-  const [theme, setTheme] = useState<"dark" | "light">(() => {
-    if (typeof window === "undefined") return "dark";
+  const [theme, setTheme] = useState<"dark" | "light">("dark");
 
+  useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
-    return savedTheme === "light" ? "light" : "dark";
-  });
+
+    if (savedTheme === "light") {
+      setTheme("light");
+    }
+  }, []);
 
   useEffect(() => {
     if (theme === "light") {
@@ -53,6 +56,10 @@ function Header() {
   //active link
 
   const [activeSection, setActiveSection] = useState("");
+  const pendingSectionRef = useRef<SectionId | "">("");
+  const pendingTimeoutRef = useRef<ReturnType<typeof window.setTimeout> | null>(
+    null,
+  );
 
   useEffect(() => {
     const getHashSection = () => {
@@ -62,58 +69,96 @@ function Header() {
         : "";
     };
 
+    const getVisibleSection = () => {
+      const observedSections = ["hero", ...sectionIds]
+        .map((sectionId) => document.getElementById(sectionId))
+        .filter((section): section is HTMLElement => Boolean(section));
+
+      const activationPoint = window.innerHeight * 0.4;
+      const activeSection =
+        observedSections.find((section) => {
+          const rect = section.getBoundingClientRect();
+          return rect.top <= activationPoint && rect.bottom > activationPoint;
+        }) ??
+        observedSections
+          .map((section) => ({
+            section,
+            distance: Math.abs(
+              section.getBoundingClientRect().top - activationPoint,
+            ),
+          }))
+          .sort((a, b) => a.distance - b.distance)[0]?.section;
+
+      if (!activeSection) return "";
+
+      return activeSection.id === "hero" ? "" : activeSection.id;
+    };
+
+    const updateUrl = (sectionId: string) => {
+      const currentPath = `${window.location.pathname}${window.location.search}`;
+      const currentUrl = `${currentPath}${window.location.hash}`;
+      const nextUrl = sectionId ? `${currentPath}#${sectionId}` : currentPath;
+
+      if (currentUrl !== nextUrl) {
+        window.history.replaceState(null, "", nextUrl);
+      }
+    };
+
     const updateActiveSection = () => {
       setActiveSection(getHashSection());
     };
 
     updateActiveSection();
 
-    const observer = new IntersectionObserver(
-      (entries) => {
-        const visibleEntry = entries
-          .filter((entry) => entry.isIntersecting)
-          .sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
+    const updateSectionFromScroll = () => {
+      const pendingSection = pendingSectionRef.current;
+      const visibleSection = getVisibleSection();
 
-        if (!visibleEntry) return;
-
-        const sectionId =
-          visibleEntry.target.id === "hero" ? "" : visibleEntry.target.id;
-
-        setActiveSection(sectionId);
-
-        const currentPath = `${window.location.pathname}${window.location.search}`;
-        const currentUrl = `${currentPath}${window.location.hash}`;
-        const nextUrl = sectionId ? `${currentPath}#${sectionId}` : currentPath;
-
-        if (currentUrl !== nextUrl) {
-          window.history.replaceState(null, "", nextUrl);
+      if (pendingSection) {
+        if (visibleSection === pendingSection) {
+          pendingSectionRef.current = "";
+        } else {
+          return;
         }
-      },
-      {
-        rootMargin: "-35% 0px -45% 0px",
-        threshold: [0, 0.25, 0.5, 0.75, 1],
-      },
-    );
+      }
 
-    const observedSections = ["hero", ...sectionIds]
-      .map((sectionId) => document.getElementById(sectionId))
-      .filter((section): section is HTMLElement => Boolean(section));
+      setActiveSection(visibleSection);
+      updateUrl(visibleSection);
+    };
 
-    observedSections.forEach((section) => observer.observe(section));
+    window.addEventListener("scroll", updateSectionFromScroll, {
+      passive: true,
+    });
+    window.addEventListener("resize", updateSectionFromScroll);
 
     window.addEventListener("hashchange", updateActiveSection);
 
     return () => {
-      observer.disconnect();
+      if (pendingTimeoutRef.current) {
+        window.clearTimeout(pendingTimeoutRef.current);
+      }
+      window.removeEventListener("scroll", updateSectionFromScroll);
+      window.removeEventListener("resize", updateSectionFromScroll);
       window.removeEventListener("hashchange", updateActiveSection);
     };
   }, []);
 
   const handleSectionClick = (sectionId: SectionId) => {
+    pendingSectionRef.current = sectionId;
+
+    if (pendingTimeoutRef.current) {
+      window.clearTimeout(pendingTimeoutRef.current);
+    }
+
+    pendingTimeoutRef.current = window.setTimeout(() => {
+      pendingSectionRef.current = "";
+    }, 1200);
+
     setActiveSection(sectionId);
   };
 
   const handleHomeClick = () => {
+    pendingSectionRef.current = "";
     setActiveSection("");
   };
 

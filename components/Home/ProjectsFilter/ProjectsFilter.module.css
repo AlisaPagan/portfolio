@@ -7,11 +7,30 @@
 }
 
 .filterBtn {
-  border: 1px solid var(--border);
-  border-radius: 4px;
+  border-bottom: 1px solid var(--border);
+}
+
+.filterBtn:focus-visible {
+  border-bottom: 1px solid var(--secondary-back-border);
 }
 
 .activeFilter {
-  background-color: var(--secondary-back);
-  border: 1px solid var(--secondary-back-border);
+  color: var(--hover-secondary-back-border);
+  border-bottom: 1px solid var(--hover-secondary-back-border);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .filterBtn:hover {
+    border-bottom: 1px solid var(--secondary-back-border);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .filtersWrapper {
+    justify-content: space-evenly;
+  }
+
+  .filterBtn {
+    font-size: 20px;
+  }
 }
