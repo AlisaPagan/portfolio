@@ -14,11 +14,33 @@ type ProjectsGridProps = {
 
 function ProjectGrid({ projects }: ProjectsGridProps) {
   return (
-    <div className={styles.projectsGrid}>
-      {projects.map((project) => (
-        <ProjectCard key={project.id} project={project}></ProjectCard>
-      ))}
-    </div>
+    <Swiper
+      modules={[Navigation, Pagination]}
+      spaceBetween={24}
+      slidesPerView={1}
+      navigation
+      pagination={{ clickable: true }}
+      scrollbar={{ draggable: true }}
+      breakpoints={{
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 32,
+        },
+
+        1440: {
+          slidesPerView: 3,
+          spaceBetween: 40,
+        },
+      }}
+    >
+      <div className={styles.projectsGrid}>
+        {projects.map((project) => (
+          <SwiperSlide key={project.id} className={styles.projectSlide}>
+            <ProjectCard key={project.id} project={project}></ProjectCard>
+          </SwiperSlide>
+        ))}
+      </div>
+    </Swiper>
   );
 }
 
