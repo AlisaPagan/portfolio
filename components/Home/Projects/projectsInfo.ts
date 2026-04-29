@@ -183,6 +183,7 @@ const projects: Project[] = [
 
     links: {
       github: "https://github.com/AlisaPagan/QuantumJS",
+      live: "https://alisapagan.github.io/QuantumJS/",
     },
   },
 
