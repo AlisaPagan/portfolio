@@ -10,6 +10,7 @@ type ButtonProps = {
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
   type?: "button" | "submit" | "reset";
   className?: string;
+  ref?: React.Ref<HTMLButtonElement>;
 };
 
 function Button({
@@ -19,9 +20,11 @@ function Button({
   onClick,
   type = "button",
   className,
+  ref,
 }: ButtonProps) {
   return (
     <button
+      ref={ref}
       type={type}
       disabled={disabled}
       onClick={onClick}

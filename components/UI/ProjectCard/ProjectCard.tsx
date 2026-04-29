@@ -76,20 +76,22 @@ export function ProjectCard({ project }: projectCardProps) {
       </div>
 
       <div className={styles.projectInfoWrapper}>
-        <div className={styles.headingWrapper}>
-          <h3 className={styles.heading}>{project.title}</h3>
-        </div>
+        <div className={styles.contentWrapper}>
+          <div className={styles.headingWrapper}>
+            <h3 className={styles.heading}>{project.title}</h3>
+          </div>
 
-        <p className={styles.description}>{project.shortDescription}</p>
-        <ul className={styles.tagList}>
-          {project.techStack
-            .map((tech) => (
-              <li key={tech} className={styles.techTag}>
-                <Tag>{tech}</Tag>
-              </li>
-            ))
-            .slice(0, 3)}
-        </ul>
+          <p className={styles.description}>{project.shortDescription}</p>
+          <ul className={styles.tagList}>
+            {project.techStack
+              .map((tech) => (
+                <li key={tech} className={styles.techTag}>
+                  <Tag>{tech}</Tag>
+                </li>
+              ))
+              .slice(0, 3)}
+          </ul>
+        </div>
         <div className={styles.buttonsWrapper}>
           <Button className={styles.btn}>View Details</Button>
         </div>

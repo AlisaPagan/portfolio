@@ -13,7 +13,7 @@
   --secondary-back: #1c2545;
   --secondary-back-border: rgba(139, 92, 246, 0.6);
   --secondary-btn-text: #d9d9d9;
-  --secondary-btn: rgba(0, 0, 0, 0.25);
+  --secondary-btn: #1c2545;
   --hover-secondary-back-border: rgba(139, 92, 246, 1);
   --btn-disabled-fill: rgba(212, 212, 212, 0.7);
   --btn-disabled-stroke: rgba(234, 234, 234, 0.4);
