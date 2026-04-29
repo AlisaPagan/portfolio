@@ -6,7 +6,6 @@ import { Navigation, Pagination } from "swiper/modules";
 
 import "swiper/css";
 import "swiper/css/navigation";
-import "swiper/css/pagination";
 
 type ProjectsGridProps = {
   projects: Project[];
@@ -15,11 +14,11 @@ type ProjectsGridProps = {
 function ProjectGrid({ projects }: ProjectsGridProps) {
   return (
     <Swiper
+      className={styles.projectsSwiper}
       modules={[Navigation, Pagination]}
       spaceBetween={24}
       slidesPerView={1}
       navigation
-      pagination={{ clickable: true }}
       scrollbar={{ draggable: true }}
       breakpoints={{
         768: {
@@ -33,13 +32,11 @@ function ProjectGrid({ projects }: ProjectsGridProps) {
         },
       }}
     >
-      <div className={styles.projectsGrid}>
-        {projects.map((project) => (
-          <SwiperSlide key={project.id} className={styles.projectSlide}>
-            <ProjectCard key={project.id} project={project}></ProjectCard>
-          </SwiperSlide>
-        ))}
-      </div>
+      {projects.map((project) => (
+        <SwiperSlide key={project.id} className={styles.projectSlide}>
+          <ProjectCard key={project.id} project={project}></ProjectCard>
+        </SwiperSlide>
+      ))}
     </Swiper>
   );
 }
