@@ -55,12 +55,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 40px;
-  height: 40px;
+  width: 31px;
+  height: 31px;
   aspect-ratio: 1 / 1;
   background-color: var(--secondary-back);
   border: 1px solid var(--secondary-back-border);
-  padding: 8px;
+  padding: 5px;
   border-radius: 50px;
   box-shadow: 0 2px 2px var(--highlight);
   transition:

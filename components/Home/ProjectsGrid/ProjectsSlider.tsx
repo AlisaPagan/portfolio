@@ -1,6 +1,6 @@
 import ProjectCard from "@/components/UI/ProjectCard/ProjectCard";
 import { Project } from "../Projects/project";
-import styles from "./ProjectsGrid.module.css";
+import styles from "./ProjectsSlider.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { GoChevronRight } from "react-icons/go";

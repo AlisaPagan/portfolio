@@ -1,7 +1,7 @@
 "use client";
 
 import styles from "./Projects.module.css";
-import ProjectGrid from "../ProjectsGrid/ProjectsGrid";
+import ProjectGrid from "../ProjectsGrid/ProjectsSlider";
 import type { ProjectFilter } from "./project";
 import { useState } from "react";
 import projects from "./projectsInfo";
