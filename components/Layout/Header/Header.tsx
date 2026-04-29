@@ -30,13 +30,20 @@ type SectionId = (typeof sectionIds)[number];
 function Header() {
   //theme toggle
   const [theme, setTheme] = useState<"dark" | "light">("dark");
+  const hasLoadedThemeRef = useRef(false);
 
   useEffect(() => {
-    const savedTheme = localStorage.getItem("theme");
+    const frameId = window.requestAnimationFrame(() => {
+      const savedTheme = localStorage.getItem("theme");
 
-    if (savedTheme === "light") {
-      setTheme("light");
-    }
+      if (savedTheme === "light") {
+        setTheme("light");
+      }
+
+      hasLoadedThemeRef.current = true;
+    });
+
+    return () => window.cancelAnimationFrame(frameId);
   }, []);
 
   useEffect(() => {
@@ -46,7 +53,9 @@ function Header() {
       document.documentElement.removeAttribute("data-theme");
     }
 
-    localStorage.setItem("theme", theme);
+    if (hasLoadedThemeRef.current) {
+      localStorage.setItem("theme", theme);
+    }
   }, [theme]);
 
   const toggleTheme = () => {
@@ -57,9 +66,7 @@ function Header() {
 
   const [activeSection, setActiveSection] = useState("");
   const pendingSectionRef = useRef<SectionId | "">("");
-  const pendingTimeoutRef = useRef<ReturnType<typeof window.setTimeout> | null>(
-    null,
-  );
+  const pendingTimeoutRef = useRef<number | null>(null);
 
   useEffect(() => {
     const getHashSection = () => {
