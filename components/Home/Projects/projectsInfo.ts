@@ -16,13 +16,13 @@ const projects: Project[] = [
       "Relax Map is a full-stack web platform where users can discover relaxation locations, read reviews, share their own places, and manage public user profiles. The project includes location browsing, filtering, content creation, editing flows, and profile-related functionality.",
 
     role: [
-      "Scrum Master",
       "Full-Stack Developer",
-      "Organized team calls, workflow, and sprint communication",
-      "Collaborated with the Team Lead on code review, debugging, and final cleanup",
+      "Scrum Master",
       "Developed backend user endpoints for current user data and profile updates",
       "Built frontend API utilities and proxy setup for frontend-backend communication",
       "Worked on the frontend user profile experience",
+      "Organized team calls, workflow, and sprint communication",
+      "Collaborated with the Team Lead on code review, debugging, and final cleanup",
     ],
 
     problem:
@@ -71,6 +71,7 @@ const projects: Project[] = [
     type: "Full-stack app",
     status: "in progress",
     categories: ["dev", "ux", "ongoing"],
+    featured: false,
 
     shortDescription:
       "Mobile-first raid organization platform for World of Warcraft players.",
@@ -134,6 +135,7 @@ const projects: Project[] = [
     type: "Frontend app",
     status: "completed",
     categories: ["dev"],
+    featured: false,
 
     shortDescription:
       "Responsive furniture store web app built with vanilla JavaScript and API integration.",
@@ -194,6 +196,7 @@ const projects: Project[] = [
     type: "Landing page",
     status: "completed",
     categories: ["dev"],
+    featured: false,
 
     shortDescription:
       "Responsive yoga studio landing page built as a team HTML/CSS project.",
@@ -251,6 +254,7 @@ const projects: Project[] = [
     type: "UX case study",
     status: "completed",
     categories: ["ux"],
+    featured: false,
 
     shortDescription:
       "E-commerce website concept for an artisan home decor shop.",
@@ -294,6 +298,7 @@ const projects: Project[] = [
     type: "Concept app",
     status: "planned",
     categories: ["ux", "ongoing"],
+    featured: false,
 
     shortDescription:
       "Oilfield formula calculator app concept for field and production workflows.",

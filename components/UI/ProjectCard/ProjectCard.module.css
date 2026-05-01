@@ -30,10 +30,11 @@
 .labelWrapper {
   position: absolute;
   top: 18px;
-  right: 18px;
+  right: 10px;
   z-index: 2;
   display: flex;
-  gap: 10px;
+  flex-direction: column;
+  gap: 8px;
 }
 
 .labelType,
@@ -44,6 +45,7 @@
   box-shadow: 0 2px 2px var(--highlight);
   color: var(--primary-btn-text);
   text-transform: capitalize;
+  text-align: center;
 }
 
 .labelType {
@@ -59,11 +61,11 @@
 .iconsWrapper {
   position: absolute;
   top: 18px;
-  left: 18px;
+  left: 10px;
   z-index: 2;
   display: flex;
-  gap: 10px;
-  align-items: center;
+  gap: 8px;
+  align-items: flex-start;
 }
 
 .iconLink {
@@ -73,9 +75,9 @@
   width: 31px;
   height: 31px;
   aspect-ratio: 1 / 1;
-  background-color: var(--secondary-back);
+  background-color: var(--secondary-btn);
   border: 1px solid var(--secondary-back-border);
-  padding: 5px;
+  padding: 6px;
   border-radius: 50px;
   box-shadow: 0 2px 2px var(--highlight);
   transition:
@@ -111,10 +113,8 @@
 .tagList {
   margin-top: auto;
   display: flex;
-  flex-wrap: wrap;
   width: 100%;
-  column-gap: 12px;
-  row-gap: 12px;
+  gap: 12px;
   align-items: center;
   justify-content: flex-start;
 }
@@ -162,11 +162,17 @@
   }
 }
 
-@media only screen and (min-width: 1440px) {
-  /* .projectCard {
-    max-width: 500px;
-  } */
+@media only screen and (min-width: 768px) {
+  .labelWrapper,
+  .iconsWrapper {
+    right: 18px;
+  }
+  .iconLink {
+    padding: 5px;
+  }
+}
 
+@media only screen and (min-width: 1440px) {
   .iconLink:hover .icon {
     fill: var(--primary-btn-text);
   }

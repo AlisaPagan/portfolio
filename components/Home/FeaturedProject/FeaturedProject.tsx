@@ -3,16 +3,18 @@ import styles from "./FeaturedProject.module.css";
 import { Project } from "../Projects/project";
 import Tag from "@/components/UI/Tag/Tag";
 import Button from "@/components/UI/Button/Button";
+import Icon from "@/components/UI/Icon/Icon";
+import { GoDotFill } from "react-icons/go";
 
-type fearutedProjectProps = {
+type FeaturedProjectProps = {
   project: Project;
 };
 
-function FeaturedProject({ project }: fearutedProjectProps) {
+function FeaturedProject({ project }: FeaturedProjectProps) {
   return (
-    <section className={`${styles.featProjSection} section`}>
+    <article className={styles.featProjSection}>
       <div className={`${styles.sectionWrapper} container`}>
-        <div className={styles.imageWrapper}>
+        <div className={styles.imageContainer}>
           <Image
             className={styles.img}
             src={project.image}
@@ -21,12 +23,15 @@ function FeaturedProject({ project }: fearutedProjectProps) {
             height={400}
             priority
           ></Image>
+          <span className={styles.labelFeat}>Featured Project</span>
         </div>
-        <div className={styles.infoWrapper}>
-          <p className={styles.year}>{project.year}</p>
-          <h3 className={styles.projectName}>{project.title}</h3>
-          <p className={styles.description}>{project.shortDescription}</p>
-          <ul className={styles.role}>{project.role}</ul>
+
+        <div className={styles.topWrapper}>
+          <div className={styles.headingWrap}>
+            <p className={styles.year}>{project.year}</p>
+            <h3 className={styles.projectName}>{project.title}</h3>
+          </div>
+          <p className={styles.description}>{project.description}</p>
           <ul className={styles.tagList}>
             {project.techStack
               .map((tech) => (
@@ -37,9 +42,28 @@ function FeaturedProject({ project }: fearutedProjectProps) {
               .slice(0, 5)}
           </ul>
         </div>
-        <Button className={styles.btn}>View Details</Button>
+
+        <div className={styles.contentWrapper}>
+          <hr className={styles.divider} />
+          <h4>My Role</h4>
+          <ul className={styles.roleList}>
+            {project.role.map((roleItem) => (
+              <li key={roleItem} className={styles.roleItem}>
+                <Icon
+                  icon={GoDotFill}
+                  size={16}
+                  className={styles.iconBullet}
+                />
+                {roleItem}
+              </li>
+            ))}
+          </ul>
+          <hr className={styles.divider} />
+
+          <Button className={styles.btn}>View Details</Button>
+        </div>
       </div>
-    </section>
+    </article>
   );
 }
 

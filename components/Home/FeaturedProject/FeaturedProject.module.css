@@ -1,0 +1,159 @@
+.featProjSection {
+  width: 100%;
+}
+
+.sectionWrapper {
+  display: grid;
+  grid-template-areas:
+    "image"
+    "top"
+    "content";
+  gap: 40px;
+  margin-bottom: 20px;
+}
+
+.imageContainer {
+  position: relative;
+  grid-area: image;
+  width: 100%;
+  margin: 0 auto;
+  display: inline-block;
+  overflow: hidden;
+}
+
+.img {
+  object-fit: cover;
+  width: 100%;
+  height: auto;
+  min-height: 400px;
+  display: block;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.labelFeat {
+  position: absolute;
+  top: 18px;
+  right: 10px;
+  z-index: 2;
+  font-size: 14px;
+  padding: 4px 8px;
+  border-radius: 50px;
+  box-shadow: 0 2px 2px var(--highlight);
+  color: var(--primary-btn-text);
+  background-color: var(--accent);
+  border: 1px solid var(--secondary-back-border);
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.headingWrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.topWrapper {
+  grid-area: top;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.contentWrapper {
+  grid-area: content;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.year {
+  color: var(--icon);
+  opacity: 0.7;
+}
+
+.divider {
+  background-image: linear-gradient(
+    to right,
+    var(--secondary-back),
+    var(--accent),
+    var(--secondary-back)
+  );
+  width: 100%;
+  border: 0;
+  height: 1px;
+  margin-bottom: 16px;
+}
+
+.roleList {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.iconBullet {
+  fill: var(--primary-btn);
+  flex-shrink: 0;
+}
+
+.roleItem {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.tagList {
+  display: flex;
+  width: 100%;
+  gap: 12px;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.btn {
+  width: 100%;
+}
+@media only screen and (min-width: 768px) {
+  .sectionWrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+      "image top"
+      "content content";
+    gap: 32px;
+    align-items: center;
+  }
+
+  .divider {
+    margin-top: 16px;
+  }
+  .btn {
+    width: 220px;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .sectionWrapper {
+    grid-template-areas:
+      "image top"
+      "image content";
+    align-items: center;
+    column-gap: 60px;
+  }
+
+  .imageContainer {
+    height: 100%;
+  }
+  .img {
+    height: 100%;
+  }
+
+  .labelFeat {
+    font-size: 16px;
+    padding: 4px 10px;
+    right: 18px;
+  }
+
+  .btn {
+    margin: 0;
+  }
+}
