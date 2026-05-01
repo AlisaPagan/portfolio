@@ -9,7 +9,7 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 40px;
   align-items: center;
   justify-content: center;
 }
@@ -55,13 +55,22 @@
   align-items: center;
   justify-content: space-between;
   width: 100%;
-  border-bottom: 1px solid var(--border);
-  padding-bottom: 18px;
+}
+
+.divider {
+  background-image: linear-gradient(
+    to right,
+    var(--secondary-back),
+    var(--accent),
+    var(--secondary-back)
+  );
+  width: 100%;
+  border: 0;
+  height: 1px;
 }
 
 .subheading {
-  font-size: 22px;
-  text-align: center;
+  font-size: 24px;
 }
 .skillsList {
   display: grid;

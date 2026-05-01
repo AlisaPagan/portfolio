@@ -23,6 +23,7 @@ function Skills() {
                 />
                 <h3 className={styles.subheading}>{group.title}</h3>
               </div>
+              <hr className={styles.divider} />
 
               <ul className={styles.skillsList}>
                 {group.skills.map((skill) => (

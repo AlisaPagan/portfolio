@@ -34,7 +34,6 @@ function Experience() {
                   {job.location}
                 </li>
               </ul>
-
               <ul className={styles.responsibilities}>
                 {job.responsibilities.map((responsibility) => (
                   <li key={responsibility} className={styles.responsibility}>
@@ -53,24 +52,26 @@ function Experience() {
 
         <div className={styles.certsificationsWrapper}>
           <h3 className={styles.certHeading}>Certifications</h3>
-          {certifications.map((certification) => (
-            <article key={certification.id} className={styles.certWrapper}>
-              <ul className={styles.certList}>
-                <li>
-                  <p className={styles.certYear}>{certification.year}</p>
-                </li>
+          <div className={styles.certWrapper}>
+            {certifications.map((certification) => (
+              <article key={certification.id} className={styles.certItem}>
+                <ul className={styles.certList}>
+                  <li>
+                    <p className={styles.certYear}>{certification.year}</p>
+                  </li>
 
-                <li>
-                  <h4>{certification.name}</h4>
-                </li>
-                <li>
-                  <h4 className={styles.certCompany}>
-                    {certification.company}
-                  </h4>
-                </li>
-              </ul>
-            </article>
-          ))}
+                  <li>
+                    <h4>{certification.name}</h4>
+                  </li>
+                  <li>
+                    <h4 className={styles.certCompany}>
+                      {certification.company}
+                    </h4>
+                  </li>
+                </ul>
+              </article>
+            ))}
+          </div>
         </div>
       </div>
     </section>

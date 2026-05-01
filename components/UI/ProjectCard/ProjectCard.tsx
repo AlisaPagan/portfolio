@@ -80,6 +80,7 @@ export function ProjectCard({ project }: projectCardProps) {
           <div className={styles.headingWrapper}>
             <h3 className={styles.heading}>{project.title}</h3>
           </div>
+          <hr className={styles.divider} />
 
           <p className={styles.description}>{project.shortDescription}</p>
           <ul className={styles.tagList}>

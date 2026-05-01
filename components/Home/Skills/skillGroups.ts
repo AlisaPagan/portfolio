@@ -41,7 +41,7 @@ const skillGroups = [
   },
 
   {
-    title: "Tools & Platforms",
+    title: "Dev Tools",
     icon: TiDeviceDesktop,
     skills: ["Git & GitHub", "Vite", "Vercel", "Render", "Trello", "Jira"],
   },
