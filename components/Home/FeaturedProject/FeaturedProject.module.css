@@ -16,6 +16,7 @@
   position: relative;
   grid-area: image;
   width: 100%;
+  height: auto;
   margin: 0 auto;
   display: inline-block;
   overflow: hidden;
@@ -24,7 +25,6 @@
 .img {
   object-fit: cover;
   width: 100%;
-  height: auto;
   min-height: 400px;
   display: block;
   border: 1px solid var(--border);
@@ -136,17 +136,19 @@
     grid-template-areas:
       "image top"
       "image content";
-    align-items: center;
+    align-items: stretch;
     column-gap: 60px;
   }
 
   .imageContainer {
-    height: 100%;
-  }
-  .img {
-    height: 100%;
+    align-self: stretch;
+    display: flex;
+    min-height: 0;
   }
 
+  .img {
+    min-height: 100%;
+  }
   .labelFeat {
     font-size: 16px;
     padding: 4px 10px;

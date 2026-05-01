@@ -11,6 +11,7 @@ type FeaturedProjectProps = {
 };
 
 function FeaturedProject({ project }: FeaturedProjectProps) {
+  const displayedRole = project.featuredRole ?? project.role;
   return (
     <article className={styles.featProjSection}>
       <div className={`${styles.sectionWrapper} container`}>
@@ -31,7 +32,7 @@ function FeaturedProject({ project }: FeaturedProjectProps) {
             <p className={styles.year}>{project.year}</p>
             <h3 className={styles.projectName}>{project.title}</h3>
           </div>
-          <p className={styles.description}>{project.description}</p>
+          <p className={styles.description}>{project.shortDescription}</p>
           <ul className={styles.tagList}>
             {project.techStack
               .map((tech) => (
@@ -47,7 +48,7 @@ function FeaturedProject({ project }: FeaturedProjectProps) {
           <hr className={styles.divider} />
           <h4>My Role</h4>
           <ul className={styles.roleList}>
-            {project.role.map((roleItem) => (
+            {displayedRole.map((roleItem) => (
               <li key={roleItem} className={styles.roleItem}>
                 <Icon
                   icon={GoDotFill}

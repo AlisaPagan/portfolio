@@ -21,6 +21,7 @@ export type Project = {
   shortDescription: string;
   description: string;
   role: string[];
+  featuredRole?: string[];
 
   problem?: string;
   solution?: string;

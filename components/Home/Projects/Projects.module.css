@@ -15,7 +15,6 @@
 
 .heading {
   text-transform: uppercase;
-  align-self: center;
 }
 
 @media only screen and (min-width: 768px) {

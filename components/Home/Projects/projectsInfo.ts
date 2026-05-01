@@ -25,6 +25,12 @@ const projects: Project[] = [
       "Collaborated with the Team Lead on code review, debugging, and final cleanup",
     ],
 
+    featuredRole: [
+      "Developed backend user endpoints for current user data and profile updates",
+      "Built frontend API utilities and proxy setup for frontend-backend communication",
+      "Worked on the frontend user profile experience",
+    ],
+
     problem:
       "Users need a simple way to find relaxing places, compare options, read real feedback, and share their own recommendations.",
     solution:
@@ -86,6 +92,12 @@ const projects: Project[] = [
       "Planned raid discovery, join request, and character validation flows",
       "Built the project architecture with Next.js, TypeScript, Express, and MongoDB",
       "Collaborating with two other developers while owning the product direction",
+    ],
+
+    featuredRole: [
+      "Product idea",
+      "Full-Stack Developer",
+      "Built the project architecture with Next.js, TypeScript, Express, and MongoDB",
     ],
 
     problem:
