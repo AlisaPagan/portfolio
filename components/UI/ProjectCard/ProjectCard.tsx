@@ -25,8 +25,10 @@ export function ProjectCard({ project }: projectCardProps) {
           height={400}
           className={styles.cardImage}
         />
-
-        <span className={styles.label}>{project.type}</span>
+        <div className={styles.labelWrapper}>
+          <span className={styles.labelType}>{project.type}</span>
+          <span className={styles.labelProgress}>{project.status}</span>
+        </div>
 
         <div className={styles.iconsWrapper}>
           {project.links?.github && (

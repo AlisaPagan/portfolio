@@ -27,18 +27,33 @@
   display: block;
 }
 
-.label {
+.labelWrapper {
   position: absolute;
   top: 18px;
   right: 18px;
   z-index: 2;
+  display: flex;
+  gap: 10px;
+}
+
+.labelType,
+.labelProgress {
   font-size: 14px;
-  background-color: var(--accent);
-  border: 1px solid var(--secondary-back-border);
   padding: 4px 8px;
   border-radius: 50px;
   box-shadow: 0 2px 2px var(--highlight);
   color: var(--primary-btn-text);
+  text-transform: capitalize;
+}
+
+.labelType {
+  background-color: var(--accent);
+  border: 1px solid var(--secondary-back-border);
+}
+
+.labelProgress {
+  background-color: var(--secondary-btn);
+  border: 1px solid var(--secondary-back-border);
 }
 
 .iconsWrapper {
