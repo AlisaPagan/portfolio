@@ -16,7 +16,7 @@
   position: relative;
   grid-area: image;
   width: 100%;
-  height: auto;
+  aspect-ratio: 1 / 1;
   margin: 0 auto;
   display: inline-block;
   overflow: hidden;
@@ -25,7 +25,7 @@
 .img {
   object-fit: cover;
   width: 100%;
-  min-height: 400px;
+  height: 100%;
   display: block;
   border: 1px solid var(--border);
   border-radius: 4px;

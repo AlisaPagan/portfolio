@@ -15,7 +15,7 @@
   border-radius: 4px 4px 0 0;
   border-bottom: 1px solid var(--border);
   width: 100%;
-  aspect-ratio: 16 / 10;
+  aspect-ratio: 1 / 1;
   display: block;
   overflow: hidden;
 }
@@ -117,6 +117,7 @@
   gap: 12px;
   align-items: center;
   justify-content: flex-start;
+  flex-wrap: wrap;
 }
 .headingWrapper {
   display: flex;

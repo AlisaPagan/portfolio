@@ -1,6 +1,7 @@
 import Image from "next/image";
 import styles from "./About.module.css";
-
+import Icon from "@/components/UI/Icon/Icon";
+import { MdOutlineFileDownload } from "react-icons/md";
 function About() {
   return (
     <section className={`${styles.about} section`} id="about">
@@ -83,6 +84,7 @@ function About() {
                   className={styles.btn}
                 >
                   Download resume
+                  <Icon icon={MdOutlineFileDownload} size={24}></Icon>
                 </a>
               </div>
             </div>

@@ -174,4 +174,8 @@
   .experienceCardsWrapper {
     flex-direction: row;
   }
+
+  .certList {
+    height: 180px;
+  }
 }
