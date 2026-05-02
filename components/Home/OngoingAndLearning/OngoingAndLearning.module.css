@@ -8,7 +8,7 @@
 .sectionWrapper {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 32px;
   justify-content: center;
   align-items: flex-start;
 }
@@ -34,19 +34,18 @@
   gap: 18px;
   align-items: center;
   justify-content: center;
-  background-color: var(--secondary-back);
-  border: 1px solid var(--secondary-back-border);
   border-radius: 4px;
   overflow: hidden;
 }
 
 .imageContainer {
-  border-radius: 4px 4px 0 0;
-  border-bottom: 1px solid var(--border);
+  border-radius: 4px;
+  border: 1px solid var(--border);
   width: 100%;
   aspect-ratio: 1 / 1;
   display: block;
   overflow: hidden;
+  margin-bottom: 22px;
 }
 
 .projectImage {
@@ -58,7 +57,6 @@
 }
 
 .contentWrapper {
-  padding: 24px;
   display: flex;
   flex-direction: column;
   gap: 18px;
@@ -157,4 +155,42 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .ongloingSection {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .sectionWrapper {
+    gap: 40px;
+  }
+
+  .projectCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+  }
+  .imageContainer {
+    height: 100%;
+    margin-bottom: 0px;
+  }
+
+  .contentWrapper {
+    align-items: stretch;
+  }
+
+  .btn {
+    width: 220px;
+  }
+
+  .learning {
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .learningCard {
+    height: 275px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
 }

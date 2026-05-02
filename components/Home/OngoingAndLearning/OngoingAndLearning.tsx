@@ -20,7 +20,11 @@ function OngoingAndLearning() {
     >
       <div className={`${styles.sectionWrapper} container`}>
         <h2 className={styles.heading}>Ongoing Projects & Learning</h2>
+
         <div className={styles.cardsWrapper}>
+          <h3 className={styles.title}>{ongoingProject?.title}</h3>
+          <hr className={styles.divider} />
+
           {ongoingProject && (
             <article className={styles.projectCard}>
               <div className={styles.imageContainer}>
@@ -34,8 +38,6 @@ function OngoingAndLearning() {
               </div>
               <div className={styles.contentWrapper}>
                 <div className={styles.topWrapper}>
-                  <h3 className={styles.title}>{ongoingProject.title}</h3>
-                  <hr className={styles.divider} />
                   <p className={styles.description}>
                     {ongoingProject.shortDescription}
                   </p>
