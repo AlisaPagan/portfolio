@@ -2,6 +2,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--background-secondary);
+
   width: 100%;
 }
 
@@ -27,11 +28,17 @@
   width: 100%;
 }
 
+.cardAndLearning {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
 .projectCard {
   display: flex;
   flex-direction: column;
   width: 100%;
-  gap: 18px;
+  gap: 24px;
   align-items: center;
   justify-content: center;
   border-radius: 4px;
@@ -39,13 +46,11 @@
 }
 
 .imageContainer {
-  border-radius: 4px;
-  border: 1px solid var(--border);
+  border-radius: 4px 4px 0 0;
   width: 100%;
   aspect-ratio: 1 / 1;
   display: block;
   overflow: hidden;
-  margin-bottom: 22px;
 }
 
 .projectImage {
@@ -53,6 +58,7 @@
   width: 100%;
   height: 100%;
   display: block;
+  border: 1px solid var(--border);
   border-radius: 4px;
 }
 
@@ -62,6 +68,8 @@
   gap: 18px;
   align-items: center;
   justify-content: flex-start;
+  padding: 24px;
+  padding-top: 0;
 }
 .topWrapper {
   display: flex;
@@ -154,6 +162,42 @@
   fill: var(--primary-btn);
 }
 
+.projectsSwiper {
+  width: 100%;
+}
+
+.projectsSwiper :global(.swiper-wrapper) {
+  align-items: stretch;
+}
+
+.projectsSwiper .projectSlide {
+  height: auto;
+  display: flex;
+}
+
+.projectsSwiper .projectSlide > article {
+  flex: 1;
+}
+
+.sliderControls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+  margin-top: 18px;
+  width: 100%;
+  z-index: 2;
+}
+
+.navButton {
+  background-color: var(--highlight);
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 4px;
+  background-blend-mode: multiply;
+}
+
 @media only screen and (min-width: 768px) {
   .ongloingSection {
     padding-top: 90px;
@@ -164,6 +208,10 @@
     gap: 40px;
   }
 
+  .cardAndLearning {
+    gap: 40px;
+  }
+
   .projectCard {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -171,11 +219,14 @@
   }
   .imageContainer {
     height: 100%;
-    margin-bottom: 0px;
+    border-right: 1px solid var(--border);
+    border-bottom: none;
+    border-radius: 4px 0 0 4px;
   }
 
   .contentWrapper {
     align-items: stretch;
+    padding-top: 24px;
   }
 
   .btn {
@@ -193,4 +244,51 @@
 }
 
 @media only screen and (min-width: 1440px) {
+  .ongloingSection {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .cardAndLearning {
+    gap: 60px;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .top {
+    align-self: flex-start;
+  }
+
+  .projectCard {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 18px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    overflow: hidden;
+    flex: 1;
+  }
+
+  .imageContainer {
+    border-bottom: 1px solid var(--border);
+    border-right: none;
+    border-radius: 4px 4px 0 0;
+    aspect-ratio: 16/9;
+    height: auto;
+  }
+
+  .learning {
+    flex-direction: column;
+    width: 50%;
+  }
+
+  .learningCard {
+    height: auto;
+  }
+
+  .description {
+    align-self: flex-start;
+  }
 }

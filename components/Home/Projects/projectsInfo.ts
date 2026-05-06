@@ -72,7 +72,7 @@ const projects: Project[] = [
 
   {
     id: "go-raiding",
-    title: "Go Raiding",
+    title: "GoRaiding",
     year: "2026",
     type: "Full-stack app",
     status: "in progress",
@@ -82,7 +82,7 @@ const projects: Project[] = [
     shortDescription:
       "Mobile-first raid organization platform for World of Warcraft players.",
     description:
-      "Go Raiding is a mobile-first web app for creating, browsing, and joining World of Warcraft raid groups. The project focuses on raid discovery, approval-based joining, character selection, item-level validation, and future Blizzard OAuth integration.",
+      "GoRaiding is a mobile-first web app for creating, browsing, and joining World of Warcraft raid groups. The project focuses on raid discovery, approval-based joining, character selection, item-level validation, and future Blizzard OAuth integration.",
 
     role: [
       "Product idea",
@@ -133,7 +133,34 @@ const projects: Project[] = [
     ],
 
     image: "/go-raiding.webp",
-    imageAlt: "Go Raiding mobile app preview",
+    imageAlt: "GoRaiding mobile app preview",
+
+    gallery: [
+      {
+        src: "/go-raiding.webp",
+        alt: "GoRaiding mobile app preview",
+      },
+
+      {
+        src: "/go-raiding-1.webp",
+        alt: "GoRaiding raid browsing",
+      },
+
+      {
+        src: "/go-raiding-2.webp",
+        alt: "GoRaiding raid creation",
+      },
+
+      {
+        src: "/go-raiding-3.webp",
+        alt: "GoRaiding raid requests management",
+      },
+
+      {
+        src: "/go-raiding-4.webp",
+        alt: "GoRaiding raid user profile",
+      },
+    ],
 
     links: {
       github: "https://github.com/AlisaPagan/go-raiding",

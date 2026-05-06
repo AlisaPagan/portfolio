@@ -153,6 +153,11 @@
 }
 
 @media only screen and (min-width: 768px) {
+  .experienceSection {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
   .experienceCardsWrapper {
     gap: 32px;
   }
@@ -171,6 +176,11 @@
 }
 
 @media only screen and (min-width: 1440px) {
+  .experienceSection {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
   .experienceCardsWrapper {
     flex-direction: row;
   }

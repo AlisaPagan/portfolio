@@ -32,6 +32,11 @@ export type Project = {
   image: string;
   imageAlt: string;
 
+  gallery?: {
+    src: string;
+    alt: string;
+  }[];
+
   links?: {
     live?: string;
     github?: string;
