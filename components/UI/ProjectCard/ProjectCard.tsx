@@ -86,13 +86,11 @@ export function ProjectCard({ project }: projectCardProps) {
 
           <p className={styles.description}>{project.shortDescription}</p>
           <ul className={styles.tagList}>
-            {project.techStack
-              .map((tech) => (
-                <li key={tech} className={styles.techTag}>
-                  <Tag>{tech}</Tag>
-                </li>
-              ))
-              .slice(0, 3)}
+            {project.techStack.slice(0, 3).map((tech) => (
+              <li key={tech} className={styles.techTag}>
+                <Tag>{tech}</Tag>
+              </li>
+            ))}
           </ul>
         </div>
         <div className={styles.buttonsWrapper}>

@@ -8,6 +8,7 @@ import Icon from "@/components/UI/Icon/Icon";
 import { PiGithubLogo } from "react-icons/pi";
 import { FaPython } from "react-icons/fa";
 import { IoLogoReact } from "react-icons/io5";
+import { GoDotFill } from "react-icons/go";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
 import { GoChevronRight } from "react-icons/go";
@@ -38,41 +39,32 @@ function OngoingAndLearning() {
           <div className={styles.cardAndLearning}>
             {ongoingProject && (
               <article className={styles.projectCard}>
-                <div className={styles.imageContainer}>
-                  <Swiper
-                    className={styles.gallery}
-                    modules={[Navigation]}
-                    spaceBetween={24}
-                    slidesPerView={1}
-                    navigation={{
-                      prevEl: ".projectsPrev",
-                      nextEl: ".projectsNext",
-                    }}
-                    scrollbar={{ draggable: true }}
-                    breakpoints={{
-                      768: {
-                        slidesPerView: 2,
-                        spaceBetween: 32,
-                      },
-
-                      1440: {
-                        slidesPerView: 3,
-                        spaceBetween: 40,
-                      },
-                    }}
-                  >
-                    {ongoingProject.gallery?.map((image) => (
-                      <SwiperSlide key={image.src}>
-                        <Image
-                          src={image.src}
-                          alt={image.alt}
-                          width={400}
-                          height={400}
-                          className={styles.projectImage}
-                        ></Image>
-                      </SwiperSlide>
-                    ))}
-                  </Swiper>
+                <div className={styles.galleryBlock}>
+                  <div className={styles.imageContainer}>
+                    <Swiper
+                      className={styles.gallery}
+                      modules={[Navigation]}
+                      spaceBetween={24}
+                      slidesPerView={1}
+                      navigation={{
+                        prevEl: ".projectsPrev",
+                        nextEl: ".projectsNext",
+                      }}
+                      scrollbar={{ draggable: true }}
+                    >
+                      {ongoingProject.gallery?.map((image) => (
+                        <SwiperSlide key={image.src} className={styles.image}>
+                          <Image
+                            src={image.src}
+                            alt={image.alt}
+                            width={400}
+                            height={400}
+                            className={styles.projectImage}
+                          ></Image>
+                        </SwiperSlide>
+                      ))}
+                    </Swiper>
+                  </div>
 
                   <div className={styles.sliderControls}>
                     <Button
@@ -102,11 +94,13 @@ function OngoingAndLearning() {
                 </div>
 
                 <div className={styles.contentWrapper}>
-                  <div className={styles.topWrapper}>
-                    <p className={styles.description}>
-                      {ongoingProject.shortDescription}
-                    </p>
-                  </div>
+                  <p className={styles.description}>
+                    {ongoingProject.shortDescription}
+                  </p>
+
+                  <p className={styles.longDescription}>
+                    {ongoingProject.description}
+                  </p>
 
                   <ul className={styles.goalsList}>
                     <li className={styles.goalItem}>
@@ -121,16 +115,26 @@ function OngoingAndLearning() {
                     </li>
                   </ul>
 
-                  <ul className={styles.tagList}>
-                    {ongoingProject.techStack
-                      .map((tech) => (
-                        <li key={tech} className={styles.techTag}>
-                          <Tag>{tech}</Tag>
-                        </li>
-                      ))
-                      .slice(0, 3)}
+                  <ul className={styles.roleList}>
+                    {ongoingProject.role.slice(2, 6).map((roleItem) => (
+                      <li key={roleItem} className={styles.roleItem}>
+                        <Icon
+                          icon={GoDotFill}
+                          size={16}
+                          className={styles.iconBullet}
+                        />
+                        {roleItem}
+                      </li>
+                    ))}
                   </ul>
 
+                  <ul className={styles.tagList}>
+                    {ongoingProject.techStack.slice(0, 3).map((tech) => (
+                      <li key={tech} className={styles.techTag}>
+                        <Tag>{tech}</Tag>
+                      </li>
+                    ))}
+                  </ul>
                   {ongoingProject.links?.github && (
                     <Link
                       href={ongoingProject.links.github}
@@ -149,41 +153,48 @@ function OngoingAndLearning() {
             )}
 
             <div className={styles.learning}>
-              <article className={styles.learningCard}>
-                <div className={styles.techWrap}>
-                  <Icon
-                    icon={FaPython}
-                    size={24}
-                    className={styles.techIcon}
-                  ></Icon>
-                  <h4 className={styles.techName}>Python</h4>
-                </div>
+              <div className={styles.top}>
+                <h3 className={styles.title}>Learning</h3>
                 <hr className={styles.divider} />
-                <p>
-                  Currently learning Python fundamentals, including syntax,
-                  variables, data types, operators, strings, collections,
-                  control flow, functions, files, modules, OOP, serialization,
-                  and working with classes.
-                </p>
-              </article>
+              </div>
 
-              <article className={styles.learningCard}>
-                <div className={styles.techWrap}>
-                  <Icon
-                    icon={IoLogoReact}
-                    size={24}
-                    className={styles.techIcon}
-                  ></Icon>
-                  <h4 className={styles.techName}>React Native</h4>
-                </div>
-                <hr className={styles.divider} />
-                <p>
-                  Learning mobile app development with React Native, focusing on
-                  setup, native components, styling, inputs, events, SVG,
-                  navigation, Firebase, lists, modals, AsyncStorage, app assets,
-                  localization, WebView, and app release.
-                </p>
-              </article>
+              <div className={styles.learningCards}>
+                <article className={styles.learningCard}>
+                  <div className={styles.techWrap}>
+                    <Icon
+                      icon={FaPython}
+                      size={24}
+                      className={styles.techIcon}
+                    ></Icon>
+                    <h4 className={styles.techName}>Python</h4>
+                  </div>
+                  <hr className={styles.divider} />
+                  <p>
+                    Currently learning Python fundamentals, including syntax,
+                    variables, data types, operators, strings, collections,
+                    control flow, functions, files, modules, OOP, serialization,
+                    and working with classes.
+                  </p>
+                </article>
+
+                <article className={styles.learningCard}>
+                  <div className={styles.techWrap}>
+                    <Icon
+                      icon={IoLogoReact}
+                      size={24}
+                      className={styles.techIcon}
+                    ></Icon>
+                    <h4 className={styles.techName}>React Native</h4>
+                  </div>
+                  <hr className={styles.divider} />
+                  <p>
+                    Learning mobile app development with React Native, focusing
+                    on setup, native components, styling, inputs, events, SVG,
+                    navigation, Firebase, lists, modals, AsyncStorage, app
+                    assets, localization, WebView, and app release.
+                  </p>
+                </article>
+              </div>
             </div>
           </div>
         </div>

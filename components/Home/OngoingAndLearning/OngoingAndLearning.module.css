@@ -2,7 +2,6 @@
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: var(--background-secondary);
-
   width: 100%;
 }
 
@@ -29,6 +28,7 @@
 }
 
 .cardAndLearning {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 40px;
@@ -41,8 +41,20 @@
   gap: 24px;
   align-items: center;
   justify-content: center;
-  border-radius: 4px;
   overflow: hidden;
+}
+
+.cardWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.galleryBlock {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
 }
 
 .imageContainer {
@@ -51,6 +63,24 @@
   aspect-ratio: 1 / 1;
   display: block;
   overflow: hidden;
+}
+
+.gallery {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery .image {
+  height: auto;
+  display: flex;
+}
+
+.sliderControls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+  width: 100%;
 }
 
 .projectImage {
@@ -68,15 +98,13 @@
   gap: 18px;
   align-items: center;
   justify-content: flex-start;
-  padding: 24px;
-  padding-top: 0;
 }
-.topWrapper {
+
+.top {
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 18px;
-  align-items: center;
-  justify-content: flex-start;
 }
 
 .divider {
@@ -93,6 +121,11 @@
 
 .description {
   font-weight: 500;
+}
+
+.longDescription,
+.roleList {
+  display: none;
 }
 
 .goalsList {
@@ -137,6 +170,12 @@
   width: 100%;
 }
 
+.learningCards {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
 .learningCard {
   display: flex;
   flex-direction: column;
@@ -162,33 +201,6 @@
   fill: var(--primary-btn);
 }
 
-.projectsSwiper {
-  width: 100%;
-}
-
-.projectsSwiper :global(.swiper-wrapper) {
-  align-items: stretch;
-}
-
-.projectsSwiper .projectSlide {
-  height: auto;
-  display: flex;
-}
-
-.projectsSwiper .projectSlide > article {
-  flex: 1;
-}
-
-.sliderControls {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 24px;
-  margin-top: 18px;
-  width: 100%;
-  z-index: 2;
-}
-
 .navButton {
   background-color: var(--highlight);
   width: 40px;
@@ -208,25 +220,27 @@
     gap: 40px;
   }
 
-  .cardAndLearning {
-    gap: 40px;
+  .projectCard {
+    flex-direction: row;
+    gap: 32px;
+    align-items: flex-start;
   }
 
-  .projectCard {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 32px;
+  .galleryBlock {
+    width: 50%;
+    justify-content: space-between;
+    min-height: 540px;
   }
+
   .imageContainer {
     height: 100%;
-    border-right: 1px solid var(--border);
-    border-bottom: none;
-    border-radius: 4px 0 0 4px;
+    aspect-ratio: 2/2.5;
   }
 
   .contentWrapper {
-    align-items: stretch;
-    padding-top: 24px;
+    width: 50%;
+    justify-content: space-between;
+    min-height: 540px;
   }
 
   .btn {
@@ -234,10 +248,12 @@
   }
 
   .learning {
+    gap: 32px;
+  }
+  .learningCards {
     flex-direction: row;
     gap: 32px;
   }
-
   .learningCard {
     height: 275px;
   }
@@ -255,33 +271,50 @@
     align-items: flex-start;
   }
 
+  .projectCard {
+    align-items: stretch;
+  }
+
   .top {
     align-self: flex-start;
   }
 
-  .projectCard {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    gap: 18px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 4px;
-    overflow: hidden;
-    flex: 1;
+  .galleryBlock {
+    justify-content: flex-start;
   }
 
   .imageContainer {
-    border-bottom: 1px solid var(--border);
-    border-right: none;
-    border-radius: 4px 4px 0 0;
-    aspect-ratio: 16/9;
-    height: auto;
+    aspect-ratio: 1 / 1;
+  }
+
+  .contentWrapper {
+    min-height: 100%;
+    justify-content: center;
+  }
+
+  .longDescription {
+    display: block;
+  }
+
+  .roleList {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .roleItem {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+  }
+
+  .iconBullet {
+    fill: var(--primary-btn);
+    flex-shrink: 0;
   }
 
   .learning {
     flex-direction: column;
-    width: 50%;
   }
 
   .learningCard {

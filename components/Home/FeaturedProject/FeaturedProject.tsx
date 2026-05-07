@@ -34,13 +34,11 @@ function FeaturedProject({ project }: FeaturedProjectProps) {
           </div>
           <p className={styles.description}>{project.shortDescription}</p>
           <ul className={styles.tagList}>
-            {project.techStack
-              .map((tech) => (
-                <li key={tech} className={styles.techTag}>
-                  <Tag>{tech}</Tag>
-                </li>
-              ))
-              .slice(0, 5)}
+            {project.techStack.slice(0, 5).map((tech) => (
+              <li key={tech} className={styles.techTag}>
+                <Tag>{tech}</Tag>
+              </li>
+            ))}
           </ul>
         </div>
 
