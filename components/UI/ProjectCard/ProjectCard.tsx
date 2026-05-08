@@ -5,9 +5,8 @@ import Tag from "../Tag/Tag";
 import Button from "../Button/Button";
 import Icon from "../Icon/Icon";
 import { GoLinkExternal } from "react-icons/go";
-import { PiGithubLogo } from "react-icons/pi";
+import { PiGithubLogo, PiBrowser } from "react-icons/pi";
 import { CiServer } from "react-icons/ci";
-import { PiBrowser } from "react-icons/pi";
 import Link from "next/link";
 
 type projectCardProps = {
@@ -80,6 +79,7 @@ export function ProjectCard({ project }: projectCardProps) {
       <div className={styles.projectInfoWrapper}>
         <div className={styles.contentWrapper}>
           <div className={styles.headingWrapper}>
+            <p className={styles.year}>{project.year}</p>
             <h3 className={styles.heading}>{project.title}</h3>
           </div>
           <hr className={styles.divider} />

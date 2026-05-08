@@ -8,11 +8,9 @@ import Icon from "@/components/UI/Icon/Icon";
 import { PiGithubLogo } from "react-icons/pi";
 import { FaPython } from "react-icons/fa";
 import { IoLogoReact } from "react-icons/io5";
-import { GoDotFill } from "react-icons/go";
+import { GoDotFill, GoChevronRight, GoChevronLeft } from "react-icons/go";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-import { GoChevronRight } from "react-icons/go";
-import { GoChevronLeft } from "react-icons/go";
 
 import "swiper/css";
 import "swiper/css/navigation";
@@ -46,9 +44,11 @@ function OngoingAndLearning() {
                       modules={[Navigation]}
                       spaceBetween={24}
                       slidesPerView={1}
+                      preventInteractionOnTransition={true}
+                      speed={450}
                       navigation={{
-                        prevEl: ".projectsPrev",
-                        nextEl: ".projectsNext",
+                        prevEl: ".galleryPrev",
+                        nextEl: ".galleryNext",
                       }}
                       scrollbar={{ draggable: true }}
                     >
@@ -69,7 +69,7 @@ function OngoingAndLearning() {
                   <div className={styles.sliderControls}>
                     <Button
                       variant="secondary"
-                      className={`${styles.navButton} projectsPrev`}
+                      className={`${styles.navButton} galleryPrev`}
                       aria-label="Previous project"
                     >
                       <Icon
@@ -81,7 +81,7 @@ function OngoingAndLearning() {
 
                     <Button
                       variant="secondary"
-                      className={`${styles.navButton} projectsNext`}
+                      className={`${styles.navButton} galleryNext`}
                       aria-label="Next project"
                     >
                       <Icon
@@ -135,19 +135,33 @@ function OngoingAndLearning() {
                       </li>
                     ))}
                   </ul>
-                  {ongoingProject.links?.github && (
+
+                  <div className={styles.buttons}>
+                    {ongoingProject.links?.github && (
+                      <Link
+                        href={ongoingProject.links.github}
+                        target="_blank"
+                        aria-label="View project on GitHub"
+                        className={styles.btnLInk}
+                      >
+                        <Button className={styles.btn}>
+                          Open on GitHub{" "}
+                          <Icon icon={PiGithubLogo} size={24}></Icon>
+                        </Button>
+                      </Link>
+                    )}
+
                     <Link
-                      href={ongoingProject.links.github}
-                      target="_blank"
+                      href={"/"}
                       aria-label="View project on GitHub"
                       className={styles.btnLInk}
                     >
-                      <Button className={styles.btn}>
-                        Open on GitHub{" "}
-                        <Icon icon={PiGithubLogo} size={24}></Icon>
+                      <Button className={styles.btn} variant="secondary">
+                        View Details
+                        <Icon icon={GoChevronRight} size={24}></Icon>
                       </Button>
                     </Link>
-                  )}
+                  </div>
                 </div>
               </article>
             )}

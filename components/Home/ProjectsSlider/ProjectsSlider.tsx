@@ -23,6 +23,8 @@ function ProjectGrid({ projects }: ProjectsGridProps) {
         modules={[Navigation]}
         spaceBetween={24}
         slidesPerView={1}
+        preventInteractionOnTransition={true}
+        speed={450}
         navigation={{
           prevEl: ".projectsPrev",
           nextEl: ".projectsNext",

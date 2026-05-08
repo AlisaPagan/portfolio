@@ -1,0 +1,131 @@
+.contactsSection {
+  position: relative;
+  overflow: hidden;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image: radial-gradient(
+    circle at center,
+    var(--accent) 0%,
+    transparent 80%
+  );
+  background-size: 100%;
+  opacity: 0.25;
+}
+
+.sectionWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.topInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.heading {
+  text-transform: uppercase;
+}
+
+.formContainer {
+}
+
+.contactsContaner {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contacts {
+  background-color: var(--secondary-back);
+  border: 1px solid var(--secondary-back-border);
+  border-radius: 4px;
+  padding: 16px;
+  width: 100%;
+}
+
+.contactsList {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.contactsItem,
+.contact {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  width: 100%;
+}
+
+.contactIcon {
+  fill: var(--icon);
+}
+
+.socials {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.soacialsList {
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+  height: 100%;
+}
+
+.socialsItem {
+  background-color: var(--accent);
+  padding: 8px;
+  border-radius: 4px;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.socialIcon {
+  fill: var(--icon);
+}
+
+@media only screen and (min-width: 768px) {
+  .contactsSection {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .glow {
+    background-image: radial-gradient(
+      circle at center,
+      var(--accent) 0%,
+      transparent 45%
+    );
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .contactsSection {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}

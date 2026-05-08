@@ -289,7 +289,7 @@ const projects: Project[] = [
   {
     id: "artisan-shop",
     title: "Artisan Home Decor Shop",
-    year: "2025",
+    year: "2024",
     type: "UX case study",
     status: "completed",
     categories: ["ux"],
@@ -333,7 +333,7 @@ const projects: Project[] = [
   {
     id: "wildcatworks",
     title: "WildcatWorks",
-    year: "2025",
+    year: "2023",
     type: "Concept app",
     status: "planned",
     categories: ["ux", "ongoing"],

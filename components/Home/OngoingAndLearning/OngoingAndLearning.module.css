@@ -16,6 +16,7 @@
 .heading {
   text-transform: uppercase;
   align-self: center;
+  text-align: center;
 }
 
 .cardsWrapper {
@@ -150,6 +151,13 @@
   gap: 12px;
 }
 
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  width: 100%;
+}
+
 .btnLInk {
   width: 100%;
 }
@@ -243,8 +251,14 @@
     min-height: 540px;
   }
 
+  .buttons {
+    flex-direction: row;
+  }
+
   .btn {
-    width: 220px;
+    width: 100%;
+    font-size: 16px;
+    line-height: 1.2;
   }
 
   .learning {
@@ -323,5 +337,9 @@
 
   .description {
     align-self: flex-start;
+  }
+
+  .btn {
+    font-size: 18px;
   }
 }
