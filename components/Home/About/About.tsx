@@ -84,7 +84,11 @@ function About() {
                   className={styles.btn}
                 >
                   Download resume
-                  <Icon icon={MdOutlineFileDownload} size={24}></Icon>
+                  <Icon
+                    icon={MdOutlineFileDownload}
+                    size={24}
+                    className={styles.icon}
+                  ></Icon>
                 </a>
               </div>
             </div>

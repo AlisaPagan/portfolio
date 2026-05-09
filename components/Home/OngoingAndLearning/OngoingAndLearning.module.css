@@ -218,6 +218,10 @@
   background-blend-mode: multiply;
 }
 
+.gitIcon {
+  fill: var(--primary-btn-text);
+}
+
 @media only screen and (min-width: 768px) {
   .ongloingSection {
     padding-top: 90px;
@@ -267,9 +271,6 @@
   .learningCards {
     flex-direction: row;
     gap: 32px;
-  }
-  .learningCard {
-    height: 275px;
   }
 }
 

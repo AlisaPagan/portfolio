@@ -120,6 +120,10 @@
   transition: background-color var(--transition);
 }
 
+.icon {
+  fill: var(--primary-btn-text);
+}
+
 .btn:focus-visible,
 .btn:active {
   outline: none;

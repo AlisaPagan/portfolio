@@ -1,0 +1,90 @@
+.contactForm {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: stretch;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.inputLabel {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.inputLabelText {
+  font-family: var(--font-roboto-mono);
+  opacity: 0.7;
+}
+
+.asterix {
+  color: var(--small-accent);
+}
+
+.input,
+.textArea {
+  font-family: var(--font-roboto);
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  color: var(--foreground);
+  font-size: 16px;
+  padding: 12px;
+  border: none;
+  border-bottom: 1px solid var(--border);
+}
+
+.input::placeholder,
+.textArea::placeholder {
+  font-family: var(--font-roboto);
+  color: var(--foreground);
+  opacity: 0.5;
+  font-size: 16px;
+}
+
+.textArea {
+  height: 150px;
+}
+
+.input:focus-visible,
+.input:active,
+.textArea:focus-visible,
+.textArea:active {
+  outline: none;
+  border-color: var(--accent);
+}
+.formBtn {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+  align-items: center;
+}
+
+.btnIcon {
+  fill: var(--primary-btn-text);
+}
+
+@media only screen and (min-width: 768px) {
+  .formBtn {
+    width: 50%;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .input:hover,
+  .textArea:hover {
+    border-color: var(--accent);
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .input,
+  .textArea,
+  .input::placeholder,
+  .textArea::placeholder {
+    font-size: 18px;
+  }
+}

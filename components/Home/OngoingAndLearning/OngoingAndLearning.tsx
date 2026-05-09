@@ -145,8 +145,12 @@ function OngoingAndLearning() {
                         className={styles.btnLInk}
                       >
                         <Button className={styles.btn}>
-                          Open on GitHub{" "}
-                          <Icon icon={PiGithubLogo} size={24}></Icon>
+                          Open on GitHub
+                          <Icon
+                            icon={PiGithubLogo}
+                            size={24}
+                            className={styles.gitIcon}
+                          ></Icon>
                         </Button>
                       </Link>
                     )}
