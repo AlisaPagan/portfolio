@@ -7,10 +7,10 @@
   width: 100%;
 }
 
-.inputLabel {
+.inputWrapper {
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 16px;
   align-items: flex-start;
   justify-content: center;
 }
@@ -56,6 +56,14 @@
   outline: none;
   border-color: var(--accent);
 }
+
+.error {
+  min-height: 21px;
+  font-size: 14px;
+  color: var(--small-accent);
+  margin-top: -16px;
+}
+
 .formBtn {
   width: 100%;
   display: flex;
