@@ -7,6 +7,7 @@ import { VscSend } from "react-icons/vsc";
 import { Formik, Form, Field, FormikHelpers, ErrorMessage } from "formik";
 import { useId } from "react";
 import FormSchema from "./formValidation";
+import emailjs from "@emailjs/browser";
 
 interface FormValues {
   name: string;
@@ -22,15 +23,50 @@ const initialValues: FormValues = {
   message: "",
 };
 
+const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
 function ContactForm() {
   const fieldId = useId();
 
-  const handleSubmit = (
+  const handleSubmit = async (
     values: FormValues,
     actions: FormikHelpers<FormValues>,
   ) => {
-    console.log("Form:", values);
-    actions.resetForm();
+    actions.setStatus("");
+    if (!serviceId || !templateId || !publicKey) {
+      actions.setStatus("Email service is not configured.");
+      actions.setSubmitting(false);
+      return;
+    }
+
+    try {
+      await emailjs.send(
+        serviceId,
+        templateId,
+        {
+          name: values.name,
+          email: values.email,
+          subject: values.subject,
+          message: values.message,
+          time: new Date().toLocaleString(),
+        },
+        {
+          publicKey,
+        },
+      );
+      actions.resetForm();
+      actions.setStatus(
+        "Thank you! Message sent. I will get back to you shortly.",
+      );
+    } catch {
+      actions.setStatus(
+        "Something went wrong. Please try again or email me directly.",
+      );
+    } finally {
+      actions.setSubmitting(false);
+    }
   };
 
   return (
@@ -39,79 +75,83 @@ function ContactForm() {
       onSubmit={handleSubmit}
       validationSchema={FormSchema}
     >
-      <Form className={styles.contactForm}>
-        <div className={styles.inputWrapper}>
-          <label className={styles.inputLabel} htmlFor={`${fieldId}-name`}>
-            <span className={styles.inputLabelText}>
-              Your name <span className={styles.asterix}>*</span>
-            </span>
-          </label>
-          <Field
-            id={`${fieldId}-name`}
-            type="text"
-            name="name"
-            className={styles.input}
-            placeholder="John Doe"
-          />
-          <p className={styles.error}>
-            <ErrorMessage name="name" />
-          </p>
-        </div>
+      {({ isSubmitting, status }) => (
+        <Form className={styles.contactForm}>
+          <div className={styles.inputWrapper}>
+            <label className={styles.inputLabel} htmlFor={`${fieldId}-name`}>
+              <span className={styles.inputLabelText}>
+                Your name <span className={styles.asterix}>*</span>
+              </span>
+            </label>
+            <Field
+              id={`${fieldId}-name`}
+              type="text"
+              name="name"
+              className={styles.input}
+              placeholder="John Doe"
+            />
+            <p className={styles.error}>
+              <ErrorMessage name="name" />
+            </p>
+          </div>
+          <div className={styles.inputWrapper}>
+            <label className={styles.inputLabel} htmlFor={`${fieldId}-email`}>
+              <span className={styles.inputLabelText}>
+                Your email <span className={styles.asterix}>*</span>
+              </span>
+            </label>
+            <Field
+              id={`${fieldId}-email`}
+              type="email"
+              name="email"
+              className={styles.input}
+              placeholder="johndoe@example.com"
+            />
+            <p className={styles.error}>
+              <ErrorMessage name="email" />
+            </p>
+          </div>
+          <div className={styles.inputWrapper}>
+            <label className={styles.inputLabel} htmlFor={`${fieldId}-subject`}>
+              <span className={styles.inputLabelText}>Subject</span>
+            </label>
+            <Field
+              id={`${fieldId}-subject`}
+              type="text"
+              name="subject"
+              className={styles.input}
+              placeholder="Portfolio / project inquiry"
+            />
+          </div>
+          <div className={styles.inputWrapper}>
+            <label className={styles.inputLabel} htmlFor={`${fieldId}-message`}>
+              <span className={styles.inputLabelText}>
+                Your message <span className={styles.asterix}>*</span>
+              </span>
+            </label>
+            <Field
+              id={`${fieldId}-message`}
+              name="message"
+              className={styles.textArea}
+              placeholder="Hi Alisa, I'd like to talk about..."
+              as="textarea"
+            ></Field>
+            <p className={styles.error}>
+              <ErrorMessage name="message" />
+            </p>
+          </div>
+          {status && <p className={styles.status}>{status} </p>}
 
-        <div className={styles.inputWrapper}>
-          <label className={styles.inputLabel} htmlFor={`${fieldId}-email`}>
-            <span className={styles.inputLabelText}>
-              Your email <span className={styles.asterix}>*</span>
-            </span>
-          </label>
-          <Field
-            id={`${fieldId}-email`}
-            type="email"
-            name="email"
-            className={styles.input}
-            placeholder="johndoe@example.com"
-          />
-          <p className={styles.error}>
-            <ErrorMessage name="email" />
-          </p>
-        </div>
-
-        <div className={styles.inputWrapper}>
-          <label className={styles.inputLabel} htmlFor={`${fieldId}-subject`}>
-            <span className={styles.inputLabelText}>Subject</span>
-          </label>
-          <Field
-            id={`${fieldId}-subject`}
-            type="text"
-            name="subject"
-            className={styles.input}
-            placeholder="Portfolio / project inquiry"
-          />
-        </div>
-
-        <div className={styles.inputWrapper}>
-          <label className={styles.inputLabel} htmlFor={`${fieldId}-message`}>
-            <span className={styles.inputLabelText}>
-              Your message <span className={styles.asterix}>*</span>
-            </span>
-          </label>
-          <Field
-            id={`${fieldId}-message`}
-            name="message"
-            className={styles.textArea}
-            placeholder="Hi Alisa, I'd like to talk about..."
-            as="textarea"
-          ></Field>
-          <p className={styles.error}>
-            <ErrorMessage name="message" />
-          </p>
-        </div>
-
-        <Button type="submit" className={styles.formBtn}>
-          Send message
-          <Icon icon={VscSend} size={18} className={styles.btnIcon} />
-        </Button>
-      </Form>
+          <Button
+            type="submit"
+            className={styles.formBtn}
+            disabled={isSubmitting}
+          >
+            {isSubmitting ? "Sending..." : "Send message"}
+            <Icon icon={VscSend} size={18} className={styles.btnIcon} />
+          </Button>
+        </Form>
+      )}
     </Formik>
   );
 }
