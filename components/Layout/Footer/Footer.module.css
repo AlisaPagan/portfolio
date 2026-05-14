@@ -1,0 +1,142 @@
+.footer {
+  padding-top: 28px;
+  padding-bottom: 90px;
+}
+
+.footerWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.footerTop {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.footerSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.logo {
+  font-size: 32px;
+  font-weight: 500;
+  text-transform: uppercase;
+  font-family: var(--font-poppins);
+}
+
+.position {
+  text-transform: uppercase;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 32px;
+  width: 100%;
+}
+
+.linkItem {
+  border-radius: 4px;
+  background-color: var(--secondary-back-border);
+}
+
+.socialLink {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 6px;
+}
+
+.socialIcon {
+  fill: var(--primary-btn-text);
+}
+
+.footerBottom {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.divider {
+  background-image: linear-gradient(
+    to right,
+    var(--secondary-back),
+    var(--accent),
+    var(--secondary-back)
+  );
+  width: 100%;
+  border: 0;
+  height: 1px;
+}
+
+.copyrightLine {
+  font-size: 14px;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.builtLine {
+  font-size: 12px;
+  opacity: 0.7;
+  text-align: center;
+}
+
+.linkItem:focus-visible,
+.linkItem:active,
+.socialLink:active,
+.socialLink:focus-visible {
+  outline: none;
+  background-color: var(--accent);
+  border-radius: 4px;
+}
+
+@media only screen and (min-width: 768px) {
+  .footer {
+    padding-top: 50px;
+    padding-bottom: 90px;
+  }
+
+  .footerWrapper {
+    gap: 40px;
+  }
+
+  .footerTop {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .footerSection {
+    width: auto;
+  }
+
+  .logo {
+    font-size: 48px;
+  }
+
+  .links {
+    gap: 24px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .footer {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+}
