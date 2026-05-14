@@ -37,6 +37,7 @@ function Contact() {
                   <Link
                     href={"mailto:alisapodgaynaya023@gmail.com"}
                     className={styles.contact}
+                    aria-label="Email Alisa"
                   >
                     <Icon
                       icon={PiEnvelopeSimpleThin}
@@ -47,7 +48,11 @@ function Contact() {
                   </Link>
                 </li>
                 <li className={styles.contactsItem}>
-                  <Link href={"tel:+15757065572"} className={styles.contact}>
+                  <Link
+                    href={"tel:+15757065572"}
+                    className={styles.contact}
+                    aria-label="Call Alisa"
+                  >
                     <Icon
                       icon={PiPhoneThin}
                       size={24}
@@ -56,7 +61,10 @@ function Contact() {
                     (575) 706-5572
                   </Link>
                 </li>
-                <li className={styles.contactsItem}>
+                <li
+                  className={styles.contactsItem}
+                  aria-label="Alisa's location"
+                >
                   <Icon
                     icon={CiLocationOn}
                     size={24}

@@ -8,6 +8,7 @@ import { Formik, Form, Field, FormikHelpers, ErrorMessage } from "formik";
 import { useId } from "react";
 import FormSchema from "./formValidation";
 import emailjs from "@emailjs/browser";
+import toast from "react-hot-toast";
 
 interface FormValues {
   name: string;
@@ -57,11 +58,9 @@ function ContactForm() {
         },
       );
       actions.resetForm();
-      actions.setStatus(
-        "Thank you! Message sent. I will get back to you shortly.",
-      );
+      toast.success("Thank you! Message sent. I will get back to you shortly.");
     } catch {
-      actions.setStatus(
+      toast.error(
         "Something went wrong. Please try again or email me directly.",
       );
     } finally {
@@ -75,7 +74,7 @@ function ContactForm() {
       onSubmit={handleSubmit}
       validationSchema={FormSchema}
     >
-      {({ isSubmitting, status }) => (
+      {({ isSubmitting }) => (
         <Form className={styles.contactForm}>
           <div className={styles.inputWrapper}>
             <label className={styles.inputLabel} htmlFor={`${fieldId}-name`}>
@@ -140,7 +139,6 @@ function ContactForm() {
               <ErrorMessage name="message" />
             </p>
           </div>
-          {status && <p className={styles.status}>{status} </p>}
 
           <Button
             type="submit"

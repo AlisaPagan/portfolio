@@ -75,10 +75,6 @@
   fill: var(--primary-btn-text);
 }
 
-.contactForm .status {
-  color: var(--small-accent);
-}
-
 @media only screen and (min-width: 768px) {
   .formBtn {
     width: 50%;

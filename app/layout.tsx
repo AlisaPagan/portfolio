@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Poppins, Roboto, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import Header from "@/components/Layout/Header/Header";
-
+import ToasterProvider from "@/components/UI/ToasterProvider/Toaster";
 const poppins = Poppins({
   variable: "--font-poppins",
   weight: ["300", "400", "500", "600", "700"],
@@ -41,6 +41,7 @@ export default function RootLayout({
     >
       <body>
         <Header />
+        <ToasterProvider />
         {children}
       </body>
     </html>
