@@ -94,7 +94,9 @@ export function ProjectCard({ project }: projectCardProps) {
           </ul>
         </div>
         <div className={styles.buttonsWrapper}>
-          <Button className={styles.btn}>View Details</Button>
+          <Link href={`/projects/${project.id}`}>
+            <Button className={styles.btn}>View Details</Button>
+          </Link>
         </div>
       </div>
     </article>

@@ -142,7 +142,7 @@ function OngoingAndLearning() {
                         href={ongoingProject.links.github}
                         target="_blank"
                         aria-label="View project on GitHub"
-                        className={styles.btnLInk}
+                        className={styles.btnLink}
                       >
                         <Button className={styles.btn}>
                           Open on GitHub
@@ -156,9 +156,9 @@ function OngoingAndLearning() {
                     )}
 
                     <Link
-                      href={"/"}
+                      href={`/projects/${ongoingProject.id}`}
                       aria-label="View project on GitHub"
-                      className={styles.btnLInk}
+                      className={styles.btnLink}
                     >
                       <Button className={styles.btn} variant="secondary">
                         View Details

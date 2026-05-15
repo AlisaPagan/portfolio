@@ -5,6 +5,7 @@ import Tag from "@/components/UI/Tag/Tag";
 import Button from "@/components/UI/Button/Button";
 import Icon from "@/components/UI/Icon/Icon";
 import { GoDotFill } from "react-icons/go";
+import Link from "next/link";
 
 type FeaturedProjectProps = {
   project: Project;
@@ -58,8 +59,9 @@ function FeaturedProject({ project }: FeaturedProjectProps) {
             ))}
           </ul>
           <hr className={styles.divider} />
-
-          <Button className={styles.btn}>View Details</Button>
+          <Link href={`projects/${project.id}`}>
+            <Button className={styles.btn}>View Details</Button>
+          </Link>
         </div>
       </div>
     </article>

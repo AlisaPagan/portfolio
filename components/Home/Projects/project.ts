@@ -25,6 +25,11 @@ export type Project = {
 
   problem?: string;
   solution?: string;
+  designProcess?: string;
+  uxDecisions?: string[];
+  nextSteps?: string[];
+  uxPlanning?: string;
+  currentDevProcess?: string[];
 
   keyFeatures: string[];
   techStack: string[];
