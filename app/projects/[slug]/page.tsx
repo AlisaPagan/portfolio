@@ -2,6 +2,7 @@ import styles from "./ProjectPage.module.css";
 import projects from "@/components/Home/Projects/projectsInfo";
 import type { Project } from "@/components/Home/Projects/project";
 import { notFound } from "next/navigation";
+import Hero from "@/components/ProjectPage/Hero/Hero";
 type Props = {
   params: Promise<{ slug: string }>;
 };
@@ -16,8 +17,8 @@ async function Project({ params }: Props) {
   }
 
   return (
-    <main>
-      <h1>{project.title}</h1>
+    <main className={styles.main}>
+      <Hero key={project.id} project={project} />
     </main>
   );
 }

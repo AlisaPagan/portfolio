@@ -72,7 +72,7 @@ const projects: Project[] = [
 
   {
     id: "go-raiding",
-    title: "GoRaiding",
+    title: "Go Raiding",
     year: "2026",
     type: "Full-stack app",
     status: "in progress",
@@ -81,55 +81,95 @@ const projects: Project[] = [
 
     shortDescription:
       "Mobile-first raid organization platform for World of Warcraft players.",
+
     description:
-      "GoRaiding is a mobile-first web app for creating, browsing, and joining World of Warcraft raid groups. The project focuses on raid discovery, approval-based joining, character selection, item-level validation, and future Blizzard OAuth integration.",
+      "Go Raiding is an in-progress full-stack platform for World of Warcraft players who want a better way to organize, browse, join, and manage raids outside the game. The project is inspired by OpenRaid and focuses on raid requirements, player reputation, character information, and approval-based raid participation.",
 
     role: [
-      "Product idea",
-      "UX/UI Designer",
-      "Full-Stack Developer",
-      "Designed mobile-first app flows in Figma",
-      "Planned raid discovery, join request, and character validation flows",
-      "Built the project architecture with Next.js, TypeScript, Express, and MongoDB",
-      "Collaborating with two other developers while owning the product direction",
+      "Created the product idea, feature direction, and full project scope",
+      "Led the mobile-first UX planning and product design for the full app experience",
+      "Researched OpenRaid, World of Warcraft raid organization, and player needs",
+      "Interviewed an experienced World of Warcraft player to define core use cases, pain points, and missing features",
+      "Designed user flows for authentication, Blizzard account connection, character management, raid browsing, raid creation, raid applications, approvals, reviews, and user profiles",
+      "Planned the full-stack architecture for users, raids, characters, raid applications, reviews, ratings, and Blizzard account integration",
+      "Built the main frontend application structure with reusable UI components, layout patterns, modals, and bottom sheets",
+      "Implemented mobile-first raid browsing, raid details, creation, management, and user profile interfaces",
+      "Developed backend API functionality for raid organization, user data, character data, applications, reviews, and profile-related features",
+      "Integrated frontend data flows with the backend using Axios and TanStack Query",
+      "Implemented gated raid joining logic based on role availability, character requirements, item level, and raid status",
+      "Planned and integrated Blizzard OAuth and character import functionality",
+      "Coordinated project direction with two collaborators while owning the main product concept, UX direction, and core development work",
     ],
 
     featuredRole: [
-      "Product idea",
-      "Full-Stack Developer",
-      "Built the project architecture with Next.js, TypeScript, Express, and MongoDB",
+      "Product owner and main developer",
+      "Designed the mobile-first UX and core user flows",
+      "Built the main frontend structure and reusable UI system",
+      "Planned and implemented raid organization logic",
     ],
 
     problem:
-      "Raid organization can be messy when players need to coordinate roles, character requirements, approvals, and event details across scattered tools.",
+      "World of Warcraft players need a convenient way to organize raids outside the game while still being able to understand who is joining. In-game tools do not give raid organizers enough context about players, and older community tools like OpenRaid are no longer available. Raid leaders need clearer information about item level, role fit, raid history, and player reputation before approving participants.",
+
     solution:
-      "A focused raid-planning platform with raid cards, detail modals, role slots, join requests, character selection, and future Blizzard account integration.",
+      "Go Raiding gives players a dedicated place to create, browse, join, and manage raids with stronger player context. Raid leaders can set minimum item level requirements, review applicants, approve or reject join requests, and see player ratings. Players can connect their Blizzard account, import character information, apply for raids that match their characters, and build reputation through reviews and raid history.",
+
+    uxPlanning:
+      "The UX planning started with research into how OpenRaid worked, how World of Warcraft raiding is organized, and what information raid leaders need before accepting players. I also interviewed an experienced World of Warcraft player to understand missing features, common frustrations, and useful improvements. The planning focused on mobile-first raid discovery, fast raid previews, approval-based joining, character-aware requirements, and reducing unnecessary navigation through bottom sheets and inline confirmations.",
+
+    designProcess:
+      "I designed the mobile version first, including the sign-up flow, dashboard states with and without a connected Blizzard account, user profile, raid browsing, raid creation, raid management, character management, review flow, and gated join interactions. The interface uses bottom navigation for the main app areas and bottom sheets for raid previews, filters, creation steps, and confirmations so users can complete actions without losing their place.",
+
+    uxDecisions: [
+      "Designed mobile-first so players can browse, manage, or check raid activity quickly from anywhere.",
+      "Used bottom navigation for the main app sections because it is easier to reach on mobile screens.",
+      "Planned gated raid joining so users can only apply when their character, role, and item level match the raid requirements.",
+      "Used bottom sheets for raid previews, filters, raid creation, and management actions to avoid sending users through too many separate pages.",
+      "Added inline confirmations for actions like leaving or deleting a raid to avoid stacking modals on top of bottom sheets.",
+      "Prioritized at-a-glance dashboard information for raids created by the user and raids the user joined.",
+      "Included ratings and reviews so raid leaders can evaluate players even when full review details are hidden.",
+    ],
+
+    currentDevProcess: [
+      "Built most of the core UI components.",
+      "Built a reusable bottom sheet component for modal-like mobile interactions.",
+      "Set up infinite query logic for paginated list loading.",
+      "Built the pre-auth landing page.",
+      "Paused active development while finishing course projects and the portfolio.",
+      "Next step is finishing reusable UI components, then building login, sign-up, and core raid browsing flows.",
+    ],
+
+    nextSteps: [
+      "Finish reusable UI components used across raid cards, profiles, forms, and bottom sheets.",
+      "Build login and sign-up UI with basic authentication logic.",
+      "Implement raid browsing and raid card components.",
+      "Build raid creation and raid management flows.",
+      "Create backend models and API routes for users, raids, characters, applications, and reviews.",
+      "Add Blizzard OAuth and character import later in the development process.",
+      "Connect item level and character requirements to raid application logic.",
+    ],
 
     keyFeatures: [
-      "Browse raids",
-      "Create raid events",
-      "Raid details modal",
-      "Role-based join requests",
-      "Character selection",
-      "Item-level validation planning",
+      "Raid creation and management",
       "Approval-based raid joining",
-      "Mobile-first navigation",
-      "Future Blizzard OAuth integration",
+      "Minimum item level requirements",
+      "Player reviews and ratings",
+      "Raid history",
+      "Character previews for applicants",
+      "Raid browsing filters",
+      "Dashboard previews for created and joined raids",
+      "Blizzard account connection and character import",
     ],
 
     techStack: [
-      "Node.js",
       "Next.js",
       "React",
       "TypeScript",
-      "CSS Modules",
-      "Zustand",
-      "TanStack Query",
-      "Axios",
+      "Node.js",
       "Express.js",
       "MongoDB",
-      "Mongoose",
-      "Figma",
+      "TanStack Query",
+      "Axios",
     ],
 
     image: "/go-raiding.webp",
@@ -313,6 +353,24 @@ const projects: Project[] = [
     solution:
       "A boutique-style e-commerce concept with editorial layouts, product-focused pages, brand storytelling, and clear shopping paths.",
 
+    designProcess:
+      "I designed this concept around the needs of a small artisan home decor brand: strong visual identity, product discovery, brand storytelling, and a calm boutique-style shopping experience. The design focuses on presenting products as curated pieces rather than generic catalog items.",
+    uxDecisions: [
+      "Used an editorial-style layout to make the shop feel more curated and premium.",
+      "Separated product, category, story, FAQ, and contact screens to keep browsing clear and focused.",
+      "Added brand storytelling sections to make the shop feel personal and trustworthy.",
+      "Kept the visual direction warm, minimal, and product-focused so the handmade/decor items remain the main focus.",
+      "Designed desktop screens first as a polished concept, with responsive development planned as a future step.",
+    ],
+
+    nextSteps: [
+      "Create responsive tablet and mobile layouts.",
+      "Build the concept as a frontend e-commerce demo.",
+      "Add product data structure and filtering.",
+      "Connect product pages to dynamic routing.",
+      "Explore cart and checkout flow as a later phase.",
+    ],
+
     keyFeatures: [
       "Homepage concept",
       "Product listing pages",
@@ -356,7 +414,26 @@ const projects: Project[] = [
       "Oilfield calculations can be scattered across spreadsheets, notes, and manuals, which slows down field workflows and increases the chance of input mistakes.",
     solution:
       "A structured calculator app with formula categories, guided inputs, unit conversion, saved history, and learning/reference content.",
+    designProcess:
+      "I planned WildcatWorks as a practical field-focused calculator app for oilfield workflows. The design direction started from organizing complex formulas into clearer categories, reducing manual lookup, and making calculations easier to access during real work situations.",
+    uxDecisions: [
+      "Grouped formulas by asset type and workflow context to make lookup faster.",
+      "Planned guided calculation flows to reduce input mistakes.",
+      "Included saved history planning so users can review previous calculations.",
+      "Added unit conversion as a core feature because field data often uses mixed units.",
+      "Planned offline and online usage because field conditions may not always have reliable connection.",
+    ],
 
+    nextSteps: [
+      "Refine formula categories and calculation flows.",
+      "Validate formulas and edge cases before development.",
+      "Create updated mobile UI screens.",
+      "Build a first MVP with core calculators and unit conversion.",
+      "Add saved history, reference content, and offline support later.",
+    ],
+
+    uxPlanning:
+      "The app is planned around formula discovery, guided inputs, unit conversion, calculation history, and reference material. The goal is to make technical oilfield calculations easier to find, repeat, and understand without relying on scattered notes or spreadsheets.",
     keyFeatures: [
       "Formula lookup",
       "Calculation flow",

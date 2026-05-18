@@ -116,7 +116,7 @@ function OngoingAndLearning() {
                   </ul>
 
                   <ul className={styles.roleList}>
-                    {ongoingProject.role.slice(2, 6).map((roleItem) => (
+                    {ongoingProject.featuredRole?.map((roleItem) => (
                       <li key={roleItem} className={styles.roleItem}>
                         <Icon
                           icon={GoDotFill}
