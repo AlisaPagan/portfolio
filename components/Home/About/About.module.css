@@ -6,7 +6,7 @@
 .sectionWrapper {
   display: flex;
   flex-direction: column;
-  gap: 24px;
+  gap: 40px;
   padding-top: 60px;
   padding-bottom: 60px;
   justify-content: center;
@@ -139,7 +139,6 @@
   .sectionWrapper {
     padding-top: 90px;
     padding-bottom: 90px;
-    gap: 40px;
   }
 
   .imageContainer,

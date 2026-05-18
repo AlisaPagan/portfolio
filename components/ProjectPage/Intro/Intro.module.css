@@ -1,0 +1,155 @@
+.intro {
+  width: 100%;
+  background-color: var(--background-secondary);
+}
+
+.sectionWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.leftContainer,
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 24px;
+}
+
+.idea {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.imageContainer {
+  width: 100%;
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.meta {
+  width: 100%;
+}
+
+.metaList {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  justify-content: space-between;
+  align-items: stretch;
+  width: 100%;
+  border: 1px solid var(--divider);
+  padding: 18px;
+  border-radius: 4px;
+}
+
+.metaItem {
+  text-transform: capitalize;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.divider {
+  background-image: linear-gradient(
+    to right,
+    var(--secondary-back),
+    var(--accent),
+    var(--secondary-back)
+  );
+  width: 100%;
+  border: 0;
+  height: 1px;
+}
+
+.goals {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  border: 1px solid var(--divider);
+  padding: 18px;
+  border-radius: 4px;
+}
+
+.goalHeading {
+  text-transform: uppercase;
+  opacity: 0.7;
+}
+
+@media only screen and (min-width: 768px) {
+  .sectionWrapper {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .content {
+    flex-direction: row;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .metaList {
+    gap: 12px;
+    padding: 16px;
+  }
+
+  .leftContainer {
+    width: 40%;
+  }
+
+  .rightContainer {
+    width: 60%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .sectionWrapper {
+    padding-top: 120px;
+    padding-bottom: 120px;
+  }
+
+  .metaList {
+    gap: 18px;
+    padding: 18px;
+  }
+
+  .info {
+    gap: 32px;
+  }
+
+  .goals {
+    gap: 32px;
+  }
+
+  .content {
+    gap: 60px;
+  }
+}
