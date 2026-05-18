@@ -36,21 +36,21 @@ function Hero({ project }: HeroProps) {
         </div>
 
         <div className={styles.ctaWrapper}>
+          {isGoRaiding && gitLink && (
+            <Link href={gitLink} target="_blank" className={styles.ctaLink}>
+              <Button className={styles.ctaBtn}>View Code</Button>
+            </Link>
+          )}
+
           {isDev && liveLink && (
             <Link href={liveLink} target="_blank" className={styles.ctaLink}>
               <Button className={styles.ctaBtn}>View Live</Button>
             </Link>
           )}
 
-          {isGoRaiding && gitLink && (
-            <Link href={gitLink} target="_blank" className={styles.ctaLink}>
-              <Button className={styles.ctaBtn}>View Live</Button>
-            </Link>
-          )}
-
           {isUx && !isGoRaiding && (
             <Link href={"/#goals"} className={styles.ctaLink}>
-              <Button className={styles.ctaBtn}>View Live</Button>
+              <Button className={styles.ctaBtn}>View More</Button>
             </Link>
           )}
         </div>

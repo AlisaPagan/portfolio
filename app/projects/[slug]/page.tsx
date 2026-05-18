@@ -3,6 +3,7 @@ import projects from "@/components/Home/Projects/projectsInfo";
 import type { Project } from "@/components/Home/Projects/project";
 import { notFound } from "next/navigation";
 import Hero from "@/components/ProjectPage/Hero/Hero";
+import Intro from "@/components/ProjectPage/Intro/Intro";
 type Props = {
   params: Promise<{ slug: string }>;
 };
@@ -18,7 +19,8 @@ async function Project({ params }: Props) {
 
   return (
     <main className={styles.main}>
-      <Hero key={project.id} project={project} />
+      <Hero project={project} />
+      <Intro project={project} />
     </main>
   );
 }
