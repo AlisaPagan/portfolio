@@ -38,6 +38,7 @@ export default function RootLayout({
 }>) {
   return (
     <html
+      data-scroll-behavior="smooth"
       lang="en"
       className={`${poppins.variable} ${roboto.variable} ${robotoMono.variable}`}
     >

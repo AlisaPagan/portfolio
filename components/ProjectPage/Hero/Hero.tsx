@@ -22,7 +22,7 @@ function Hero({ project }: HeroProps) {
 
   return (
     <section className={`${styles.hero} section`} style={heroBackground}>
-      <div className={`${styles.sectionWrapper} container`}>
+      <div className={styles.sectionWrapper}>
         <div className={styles.heroTop}>
           <h1> {project.title}</h1>
           <p className={styles.description}>{project.shortDescription}</p>
