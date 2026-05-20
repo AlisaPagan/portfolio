@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import Hero from "@/components/ProjectPage/Hero/Hero";
 import Intro from "@/components/ProjectPage/Intro/Intro";
 import DevProcess from "@/components/ProjectPage/DevProcess/DevProcess";
+import UxProcess from "@/components/ProjectPage/UxProcess/UxProcess";
 type Props = {
   params: Promise<{ slug: string }>;
 };
@@ -27,6 +28,7 @@ async function Project({ params }: Props) {
       <Hero project={project} />
       <Intro project={project} />
       {isDev && !isGoRaiding && <DevProcess project={project} />}
+      {isUx && !isGoRaiding && <UxProcess project={project} />}
     </main>
   );
 }

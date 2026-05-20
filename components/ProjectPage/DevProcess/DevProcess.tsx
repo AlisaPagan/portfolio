@@ -5,10 +5,10 @@ import Icon from "@/components/UI/Icon/Icon";
 import { GoDotFill } from "react-icons/go";
 import Tag from "@/components/UI/Tag/Tag";
 
-type HeroProps = {
+type DevProcessProps = {
   project: Project;
 };
-function DevProcess({ project }: HeroProps) {
+function DevProcess({ project }: DevProcessProps) {
   const processImg = project.gallery?.[2] ?? {
     src: project.image,
     alt: project.imageAlt,

@@ -37,6 +37,8 @@ export type Project = {
   image: string;
   imageAlt: string;
 
+  wireframes?: { src: string; alt: string }[];
+
   gallery?: {
     src: string;
     alt: string;

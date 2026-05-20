@@ -63,6 +63,33 @@ const projects: Project[] = [
     image: "/relax-map.webp",
     imageAlt: "Relax Map project preview",
 
+    gallery: [
+      {
+        src: "/relax-map-1.webp",
+        alt: "GoRaiding mobile app preview",
+      },
+
+      {
+        src: "/relax-map-2.webp",
+        alt: "GoRaiding raid browsing",
+      },
+
+      {
+        src: "/relax-map-3.webp",
+        alt: "GoRaiding raid creation",
+      },
+
+      {
+        src: "/relax-map-4.webp",
+        alt: "GoRaiding raid requests management",
+      },
+
+      {
+        src: "/relax-map-5.webp",
+        alt: "GoRaiding raid user profile",
+      },
+    ],
+
     links: {
       live: "https://chillscape-frontend.vercel.app/",
       frontend: "https://github.com/AlisaPagan/chillscape-frontend",
@@ -175,12 +202,34 @@ const projects: Project[] = [
     image: "/go-raiding.webp",
     imageAlt: "GoRaiding mobile app preview",
 
-    gallery: [
+    wireframes: [
       {
-        src: "/go-raiding.webp",
+        src: "/go-raiding-wire.webp",
         alt: "GoRaiding mobile app preview",
       },
 
+      {
+        src: "/go-raiding-wire-1.webp",
+        alt: "GoRaiding raid browsing",
+      },
+
+      {
+        src: "/go-raiding-wire-2.webp",
+        alt: "GoRaiding raid creation",
+      },
+
+      {
+        src: "/go-raiding-wire-3.webp",
+        alt: "GoRaiding raid requests management",
+      },
+
+      {
+        src: "/go-raiding-wire-4.webp",
+        alt: "GoRaiding raid user profile",
+      },
+    ],
+
+    gallery: [
       {
         src: "/go-raiding-1.webp",
         alt: "GoRaiding raid browsing",
@@ -262,6 +311,28 @@ const projects: Project[] = [
     image: "/mebleria.webp",
     imageAlt: "Mebleria furniture store project preview",
 
+    gallery: [
+      {
+        src: "/mebleria-1.webp",
+        alt: "GoRaiding raid browsing",
+      },
+
+      {
+        src: "/mebleria-2.webp",
+        alt: "GoRaiding raid creation",
+      },
+
+      {
+        src: "/mebleria-3.webp",
+        alt: "GoRaiding raid requests management",
+      },
+
+      {
+        src: "/mebleria-4.webp",
+        alt: "GoRaiding raid user profile",
+      },
+    ],
+
     links: {
       github: "https://github.com/AlisaPagan/QuantumJS",
       live: "https://alisapagan.github.io/QuantumJS/",
@@ -319,6 +390,33 @@ const projects: Project[] = [
 
     image: "/flowbloom.webp",
     imageAlt: "FlowBloom yoga studio landing page preview",
+
+    gallery: [
+      {
+        src: "/flowbloom-1.webp",
+        alt: "GoRaiding raid browsing",
+      },
+
+      {
+        src: "/flowbloom-2.webp",
+        alt: "GoRaiding raid creation",
+      },
+
+      {
+        src: "/flowbloom-3.webp",
+        alt: "GoRaiding raid requests management",
+      },
+
+      {
+        src: "/flowbloom-4.webp",
+        alt: "GoRaiding raid user profile",
+      },
+
+      {
+        src: "/flowbloom-5.webp",
+        alt: "GoRaiding raid user profile",
+      },
+    ],
 
     links: {
       live: "https://alisapagan.github.io/FlowBloom/",
@@ -386,6 +484,50 @@ const projects: Project[] = [
 
     image: "/artisan-shop.webp",
     imageAlt: "Artisan home decor shop website design preview",
+
+    wireframes: [
+      {
+        src: "/artisan-shop-wire.webp",
+        alt: "GoRaiding mobile app preview",
+      },
+
+      {
+        src: "/artisan-shop-wire-1.webp",
+        alt: "GoRaiding raid browsing",
+      },
+
+      {
+        src: "/artisan-shop-wire-2.webp",
+        alt: "GoRaiding raid creation",
+      },
+    ],
+
+    gallery: [
+      {
+        src: "/artisan-shop-1.webp",
+        alt: "GoRaiding raid browsing",
+      },
+
+      {
+        src: "/artisan-shop-2.webp",
+        alt: "GoRaiding raid creation",
+      },
+
+      {
+        src: "/artisan-shop-3.webp",
+        alt: "GoRaiding raid requests management",
+      },
+
+      {
+        src: "/artisan-shop-4.webp",
+        alt: "GoRaiding raid user profile",
+      },
+
+      {
+        src: "/artisan-shop-5.webp",
+        alt: "GoRaiding raid user profile",
+      },
+    ],
   },
 
   {
@@ -454,6 +596,70 @@ const projects: Project[] = [
 
     image: "/wildcatworks.webp",
     imageAlt: "WildcatWorks app concept preview",
+
+    wireframes: [
+      {
+        src: "/wildcatworks-wire.webp",
+        alt: "GoRaiding mobile app preview",
+      },
+
+      {
+        src: "/wildcatworks-wire-1.webp",
+        alt: "GoRaiding raid browsing",
+      },
+
+      {
+        src: "/wildcatworks-wire-2.webp",
+        alt: "GoRaiding raid creation",
+      },
+
+      {
+        src: "/wildcatworks-wire-3.webp",
+        alt: "GoRaiding raid requests management",
+      },
+
+      {
+        src: "/wildcatworks-wire-4.webp",
+        alt: "GoRaiding raid user profile",
+      },
+    ],
+
+    gallery: [
+      {
+        src: "/wildcatworks-1.webp",
+        alt: "GoRaiding raid browsing",
+      },
+
+      {
+        src: "/wildcatworks-2.webp",
+        alt: "GoRaiding raid creation",
+      },
+
+      {
+        src: "/wildcatworks-3.webp",
+        alt: "GoRaiding raid requests management",
+      },
+
+      {
+        src: "/wildcatworks-4.webp",
+        alt: "GoRaiding raid user profile",
+      },
+
+      {
+        src: "/wildcatworks-5.webp",
+        alt: "GoRaiding raid user profile",
+      },
+
+      {
+        src: "/wildcatworks-6.webp",
+        alt: "GoRaiding raid user profile",
+      },
+
+      {
+        src: "/wildcatworks-7.webp",
+        alt: "GoRaiding raid user profile",
+      },
+    ],
   },
 ];
 

@@ -1,0 +1,110 @@
+.uxProcess {
+  position: relative;
+  overflow: hidden;
+}
+
+.sectionWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    radial-gradient(circle at bottom right, var(--accent) 0%, transparent 45%),
+    radial-gradient(circle at top left, var(--accent) 0%, transparent 45%);
+  background-size: 100%;
+  opacity: 0.25;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  align-self: center;
+}
+
+.slider {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow: hidden;
+}
+
+.imgSwiper {
+  width: 100%;
+  height: 100%;
+  min-width: 0;
+}
+
+.imgContainer {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  aspect-ratio: 2/3;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.sliderControls {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 24px;
+  width: 100%;
+}
+
+.navButton {
+  background-color: var(--highlight);
+  width: 40px;
+  height: 40px;
+  padding: 0;
+  border-radius: 4px;
+  background-blend-mode: multiply;
+}
+
+@media only screen and (min-width: 768px) {
+  .sectionWrapper {
+    flex-direction: row;
+    padding-top: 90px;
+    padding-bottom: 90px;
+    align-items: center;
+  }
+
+  .title {
+    text-align: start;
+    align-self: self-start;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .sectionWrapper {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    gap: 60px;
+  }
+
+  .imgContainer {
+    aspect-ratio: 1/1;
+  }
+}
