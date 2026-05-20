@@ -3,6 +3,7 @@ import styles from "./DevProcess.module.css";
 import { Project } from "@/components/Home/Projects/project";
 import Icon from "@/components/UI/Icon/Icon";
 import { GoDotFill } from "react-icons/go";
+import Tag from "@/components/UI/Tag/Tag";
 
 type HeroProps = {
   project: Project;
@@ -55,12 +56,12 @@ function DevProcess({ project }: HeroProps) {
           </div>
 
           <div className={styles.listContaier}>
+            <hr className={styles.divider} />
             <h3 className={styles.infoTitle}>Tech Stack</h3>
             <ul className={styles.infoListTech}>
               {project.techStack.map((tech) => (
                 <li key={tech} className={styles.infoListItem}>
-                  <Icon icon={GoDotFill} size={16} className={styles.icon} />
-                  {tech}
+                  <Tag>{tech}</Tag>
                 </li>
               ))}
             </ul>

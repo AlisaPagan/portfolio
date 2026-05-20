@@ -153,6 +153,10 @@
   gap: 16px;
 }
 
+.btnLink {
+  width: 100%;
+}
+
 .btn {
   width: 100%;
 }

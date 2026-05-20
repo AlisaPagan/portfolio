@@ -57,9 +57,8 @@
 }
 
 .infoListTech {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr auto;
+  display: flex;
+  flex-wrap: wrap;
   column-gap: 24px;
   row-gap: 12px;
 }
@@ -73,6 +72,23 @@
 .icon {
   fill: var(--primary-btn);
   flex-shrink: 0;
+}
+
+.divider {
+  background-image: linear-gradient(
+    to right,
+    var(--secondary-back),
+    var(--accent),
+    var(--secondary-back)
+  );
+  width: 100%;
+  border: 0;
+  height: 1px;
+}
+
+.title {
+  text-align: center;
+  align-self: center;
 }
 
 @media only screen and (min-width: 768px) {
@@ -91,20 +107,18 @@
     gap: 40px;
   }
 
-  .listContaier:nth-child(2) {
-    order: 3;
+  .listContaier:nth-child(3) {
     grid-column: 1 / -1;
     align-items: center;
   }
 
-  .listContaier:last-child {
-    order: 2;
-    justify-self: flex-end;
-    align-items: flex-end;
+  .infoListTech {
+    align-items: center;
+    justify-content: center;
   }
 
-  .listContaier:first-child {
-    order: 1;
+  .infoTitle {
+    font-size: 38px;
   }
 }
 
@@ -116,29 +130,17 @@
   }
 
   .infoGrid {
-    grid-template-columns: repeat(3, max-content);
+    grid-template-columns: repeat(2, max-content);
     gap: 60px;
     width: 100%;
     justify-content: space-between;
   }
 
-  .listContaier:nth-child(2) {
-    order: 2;
-    grid-column: unset;
-    align-items: flex-start;
-  }
-
-  .listContaier:last-child {
-    order: 3;
-    justify-self: flex-start;
-    align-items: flex-start;
-  }
-
-  .listContaier:first-child {
-    order: 1;
-  }
-
   .listContaier {
     gap: 32px;
+  }
+
+  .infoTitle {
+    font-size: 52px;
   }
 }

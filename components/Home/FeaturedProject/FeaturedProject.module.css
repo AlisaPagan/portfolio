@@ -109,6 +109,10 @@
   flex-wrap: wrap;
 }
 
+.btnLink {
+  width: 100%;
+}
+
 .btn {
   width: 100%;
 }
@@ -127,7 +131,6 @@
   }
   .btn {
     width: 220px;
-    margin: 0 auto;
   }
 }
 
@@ -136,8 +139,9 @@
     grid-template-areas:
       "image top"
       "image content";
-    align-items: stretch;
+    align-items: center;
     column-gap: 60px;
+    grid-template-columns: unset;
   }
 
   .imageContainer {

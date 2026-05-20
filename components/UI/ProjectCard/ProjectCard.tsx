@@ -94,7 +94,7 @@ export function ProjectCard({ project }: projectCardProps) {
           </ul>
         </div>
         <div className={styles.buttonsWrapper}>
-          <Link href={`/projects/${project.id}`}>
+          <Link href={`/projects/${project.id}`} className={styles.btnLink}>
             <Button className={styles.btn}>View Details</Button>
           </Link>
         </div>

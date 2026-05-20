@@ -59,7 +59,7 @@ function FeaturedProject({ project }: FeaturedProjectProps) {
             ))}
           </ul>
           <hr className={styles.divider} />
-          <Link href={`projects/${project.id}`}>
+          <Link href={`projects/${project.id}`} className={styles.btnLink}>
             <Button className={styles.btn}>View Details</Button>
           </Link>
         </div>
