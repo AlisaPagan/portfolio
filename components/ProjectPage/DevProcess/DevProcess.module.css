@@ -1,0 +1,144 @@
+.devProcessSection {
+  position: relative;
+  overflow: hidden;
+}
+
+.glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    radial-gradient(circle at bottom right, var(--accent) 0%, transparent 45%),
+    radial-gradient(circle at top left, var(--accent) 0%, transparent 45%);
+  background-size: 100%;
+  opacity: 0.25;
+}
+
+.sectionWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.imageContainer {
+  border: 1px solid var(--border);
+  border-radius: 4px;
+  aspect-ratio: 3/4;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.infoGrid {
+  display: grid;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 24px;
+  width: 100%;
+}
+
+.listContaier {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.infoListTech {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr auto;
+  column-gap: 24px;
+  row-gap: 12px;
+}
+
+.infoListItem {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.icon {
+  fill: var(--primary-btn);
+  flex-shrink: 0;
+}
+
+@media only screen and (min-width: 768px) {
+  .sectionWrapper {
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .imageContainer {
+    aspect-ratio: 16/9;
+    width: 100%;
+  }
+
+  .infoGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 40px;
+  }
+
+  .listContaier:nth-child(2) {
+    order: 3;
+    grid-column: 1 / -1;
+    align-items: center;
+  }
+
+  .listContaier:last-child {
+    order: 2;
+    justify-self: flex-end;
+    align-items: flex-end;
+  }
+
+  .listContaier:first-child {
+    order: 1;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .sectionWrapper {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    justify-content: space-between;
+  }
+
+  .infoGrid {
+    grid-template-columns: repeat(3, max-content);
+    gap: 60px;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .listContaier:nth-child(2) {
+    order: 2;
+    grid-column: unset;
+    align-items: flex-start;
+  }
+
+  .listContaier:last-child {
+    order: 3;
+    justify-self: flex-start;
+    align-items: flex-start;
+  }
+
+  .listContaier:first-child {
+    order: 1;
+  }
+
+  .listContaier {
+    gap: 32px;
+  }
+}

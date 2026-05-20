@@ -1,0 +1,74 @@
+import Image from "next/image";
+import styles from "./DevProcess.module.css";
+import { Project } from "@/components/Home/Projects/project";
+import Icon from "@/components/UI/Icon/Icon";
+import { GoDotFill } from "react-icons/go";
+
+type HeroProps = {
+  project: Project;
+};
+function DevProcess({ project }: HeroProps) {
+  const processImg = project.gallery?.[2] ?? {
+    src: project.image,
+    alt: project.imageAlt,
+  };
+
+  return (
+    <section className={`${styles.devProcessSection} section`}>
+      <div className={styles.glow}></div>
+
+      <div className={`${styles.sectionWrapper} container`}>
+        <h2 className={styles.title}>Project Details</h2>
+        <div className={styles.imageContainer}>
+          <Image
+            src={processImg.src}
+            alt={processImg.alt}
+            width={400}
+            height={400}
+            className={styles.img}
+          ></Image>
+        </div>
+
+        <div className={styles.infoGrid}>
+          <div className={styles.listContaier}>
+            <h3 className={styles.infoTitle}>Key Features</h3>
+            <ul className={styles.infoList}>
+              {project.keyFeatures.map((feature) => (
+                <li key={feature} className={styles.infoListItem}>
+                  <Icon icon={GoDotFill} size={16} className={styles.icon} />{" "}
+                  {feature}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className={styles.listContaier}>
+            <h3 className={styles.infoTitle}>My Role</h3>
+            <ul className={styles.infoList}>
+              {project.role.map((roleItem) => (
+                <li key={roleItem} className={styles.infoListItem}>
+                  <Icon icon={GoDotFill} size={16} className={styles.icon} />
+                  {roleItem}
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          <div className={styles.listContaier}>
+            <h3 className={styles.infoTitle}>Tech Stack</h3>
+            <ul className={styles.infoListTech}>
+              {project.techStack.map((tech) => (
+                <li key={tech} className={styles.infoListItem}>
+                  <Icon icon={GoDotFill} size={16} className={styles.icon} />
+                  {tech}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+export default DevProcess;

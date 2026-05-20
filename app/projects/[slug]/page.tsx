@@ -4,6 +4,7 @@ import type { Project } from "@/components/Home/Projects/project";
 import { notFound } from "next/navigation";
 import Hero from "@/components/ProjectPage/Hero/Hero";
 import Intro from "@/components/ProjectPage/Intro/Intro";
+import DevProcess from "@/components/ProjectPage/DevProcess/DevProcess";
 type Props = {
   params: Promise<{ slug: string }>;
 };
@@ -17,10 +18,15 @@ async function Project({ params }: Props) {
     notFound();
   }
 
+  const isDev = project.categories.includes("dev");
+  const isUx = project.categories.includes("ux");
+  const isGoRaiding = project.id === "go-raiding";
+
   return (
     <main className={styles.main}>
       <Hero project={project} />
       <Intro project={project} />
+      {isDev && !isGoRaiding && <DevProcess project={project} />}
     </main>
   );
 }
