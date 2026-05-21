@@ -24,7 +24,7 @@ function Hero({ project }: HeroProps) {
     <section className={`${styles.hero} section`} style={heroBackground}>
       <div className={styles.sectionWrapper}>
         <div className={styles.heroTop}>
-          <h1> {project.title}</h1>
+          <h1 className={styles.title}> {project.title}</h1>
           <p className={styles.description}>{project.shortDescription}</p>
           <ul className={styles.techList}>
             {project.techStack.slice(0, 3).map((tech) => (
