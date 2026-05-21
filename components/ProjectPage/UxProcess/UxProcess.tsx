@@ -2,83 +2,47 @@
 
 import styles from "./UxProcess.module.css";
 import { Project } from "@/components/Home/Projects/project";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
-import { GoChevronRight } from "react-icons/go";
-import { GoChevronLeft } from "react-icons/go";
-import Button from "@/components/UI/Button/Button";
-import Icon from "@/components/UI/Icon/Icon";
-import Image from "next/image";
-
-import "swiper/css";
-import "swiper/css/navigation";
+import ImageSlider from "@/components/UI/ImageSlider/ImageSlider";
 
 type UxProcessProps = {
   project: Project;
 };
 
 function UxProcess({ project }: UxProcessProps) {
+  const isUx = project.categories.includes("ux");
+  const isGoRaiding = project.id === "go-raiding";
+
   return (
     <section className={`${styles.uxProcess} section`}>
       <div className={styles.glow}></div>
-      <div className={`${styles.sectionWrapper} container`}>
-        <div className={styles.slider}>
-          <Swiper
+      <div
+        className={`${isGoRaiding ? styles.sectionWrapperGoRaiding : ""} ${styles.sectionWrapper} container`}
+      >
+        {project.wireframes && (
+          <ImageSlider
+            images={project.wireframes}
+            navId={`${project.id}-wireframes`}
             className={styles.imgSwiper}
-            modules={[Navigation]}
+            slideClassName={styles.imgContainer}
             slidesPerView={1}
-            preventInteractionOnTransition={true}
-            speed={450}
-            navigation={{
-              prevEl: ".imagePrev",
-              nextEl: ".imageNext",
-            }}
-            scrollbar={{ draggable: true }}
-          >
-            {project.wireframes?.map((image) => (
-              <SwiperSlide key={image.src} className={styles.imgContainer}>
-                <Image
-                  src={image.src}
-                  alt={image.alt}
-                  width={400}
-                  height={400}
-                  className={styles.img}
-                ></Image>
-              </SwiperSlide>
-            ))}
-          </Swiper>
+            slidesPerViewTablet={isGoRaiding ? 2 : 1}
+            slidesPerViewDesktop={isGoRaiding ? 2 : 1}
+          />
+        )}
 
-          <div className={styles.sliderControls}>
-            <Button
-              variant="secondary"
-              className={`${styles.navButton} imagePrev`}
-              aria-label="Previous image"
-            >
-              <Icon
-                icon={GoChevronLeft}
-                size={24}
-                className={styles.controlsIcon}
-              />
-            </Button>
-
-            <Button
-              variant="secondary"
-              className={`${styles.navButton} imageNext`}
-              aria-label="Next image"
-            >
-              <Icon
-                icon={GoChevronRight}
-                size={24}
-                className={styles.controlsIcon}
-              />
-            </Button>
+        {isUx && !isGoRaiding && (
+          <div className={styles.content}>
+            <h2 className={styles.title}>Design Process</h2>
+            <p className={styles.description}>{project.designProcess}</p>
           </div>
-        </div>
+        )}
 
-        <div className={styles.content}>
-          <h2 className={styles.title}>Design Process</h2>
-          <p className={styles.description}>{project.designProcess}</p>
-        </div>
+        {isGoRaiding && (
+          <div className={styles.content}>
+            <h2 className={styles.titleGoRaiding}>UX Planning</h2>
+            <p className={styles.description}>{project.uxPlanning}</p>
+          </div>
+        )}
       </div>
     </section>
   );

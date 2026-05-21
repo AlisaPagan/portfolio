@@ -28,7 +28,7 @@ async function Project({ params }: Props) {
       <Hero project={project} />
       <Intro project={project} />
       {isDev && !isGoRaiding && <DevProcess project={project} />}
-      {isUx && !isGoRaiding && <UxProcess project={project} />}
+      {isUx && <UxProcess project={project} />}
     </main>
   );
 }

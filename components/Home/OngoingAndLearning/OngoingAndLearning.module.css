@@ -45,12 +45,6 @@
   overflow: hidden;
 }
 
-.cardWrapper {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-
 .galleryBlock {
   width: 100%;
   display: flex;
@@ -59,7 +53,8 @@
 }
 
 .imageContainer {
-  border-radius: 4px 4px 0 0;
+  border-radius: 4px;
+  border: 1px solid var(--border);
   width: 100%;
   aspect-ratio: 2 / 3;
   display: block;
@@ -69,28 +64,6 @@
 .gallery {
   width: 100%;
   height: 100%;
-}
-
-.gallery .image {
-  height: auto;
-  display: flex;
-}
-
-.sliderControls {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 24px;
-  width: 100%;
-}
-
-.projectImage {
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
-  display: block;
-  border: 1px solid var(--border);
-  border-radius: 4px;
 }
 
 .contentWrapper {
@@ -207,15 +180,6 @@
 
 .techIcon {
   fill: var(--primary-btn);
-}
-
-.navButton {
-  background-color: var(--highlight);
-  width: 40px;
-  height: 40px;
-  padding: 0;
-  border-radius: 4px;
-  background-blend-mode: multiply;
 }
 
 .gitIcon {

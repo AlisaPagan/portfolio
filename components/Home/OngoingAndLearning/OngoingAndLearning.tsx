@@ -1,6 +1,5 @@
 import styles from "./OngoingAndLearning.module.css";
 import projects from "../Projects/projectsInfo";
-import Image from "next/image";
 import Tag from "@/components/UI/Tag/Tag";
 import Button from "@/components/UI/Button/Button";
 import Link from "next/link";
@@ -8,12 +7,8 @@ import Icon from "@/components/UI/Icon/Icon";
 import { PiGithubLogo } from "react-icons/pi";
 import { FaPython } from "react-icons/fa";
 import { IoLogoReact } from "react-icons/io5";
-import { GoDotFill, GoChevronRight, GoChevronLeft } from "react-icons/go";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation } from "swiper/modules";
-
-import "swiper/css";
-import "swiper/css/navigation";
+import { GoDotFill, GoChevronRight } from "react-icons/go";
+import ImageSlider from "@/components/UI/ImageSlider/ImageSlider";
 
 function OngoingAndLearning() {
   const ongoingProject = projects.find((project) =>
@@ -38,59 +33,17 @@ function OngoingAndLearning() {
             {ongoingProject && (
               <article className={styles.projectCard}>
                 <div className={styles.galleryBlock}>
-                  <div className={styles.imageContainer}>
-                    <Swiper
+                  {ongoingProject.gallery && (
+                    <ImageSlider
+                      images={ongoingProject.gallery}
+                      navId={`${ongoingProject.id}-gallery`}
                       className={styles.gallery}
-                      modules={[Navigation]}
-                      spaceBetween={24}
+                      slideClassName={styles.imageContainer}
                       slidesPerView={1}
-                      preventInteractionOnTransition={true}
-                      speed={450}
-                      navigation={{
-                        prevEl: ".galleryPrev",
-                        nextEl: ".galleryNext",
-                      }}
-                      scrollbar={{ draggable: true }}
-                    >
-                      {ongoingProject.gallery?.map((image) => (
-                        <SwiperSlide key={image.src} className={styles.image}>
-                          <Image
-                            src={image.src}
-                            alt={image.alt}
-                            width={400}
-                            height={400}
-                            className={styles.projectImage}
-                          ></Image>
-                        </SwiperSlide>
-                      ))}
-                    </Swiper>
-                  </div>
-
-                  <div className={styles.sliderControls}>
-                    <Button
-                      variant="secondary"
-                      className={`${styles.navButton} galleryPrev`}
-                      aria-label="Previous project"
-                    >
-                      <Icon
-                        icon={GoChevronLeft}
-                        size={24}
-                        className={styles.controlsIcon}
-                      />
-                    </Button>
-
-                    <Button
-                      variant="secondary"
-                      className={`${styles.navButton} galleryNext`}
-                      aria-label="Next project"
-                    >
-                      <Icon
-                        icon={GoChevronRight}
-                        size={24}
-                        className={styles.controlsIcon}
-                      />
-                    </Button>
-                  </div>
+                      slidesPerViewTablet={1}
+                      slidesPerViewDesktop={1}
+                    />
+                  )}
                 </div>
 
                 <div className={styles.contentWrapper}>
