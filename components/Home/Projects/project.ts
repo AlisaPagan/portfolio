@@ -30,6 +30,7 @@ export type Project = {
   nextSteps?: string[];
   uxPlanning?: string;
   currentDevProcess?: string[];
+  devFocus?: string[];
 
   keyFeatures: string[];
   techStack: string[];

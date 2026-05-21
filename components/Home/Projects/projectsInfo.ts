@@ -36,6 +36,11 @@ const projects: Project[] = [
     solution:
       "A searchable relaxation location platform with reviews, profiles, and tools for creating and editing user-generated content.",
 
+    devFocus: [
+      "Relax Map was built as a full-stack team project with a Next.js frontend and an Express/MongoDB backend. My development work focused on connecting frontend features to backend data, including API utilities, proxy setup, user-related backend endpoints, and the profile update flow. I also worked on frontend UI fixes, debugging, and cleanup across location and profile-related sections.",
+      "Since this was a collaborative project, part of the technical process involved keeping implementation organized across frontend and backend tasks. I helped coordinate team workflow as Scrum Master, supported code review and debugging with the Team Lead, and made sure the final user-facing experience was more consistent before deployment.",
+    ],
+
     keyFeatures: [
       "Location discovery",
       "Reviews",
@@ -283,6 +288,11 @@ const projects: Project[] = [
     solution:
       "A responsive furniture storefront with API-powered product data, interactive UI elements, notifications, ratings, and user-friendly browsing behavior.",
 
+    devFocus: [
+      "Mebleria was built as a JavaScript team project using a REST API to render product data, handle filtering, pagination, modals, and interactive page behavior. My work focused on frontend logic, responsive layout, styling fixes, and improving the user experience across product browsing and navigation interactions.",
+      "The project required combining UI structure with API-driven data, so a big part of the process was making sure dynamic content worked smoothly with the visual layout. I also helped coordinate the team as Scrum Master, debug issues, and polish the final implementation before deployment.",
+    ],
+
     keyFeatures: [
       "Product browsing",
       "REST API integration",
@@ -365,6 +375,11 @@ const projects: Project[] = [
       "A yoga studio needs a simple landing page that explains the offer, presents classes and trainers, builds trust, and drives users toward joining a pricing package.",
     solution:
       "A structured one-page website with anchor navigation, service sections, team content, gallery, testimonials, pricing, and footer subscription/contact areas.",
+
+    devFocus: [
+      "FlowBloom was built as a responsive HTML/CSS landing page focused on clean structure, semantic markup, and accurate implementation from the design brief. The project included anchor navigation, section-based page layout, optimized images, SVG sprite icons, and responsive styling across common screen sizes.",
+      "As Team Lead, I helped organize the implementation process, divide work between team members, and keep the layout consistent with the technical requirements. The main development focus was building a polished static page with reliable responsive behavior and clean front-end structure.",
+    ],
 
     keyFeatures: [
       "One-page landing page",
