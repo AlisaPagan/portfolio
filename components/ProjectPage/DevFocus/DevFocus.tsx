@@ -9,22 +9,28 @@ function DevFocus({ project }: DevFocusProps) {
     <section className={`${styles.devFocusSeciton} section`}>
       <div className={`${styles.sectionWrapper} container`}>
         <h2 className={styles.title}>Development Focus</h2>
-        <div className={styles.leftContainer}>
-          <ul className={styles.goals}>
-            <li className={styles.goalItem}>
-              <span className={styles.goalHeading}>Problem: </span>
-              {project.problem}
-            </li>
-            <hr className={styles.divider} />
+        <div className={styles.content}>
+          <div className={styles.leftContainer}>
+            <ul className={styles.goals}>
+              <li className={styles.goalItem}>
+                <span className={styles.goalHeading}>Problem: </span>
+                {project.problem}
+              </li>
+              <hr className={styles.divider} />
 
-            <li className={styles.goalItem}>
-              <span className={styles.goalHeading}>Solution: </span>
-              {project.solution}
-            </li>
-          </ul>
-        </div>
-        <div className={styles.rightContainer}>
-          <p className={styles.description}>{project.description}</p>
+              <li className={styles.goalItem}>
+                <span className={styles.goalHeading}>Solution: </span>
+                {project.solution}
+              </li>
+            </ul>
+          </div>
+          <div className={styles.rightContainer}>
+            {project.devFocus?.map((focus) => (
+              <p key={focus} className={styles.description}>
+                {focus}
+              </p>
+            ))}
+          </div>
         </div>
       </div>
     </section>
