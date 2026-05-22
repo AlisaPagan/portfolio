@@ -8,6 +8,7 @@ import DevProcess from "@/components/ProjectPage/DevProcess/DevProcess";
 import UxProcess from "@/components/ProjectPage/UxProcess/UxProcess";
 import DevFocus from "@/components/ProjectPage/DevFocus/DevFocus";
 import Gallery from "@/components/ProjectPage/Gallery/Gallery";
+import CurrentProcess from "@/components/ProjectPage/CurrentProcess/CurrentProcess";
 type Props = {
   params: Promise<{ slug: string }>;
 };
@@ -36,6 +37,8 @@ async function Project({ params }: Props) {
       {isDev && !isGoRaiding && <DevFocus project={project} />}
 
       {!isGoRaiding && <Gallery project={project} />}
+
+      {isGoRaiding && <CurrentProcess project={project} />}
     </main>
   );
 }

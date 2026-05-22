@@ -1,5 +1,3 @@
-"use client";
-
 import styles from "./UxProcess.module.css";
 import { Project } from "@/components/Home/Projects/project";
 import ImageSlider from "@/components/UI/ImageSlider/ImageSlider";
