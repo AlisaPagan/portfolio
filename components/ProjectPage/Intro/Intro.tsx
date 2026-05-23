@@ -49,15 +49,6 @@ function Intro({ project }: IntroProps) {
             {isDev && !isGoRaiding && (
               <div className={styles.info}>
                 <h2 className={styles.title}>Overview</h2>
-                <div className={styles.meta}>
-                  <ul className={styles.metaList}>
-                    <li className={styles.metaItem}>{project.year}</li>
-                    <li className={styles.metaItem}>{project.type}</li>
-                    <li className={styles.metaItem}>{project.status}</li>
-                    <li className={styles.metaItem}>{project.categories}</li>
-                  </ul>
-                </div>
-                <hr className={styles.divider} />
                 <p>{project.description}</p>
               </div>
             )}

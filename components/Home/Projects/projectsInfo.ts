@@ -25,6 +25,8 @@ const projects: Project[] = [
       "Collaborated with the Team Lead on code review, debugging, and final cleanup",
     ],
 
+    mainRole: "Full-Stack Developer",
+
     featuredRole: [
       "Developed backend user endpoints for current user data and profile updates",
       "Built frontend API utilities and proxy setup for frontend-backend communication",
@@ -132,6 +134,7 @@ const projects: Project[] = [
       "Planned and integrated Blizzard OAuth and character import functionality",
       "Coordinated project direction with two collaborators while owning the main product concept, UX direction, and core development work",
     ],
+    mainRole: "UX/UI Designer / Full-Stack Developer",
 
     featuredRole: [
       "Product owner and main developer",
@@ -283,6 +286,8 @@ const projects: Project[] = [
       "Helped connect interface behavior with API-driven content",
     ],
 
+    mainRole: "Frontend Developer",
+
     problem:
       "Furniture shoppers need a fast, mobile-friendly way to browse products, filter options, compare details, and interact with store content without unnecessary friction.",
     solution:
@@ -370,6 +375,8 @@ const projects: Project[] = [
       "Worked on HTML/CSS layout and responsive structure",
       "Followed project technical requirements and code quality standards",
     ],
+
+    mainRole: "Frontend Developer",
 
     problem:
       "A yoga studio needs a simple landing page that explains the offer, presents classes and trainers, builds trust, and drives users toward joining a pricing package.",
@@ -460,6 +467,8 @@ const projects: Project[] = [
       "Designed product, category, story, FAQ, and contact-focused screens",
       "Built the visual direction and layout system",
     ],
+
+    mainRole: "UX/UI Designer",
 
     problem:
       "Small artisan shops need to present products in a way that feels trustworthy, curated, and personal without looking like a generic marketplace.",
@@ -566,6 +575,8 @@ const projects: Project[] = [
       "Designed formula discovery and calculation experience",
       "Planned future development direction",
     ],
+
+    mainRole: "UX/UI Designer",
 
     problem:
       "Oilfield calculations can be scattered across spreadsheets, notes, and manuals, which slows down field workflows and increases the chance of input mistakes.",
