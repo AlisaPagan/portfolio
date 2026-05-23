@@ -1,6 +1,7 @@
 .footer {
   padding-top: 28px;
   padding-bottom: 90px;
+  border-top: 1px solid var(--divider);
 }
 
 .footerWrapper {
@@ -60,7 +61,7 @@
 }
 
 .socialIcon {
-  fill: var(--primary-btn-text);
+  fill: var(--foreground);
 }
 
 .footerBottom {
