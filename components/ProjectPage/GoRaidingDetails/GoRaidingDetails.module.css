@@ -1,0 +1,68 @@
+.goRaidingDetailsSection {
+  position: relative;
+  overflow: hidden;
+}
+
+.glow {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    radial-gradient(circle at bottom right, var(--accent) 0%, transparent 45%),
+    radial-gradient(circle at top left, var(--accent) 0%, transparent 45%);
+  background-size: 100%;
+  opacity: 0.25;
+}
+
+.sectionWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.listContaier {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.infoList {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.infoListItem {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.icon {
+  fill: var(--primary-btn);
+  flex-shrink: 0;
+}
+
+.infoListTech {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 24px;
+  row-gap: 12px;
+}
+
+.divider {
+  background-image: linear-gradient(
+    to right,
+    var(--secondary-back),
+    var(--accent),
+    var(--secondary-back)
+  );
+  width: 100%;
+  border: 0;
+  height: 1px;
+}

@@ -9,6 +9,8 @@ import UxProcess from "@/components/ProjectPage/UxProcess/UxProcess";
 import DevFocus from "@/components/ProjectPage/DevFocus/DevFocus";
 import Gallery from "@/components/ProjectPage/Gallery/Gallery";
 import CurrentProcess from "@/components/ProjectPage/CurrentProcess/CurrentProcess";
+import DevCtas from "@/components/ProjectPage/DevCtas/DevCtas";
+import GoRaidingDetails from "@/components/ProjectPage/GoRaidingDetails/GoRaidingDetails";
 type Props = {
   params: Promise<{ slug: string }>;
 };
@@ -28,17 +30,29 @@ async function Project({ params }: Props) {
 
   return (
     <main className={styles.main}>
+      {/* hero section */}
       <Hero project={project} />
+
+      {/* intro section */}
       <Intro project={project} />
 
+      {/* project details / design process/ ux planning */}
       {isDev && !isGoRaiding && <DevProcess project={project} />}
       {isUx && <UxProcess project={project} />}
 
+      {/* dev focus / current prosses on goraiding*/}
       {isDev && !isGoRaiding && <DevFocus project={project} />}
+      {isGoRaiding && <CurrentProcess project={project} />}
 
+      {/* gallery on dev and ux */}
       {!isGoRaiding && <Gallery project={project} />}
 
-      {isGoRaiding && <CurrentProcess project={project} />}
+      {/* ux and goraiding details */}
+      {isUx && !isGoRaiding && <DevProcess project={project} />}
+      {isGoRaiding && <GoRaidingDetails project={project} />}
+
+      {/* dev ctas */}
+      {isDev && !isGoRaiding && <DevCtas project={project} />}
     </main>
   );
 }

@@ -15,6 +15,14 @@
   opacity: 0.25;
 }
 
+.glowUx {
+  background-image: radial-gradient(
+    circle at center,
+    var(--accent) 0%,
+    transparent 45%
+  );
+}
+
 .sectionWrapper {
   display: flex;
   flex-direction: column;
@@ -130,7 +138,7 @@
   }
 
   .infoGrid {
-    grid-template-columns: repeat(2, max-content);
+    grid-template-columns: repeat(2, 1fr);
     gap: 60px;
     width: 100%;
     justify-content: space-between;

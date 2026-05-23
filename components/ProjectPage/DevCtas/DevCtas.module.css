@@ -1,0 +1,46 @@
+.ctasSection {
+  position: relative;
+  overflow: hidden;
+
+  padding-bottom: 40px;
+}
+
+.ctasWrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.frontBackWrapper {
+  width: 100%;
+  display: flex;
+  gap: 24px;
+}
+
+.ctaLink {
+  width: 100%;
+}
+
+.ctaLinkFB {
+  width: 50%;
+}
+
+@media only screen and (min-width: 768px) {
+  .ctasSection {
+    padding-bottom: 60px;
+  }
+
+  .ctasWrapper {
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+  }
+
+  .ctaLinkFB,
+  .ctaLink,
+  .frontBackWrapper {
+    width: unset;
+  }
+}
