@@ -13,10 +13,13 @@ function Gallery({ project }: GalleryProps) {
   return (
     <section
       className={`${isUx ? styles.uxWrapper : ""}
+
     ${styles.gallerySection} section`}
     >
       {!isUx && <div className={styles.glow}></div>}
-      <div className={`${styles.sectionWrapper} container`}>
+      <div
+        className={`${styles.sectionWrapper} container ${isGoRaiding ? styles.grWrapper : ""}`}
+      >
         {isUx && !isGoRaiding && <h2 className={styles.title}>Screens</h2>}
 
         {project.gallery && (

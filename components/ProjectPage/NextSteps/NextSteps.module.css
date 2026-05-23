@@ -1,0 +1,84 @@
+.NextStepsSection {
+  background-color: var(--background-secondary);
+}
+
+.sectionWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-top: 60px;
+  padding-bottom: 60px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.grWrapper {
+  padding-top: 40px;
+}
+
+.title,
+.subtitle {
+  text-align: center;
+}
+
+.imgWrapper {
+  width: 100%;
+  aspect-ratio: 2/3;
+  border: 1px solid var(--border);
+  border-radius: 4px;
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.contentWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: center;
+  width: 100%;
+}
+
+.stepsList {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+.stepsListItem {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  align-items: center;
+}
+
+.icon {
+  fill: var(--foreground);
+  flex-shrink: 0;
+  border: 1px solid var(--foreground);
+  border-radius: 50px;
+  padding: 2px;
+}
+
+@media only screen and (min-width: 768px) {
+  .grWrapper {
+    padding-top: 40px;
+  }
+
+  .imgWrapper {
+    aspect-ratio: 3/2;
+  }
+
+  .contentWrapper {
+    align-items: stretch;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .grWrapper {
+    padding-top: 60px;
+  }
+}

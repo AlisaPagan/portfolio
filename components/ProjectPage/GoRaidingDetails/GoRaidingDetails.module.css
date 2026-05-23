@@ -9,8 +9,8 @@
   pointer-events: none;
   z-index: 0;
   background-image:
-    radial-gradient(circle at bottom right, var(--accent) 0%, transparent 45%),
-    radial-gradient(circle at top left, var(--accent) 0%, transparent 45%);
+    radial-gradient(circle at bottom left, var(--accent) 0%, transparent 45%),
+    radial-gradient(circle at top right, var(--accent) 0%, transparent 45%);
   background-size: 100%;
   opacity: 0.25;
 }
@@ -65,4 +65,36 @@
   width: 100%;
   border: 0;
   height: 1px;
+}
+
+@media only screen and (min-width: 768px) {
+  .sectionWrapper {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    padding-top: 90px;
+    padding-bottom: 90px;
+  }
+
+  .listContaier:first-child {
+    grid-column: 1 / -1;
+  }
+
+  .listContaier {
+    gap: 24px;
+  }
+
+  .divider {
+    margin-top: 16px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .sectionWrapper {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    gap: 60px;
+  }
+  .divider {
+    margin-top: 36px;
+  }
 }

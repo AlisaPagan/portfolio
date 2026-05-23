@@ -22,8 +22,9 @@ function GoRaidingDetails({ project }: GoRaidingDetailsProps) {
               </li>
             ))}
           </ul>
+          <hr className={styles.divider} />
         </div>
-        <hr className={styles.divider} />
+
         <div className={styles.listContaier}>
           <h3 className={styles.infoTitle}>Key Features</h3>
           <ul className={styles.infoList}>
@@ -35,6 +36,7 @@ function GoRaidingDetails({ project }: GoRaidingDetailsProps) {
             ))}
           </ul>
         </div>
+
         <div className={styles.listContaier}>
           <h3 className={styles.infoTitle}>Tech Stack</h3>
           <ul className={styles.infoListTech}>

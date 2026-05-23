@@ -14,7 +14,7 @@
   background-image: radial-gradient(
     circle at center,
     var(--accent) 0%,
-    transparent 45%
+    transparent 65%
   );
 
   background-size: 100%;
@@ -30,6 +30,10 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+}
+
+.grWrapper {
+  padding-bottom: 0px;
 }
 
 .title {
@@ -53,11 +57,19 @@
     padding-top: 90px;
     padding-bottom: 90px;
   }
+
+  .grWrapper {
+    padding-bottom: 0px;
+  }
 }
 
 @media only screen and (min-width: 1440px) {
   .sectionWrapper {
     padding-top: 120px;
     padding-bottom: 120px;
+  }
+
+  .grWrapper {
+    padding-bottom: 0px;
   }
 }

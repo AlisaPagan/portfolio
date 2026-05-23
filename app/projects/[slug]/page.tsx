@@ -11,6 +11,7 @@ import Gallery from "@/components/ProjectPage/Gallery/Gallery";
 import CurrentProcess from "@/components/ProjectPage/CurrentProcess/CurrentProcess";
 import DevCtas from "@/components/ProjectPage/DevCtas/DevCtas";
 import GoRaidingDetails from "@/components/ProjectPage/GoRaidingDetails/GoRaidingDetails";
+import NextSteps from "@/components/ProjectPage/NextSteps/NextSteps";
 type Props = {
   params: Promise<{ slug: string }>;
 };
@@ -50,6 +51,10 @@ async function Project({ params }: Props) {
       {/* ux and goraiding details */}
       {isUx && !isGoRaiding && <DevProcess project={project} />}
       {isGoRaiding && <GoRaidingDetails project={project} />}
+
+      {/* ux next steps*/}
+      {isGoRaiding && <Gallery project={project} />}
+      {isUx && <NextSteps project={project} />}
 
       {/* dev ctas */}
       {isDev && !isGoRaiding && <DevCtas project={project} />}
