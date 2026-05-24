@@ -12,6 +12,7 @@ import CurrentProcess from "@/components/ProjectPage/CurrentProcess/CurrentProce
 import DevCtas from "@/components/ProjectPage/DevCtas/DevCtas";
 import GoRaidingDetails from "@/components/ProjectPage/GoRaidingDetails/GoRaidingDetails";
 import NextSteps from "@/components/ProjectPage/NextSteps/NextSteps";
+import ProjectHeader from "@/components/Layout/ProjectHeader/ProjectHeader";
 type Props = {
   params: Promise<{ slug: string }>;
 };
@@ -31,6 +32,8 @@ async function Project({ params }: Props) {
 
   return (
     <main className={styles.main}>
+      <ProjectHeader />
+
       {/* hero section */}
       <Hero project={project} />
 

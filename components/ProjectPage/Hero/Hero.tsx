@@ -21,7 +21,11 @@ function Hero({ project }: HeroProps) {
   } as React.CSSProperties;
 
   return (
-    <section className={`${styles.hero} section`} style={heroBackground}>
+    <section
+      id="top"
+      className={`${styles.hero} section`}
+      style={heroBackground}
+    >
       <div className={`${styles.sectionWrapper} container`}>
         <div className={styles.heroTop}>
           <h1 className={styles.title}> {project.title}</h1>
@@ -59,7 +63,9 @@ function Hero({ project }: HeroProps) {
 
           <div className={styles.gridSide}>
             <div className={styles.metaGridCell}>
-              <span className={styles.metaLabel}>Tech Stack:</span>
+              <span className={styles.metaLabel}>
+                {!isUx ? "Tech Stack" : "Design Tools"}
+              </span>
               <ul className={styles.techList}>
                 {project.techStack.map((tech) => (
                   <li key={tech}>

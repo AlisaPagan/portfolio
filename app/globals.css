@@ -168,6 +168,11 @@ h4 {
   margin: 0 auto;
 }
 
+a:focus-visible,
+button:focus-visible {
+  outline: none;
+}
+
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;

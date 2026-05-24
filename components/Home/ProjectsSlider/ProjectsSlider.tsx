@@ -3,8 +3,7 @@ import { Project } from "../Projects/project";
 import styles from "./ProjectsSlider.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
-import { GoChevronRight } from "react-icons/go";
-import { GoChevronLeft } from "react-icons/go";
+import { GoChevronRight, GoChevronLeft } from "react-icons/go";
 import Button from "@/components/UI/Button/Button";
 import Icon from "@/components/UI/Icon/Icon";
 

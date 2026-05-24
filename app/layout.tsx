@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins, Roboto, Roboto_Mono } from "next/font/google";
 import "./globals.css";
-import Header from "@/components/Layout/Header/Header";
 import ToasterProvider from "@/components/UI/ToasterProvider/Toaster";
 import Footer from "@/components/Layout/Footer/Footer";
 
@@ -43,7 +42,6 @@ export default function RootLayout({
       className={`${poppins.variable} ${roboto.variable} ${robotoMono.variable}`}
     >
       <body>
-        <Header />
         <ToasterProvider />
         {children}
         <Footer />

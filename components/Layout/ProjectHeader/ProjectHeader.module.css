@@ -1,0 +1,201 @@
+.projectHeader {
+  position: fixed;
+  top: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.headerWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.logo {
+  color: var(--foreground);
+  font-family: var(--font-poppins);
+  font-size: 25px;
+  font-weight: 300;
+  letter-spacing: -0.04em;
+  transition: color var(--transition);
+  background-color: var(--header);
+  border: 1px solid var(--secondary-back-border);
+  border-radius: 4px;
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  transition:
+    color var(--transition),
+    border-color var(--transition);
+}
+
+.logo:focus-visible {
+  color: var(--nav-link-hover);
+  outline: none;
+  border: 1px solid var(--hover-secondary-back-border);
+}
+
+.themeButton.themeButton {
+  background-color: var(--header);
+  border: 1px solid var(--secondary-back-border);
+  border-radius: 4px;
+  width: 50px;
+  height: 50px;
+  transition:
+    background-color var(--transition),
+    border-color var(--transition),
+    transform var(--transition);
+}
+
+.themeButton .themeIcon {
+  fill: var(--foreground);
+}
+
+.themeButton.themeButton:focus-visible {
+  background-color: var(--foreground);
+  border: 1px solid transparent;
+}
+
+.themeButton:focus-visible .themeIcon {
+  fill: var(--background);
+}
+
+.projectNav {
+  position: fixed;
+  bottom: 16px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  display: flex;
+  padding: 0 16px;
+}
+
+.navBtnsWrap {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  width: fit-content;
+  background-color: var(--header);
+  border: 1px solid var(--secondary-back-border);
+  backdrop-filter: blur(2.5px);
+  padding: 10px 16px;
+  border-radius: 10px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition:
+    transform var(--transition),
+    opacity var(--transition);
+}
+
+.btnText {
+  display: none;
+}
+
+.topLink {
+  background-color: var(--secondary-btn);
+  border: 1px solid var(--secondary-back-border);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 4px;
+  width: 42px;
+  height: 42px;
+  padding: 8px;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(8px);
+  transition:
+    border-color var(--transition),
+    transform var(--transition),
+    opacity var(--transition);
+}
+
+.linkVisible {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.topLink:focus-visible,
+.topLink:active {
+  border-color: var(--hover-secondary-back-border);
+}
+.iconUp {
+  transform: rotate(180deg);
+  fill: var(--foreground);
+}
+
+.navBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 42px;
+  height: 42px;
+  padding: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .btnText {
+    display: inline;
+  }
+
+  .navBtn {
+    width: 220px;
+    height: auto;
+    gap: 12px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--nav-link);
+    width: 65px;
+    height: 65px;
+  }
+
+  .themeButton.themeButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 65px;
+    height: 65px;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .themeButton.themeButton:hover {
+    background-color: var(--foreground);
+    border: 1px solid transparent;
+    transform: rotate(0.5turn);
+  }
+
+  .themeButton:hover .themeIcon {
+    fill: var(--background);
+  }
+
+  .logo:hover {
+    color: var(--nav-link-hover);
+    border-color: var(--hover-secondary-back-border);
+  }
+
+  .topLink:hover {
+    border-color: var(--hover-secondary-back-border);
+    transform: translateY(-8px);
+  }
+}
