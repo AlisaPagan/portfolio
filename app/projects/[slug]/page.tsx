@@ -13,6 +13,7 @@ import DevCtas from "@/components/ProjectPage/DevCtas/DevCtas";
 import GoRaidingDetails from "@/components/ProjectPage/GoRaidingDetails/GoRaidingDetails";
 import NextSteps from "@/components/ProjectPage/NextSteps/NextSteps";
 import ProjectHeader from "@/components/Layout/ProjectHeader/ProjectHeader";
+import Loader from "@/components/UI/Loader/Loader";
 type Props = {
   params: Promise<{ slug: string }>;
 };
