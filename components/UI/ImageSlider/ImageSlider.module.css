@@ -6,10 +6,12 @@
   width: 100%;
 }
 
-.navButton {
+.sliderControls .navButton {
   background-color: var(--highlight);
   width: 40px;
   height: 40px;
+  min-width: 40px;
+  min-height: 40px;
   padding: 0;
   border-radius: 4px;
   background-blend-mode: multiply;
