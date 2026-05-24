@@ -22,7 +22,7 @@ function GoRaidingDetails({ project }: GoRaidingDetailsProps) {
               </li>
             ))}
           </ul>
-          <hr className={styles.divider} />
+          <hr className="divider" />
         </div>
 
         <div className={styles.listContaier}>

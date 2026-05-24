@@ -64,7 +64,7 @@ function Hero({ project }: HeroProps) {
           <div className={styles.gridSide}>
             <div className={styles.metaGridCell}>
               <span className={styles.metaLabel}>
-                {!isUx ? "Tech Stack" : "Design Tools"}
+                {isDev ? "Tech Stack" : "Design Tools"}
               </span>
               <ul className={styles.techList}>
                 {project.techStack.map((tech) => (

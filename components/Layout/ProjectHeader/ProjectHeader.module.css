@@ -76,15 +76,13 @@
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  width: 100%;
-  display: flex;
 }
 
 .navBtnsWrap {
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 40px;
+  gap: 32px;
   width: fit-content;
   background-color: var(--header);
   border: 1px solid var(--secondary-back-border);

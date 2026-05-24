@@ -55,18 +55,6 @@
   row-gap: 12px;
 }
 
-.divider {
-  background-image: linear-gradient(
-    to right,
-    var(--secondary-back),
-    var(--accent),
-    var(--secondary-back)
-  );
-  width: 100%;
-  border: 0;
-  height: 1px;
-}
-
 @media only screen and (min-width: 768px) {
   .sectionWrapper {
     display: grid;

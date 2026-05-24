@@ -173,6 +173,18 @@ button:focus-visible {
   outline: none;
 }
 
+.divider {
+  background-image: linear-gradient(
+    to right,
+    var(--secondary-back),
+    var(--accent),
+    var(--secondary-back)
+  );
+  width: 100%;
+  border: 0;
+  height: 1px;
+}
+
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;

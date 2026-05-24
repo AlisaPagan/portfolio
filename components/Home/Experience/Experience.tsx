@@ -16,7 +16,7 @@ function Experience() {
             <article key={job.id} className={styles.jobCard}>
               <div className={styles.topWrapper}>
                 <h3 className={styles.companyName}>{job.company}</h3>
-                <hr className={styles.divider} />
+                <hr className="divider" />
                 <h4>{job.position}</h4>
               </div>
 

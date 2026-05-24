@@ -79,7 +79,7 @@ function Footer() {
             </ul>
           </div>
         </div>
-        <hr className={styles.divider} />
+        <hr className="divider" />
         <div className={styles.footerBottom}>
           <p className={styles.copyrightLine}>
             &copy; {new Date().getFullYear()} Designed and coded by Alisa Pagan.

@@ -70,19 +70,6 @@
   opacity: 0.7;
 }
 
-.divider {
-  background-image: linear-gradient(
-    to right,
-    var(--secondary-back),
-    var(--accent),
-    var(--secondary-back)
-  );
-  width: 100%;
-  border: 0;
-  height: 1px;
-  margin-bottom: 16px;
-}
-
 .roleList {
   display: flex;
   flex-direction: column;
@@ -122,7 +109,6 @@
     grid-template-areas:
       "image top"
       "content content";
-    gap: 32px;
     align-items: center;
   }
 

@@ -80,7 +80,7 @@ function DevProcess({ project }: DevProcessProps) {
           </div>
 
           <div className={styles.listContaier}>
-            <hr className={styles.divider} />
+            <hr className="divider" />
             <h3 className={styles.infoTitle}>
               {isDev ? "Tech Stack" : "Design Toolkit"}
             </h3>

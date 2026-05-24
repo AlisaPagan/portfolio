@@ -82,7 +82,7 @@ export function ProjectCard({ project }: projectCardProps) {
             <p className={styles.year}>{project.year}</p>
             <h3 className={styles.heading}>{project.title}</h3>
           </div>
-          <hr className={styles.divider} />
+          <hr className="divider" />
 
           <p className={styles.description}>{project.shortDescription}</p>
           <ul className={styles.tagList}>

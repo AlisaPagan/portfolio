@@ -23,7 +23,7 @@ function Contact() {
             is simply dummy text of the printing and typesetting industry.
           </p>
         </div>
-        <hr className={styles.divider} />
+        <hr className="divider" />
 
         <div className={styles.contentWrapper}>
           <div className={styles.formContainer}>

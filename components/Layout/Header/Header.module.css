@@ -34,7 +34,6 @@
   width: 50px;
   height: 50px;
   text-align: center;
-  transition: color var(--transition);
 }
 
 .logo:focus-visible {
@@ -164,7 +163,7 @@
   .desktopNav {
     display: flex;
     justify-content: center;
-    gap: 28px;
+    gap: 32px;
   }
 
   .mobileBottomBar {

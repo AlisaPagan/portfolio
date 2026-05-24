@@ -26,7 +26,7 @@ function OngoingAndLearning() {
         <div className={styles.cardsWrapper}>
           <div className={styles.top}>
             <h3 className={styles.title}>{ongoingProject?.title}</h3>
-            <hr className={styles.divider} />
+            <hr className="divider" />
           </div>
 
           <div className={styles.cardAndLearning}>
@@ -60,7 +60,7 @@ function OngoingAndLearning() {
                       <span className={styles.goalLabel}>Problem: </span>
                       {ongoingProject.problem}
                     </li>
-                    <hr className={styles.divider} />
+                    <hr className="divider" />
 
                     <li className={styles.goalItem}>
                       <span className={styles.goalLabel}>Solution: </span>
@@ -126,7 +126,7 @@ function OngoingAndLearning() {
             <div className={styles.learning}>
               <div className={styles.top}>
                 <h3 className={styles.title}>Learning</h3>
-                <hr className={styles.divider} />
+                <hr className="divider" />
               </div>
 
               <div className={styles.learningCards}>
@@ -139,7 +139,7 @@ function OngoingAndLearning() {
                     ></Icon>
                     <h4 className={styles.techName}>Python</h4>
                   </div>
-                  <hr className={styles.divider} />
+                  <hr className="divider" />
                   <p>
                     Currently learning Python fundamentals, including syntax,
                     variables, data types, operators, strings, collections,
@@ -157,7 +157,7 @@ function OngoingAndLearning() {
                     ></Icon>
                     <h4 className={styles.techName}>React Native</h4>
                   </div>
-                  <hr className={styles.divider} />
+                  <hr className="divider" />
                   <p>
                     Learning mobile app development with React Native, focusing
                     on setup, native components, styling, inputs, events, SVG,

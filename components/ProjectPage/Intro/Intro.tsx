@@ -61,7 +61,7 @@ function Intro({ project }: IntroProps) {
                     <span className={styles.goalHeading}>Problem: </span>
                     {project.problem}
                   </li>
-                  <hr className={styles.divider} />
+                  <hr className="divider" />
 
                   <li className={styles.goalItem}>
                     <span className={styles.goalHeading}>Solution: </span>

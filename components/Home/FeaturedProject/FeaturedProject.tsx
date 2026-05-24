@@ -44,7 +44,7 @@ function FeaturedProject({ project }: FeaturedProjectProps) {
         </div>
 
         <div className={styles.contentWrapper}>
-          <hr className={styles.divider} />
+          <hr className="divider" />
           <h4>My Role</h4>
           <ul className={styles.roleList}>
             {displayedRole.map((roleItem) => (
@@ -58,7 +58,7 @@ function FeaturedProject({ project }: FeaturedProjectProps) {
               </li>
             ))}
           </ul>
-          <hr className={styles.divider} />
+          <hr className="divider" />
           <Link href={`projects/${project.id}`} className={styles.btnLink}>
             <Button className={styles.btn}>View Details</Button>
           </Link>
