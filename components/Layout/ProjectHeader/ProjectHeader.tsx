@@ -109,9 +109,7 @@ function ProjectHeader({ currentProjectId }: projectHeaderProps) {
       </header>
 
       <section className={`${styles.projectNav} container`}>
-        <div
-          className={`${styles.navBtnsWrap} ${showLink ? styles.linkVisible : ""}`}
-        >
+        <div className={`${styles.navBtnsWrap} `}>
           <Link
             href={`/projects/${prevProject.id}`}
             aria-label="previous-project"

@@ -33,3 +33,12 @@
   min-width: 0;
   overflow: hidden;
 }
+
+.sliderControls .navButton:disabled,
+.sliderControls .navButton:disabled:hover,
+.sliderControls .navButton:disabled:focus {
+  background-color: var(--btn-disabled-fill);
+  border: 1px solid var(--btn-disabled-stroke);
+  color: var(--btn-disabled-text);
+  cursor: not-allowed;
+}
