@@ -3,12 +3,16 @@ import styles from "./ProjectHeader.module.css";
 import Link from "next/link";
 import Button from "@/components/UI/Button/Button";
 import Icon from "@/components/UI/Icon/Icon";
-import { Project } from "@/components/Home/Projects/project";
 import { useState, useEffect, useRef } from "react";
 import { PiSunDimThin, PiMoonThin, PiArrowDownThin } from "react-icons/pi";
 import { GoChevronRight, GoChevronLeft } from "react-icons/go";
+import projects from "@/components/Home/Projects/projectsInfo";
 
-function ProjectHeader() {
+type projectHeaderProps = {
+  currentProjectId: string;
+};
+
+function ProjectHeader({ currentProjectId }: projectHeaderProps) {
   //theme toggle
   const [theme, setTheme] = useState<"dark" | "light">("dark");
   const hasLoadedThemeRef = useRef(false);
@@ -61,11 +65,26 @@ function ProjectHeader() {
     };
   }, []);
 
+  // prev & next navigation
+  const currentIndex = projects.findIndex(
+    (project) => project.id === currentProjectId,
+  );
+
+  const prevProject =
+    currentIndex > 0
+      ? projects[currentIndex - 1]
+      : projects[projects.length - 1];
+
+  const nextProject =
+    currentIndex < projects.length - 1
+      ? projects[currentIndex + 1]
+      : projects[0];
+
   return (
     <>
       <header className={styles.projectHeader}>
         <div className={`${styles.headerWrapper} container`}>
-          <Link href={"/"} className={styles.logo}>
+          <Link href="/" className={styles.logo}>
             AP
           </Link>
 
@@ -94,8 +113,8 @@ function ProjectHeader() {
           className={`${styles.navBtnsWrap} ${showLink ? styles.linkVisible : ""}`}
         >
           <Link
-            href={"/"}
-            area-label="previous-project"
+            href={`/projects/${prevProject.id}`}
+            aria-label="previous-project"
             className={styles.projectNavLink}
           >
             <Button type="button" variant="primary" className={styles.navBtn}>
@@ -104,8 +123,8 @@ function ProjectHeader() {
             </Button>
           </Link>
           <Link
-            href={"/"}
-            area-label="next-project"
+            href={`/projects/${nextProject.id}`}
+            aria-label="next-project"
             className={styles.projectNavLink}
           >
             <Button type="button" variant="primary" className={styles.navBtn}>

@@ -32,7 +32,7 @@ async function Project({ params }: Props) {
 
   return (
     <main className={styles.main}>
-      <ProjectHeader />
+      <ProjectHeader currentProjectId={project.id} />
 
       {/* hero section */}
       <Hero project={project} />

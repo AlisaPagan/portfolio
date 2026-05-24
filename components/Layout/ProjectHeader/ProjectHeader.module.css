@@ -147,6 +147,10 @@
   padding: 8px;
 }
 
+.icon {
+  fill: var(--primary-btn-text);
+}
+
 @media only screen and (min-width: 768px) {
   .btnText {
     display: inline;

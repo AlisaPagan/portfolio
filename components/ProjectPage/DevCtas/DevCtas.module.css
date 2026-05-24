@@ -1,7 +1,7 @@
 .ctasSection {
   position: relative;
   overflow: hidden;
-
+  padding-top: 20px;
   padding-bottom: 40px;
 }
 
@@ -28,6 +28,7 @@
 
 @media only screen and (min-width: 768px) {
   .ctasSection {
+    padding-top: 40px;
     padding-bottom: 60px;
   }
 
