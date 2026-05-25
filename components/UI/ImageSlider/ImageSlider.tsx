@@ -83,8 +83,8 @@ function ImageSlider({
               <Image
                 src={image.src}
                 alt={image.alt}
-                width={400}
-                height={400}
+                width={1920}
+                height={1920}
                 className={styles.img}
               ></Image>
             </SwiperSlide>
