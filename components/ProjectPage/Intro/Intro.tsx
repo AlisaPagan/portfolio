@@ -11,7 +11,7 @@ function Intro({ project }: IntroProps) {
   const isUx = project.categories.includes("ux");
   const isGoRaiding = project.id === "go-raiding";
 
-  const introImg = project.gallery?.[1] ?? {
+  const introImg = project.gallery?.[0] ?? {
     src: project.image,
     alt: project.imageAlt,
   };
@@ -37,8 +37,8 @@ function Intro({ project }: IntroProps) {
                 <Image
                   src={introImg.src}
                   alt={introImg.alt}
-                  width={400}
-                  height={400}
+                  width={1080}
+                  height={1080}
                   className={styles.img}
                 />
               </div>

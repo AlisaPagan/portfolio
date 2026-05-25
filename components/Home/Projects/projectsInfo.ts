@@ -67,33 +67,45 @@ const projects: Project[] = [
       "Render",
     ],
 
-    image: "/relax-map-new.webp",
+    image: "/relax-map-locations.webp",
     imageAlt: "Relax Map project preview",
 
     gallery: [
       {
-        src: "/relax-map-1.webp",
-        alt: "GoRaiding mobile app preview",
+        src: "/relax-map-home.webp",
+        alt: "Relax Map project home page preview",
       },
 
       {
-        src: "/relax-map-2.webp",
-        alt: "GoRaiding raid browsing",
+        src: "/relax-map-mobile.webp",
+        alt: "Relax Map project mobile pages preview",
+      },
+    ],
+
+    sliderGallery: [
+      {
+        src: "/relax-map-preview-1.webp",
+        alt: "Relax Map project advantages and popular locations",
       },
 
       {
-        src: "/relax-map-3.webp",
-        alt: "GoRaiding raid creation",
+        src: "/relax-map-preview-2.webp",
+        alt: "Relax Map project reviews",
       },
 
       {
-        src: "/relax-map-4.webp",
-        alt: "GoRaiding raid requests management",
+        src: "/relax-map-preview-3.webp",
+        alt: "Relax Map project edit location",
       },
 
       {
-        src: "/relax-map-5.webp",
-        alt: "GoRaiding raid user profile",
+        src: "/relax-map-preview-4.webp",
+        alt: "Relax Map project add location",
+      },
+
+      {
+        src: "/relax-map-preview-5.webp",
+        alt: "Relax Map project leave review",
       },
     ],
 

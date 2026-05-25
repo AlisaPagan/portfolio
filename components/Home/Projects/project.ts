@@ -46,6 +46,11 @@ export type Project = {
     alt: string;
   }[];
 
+  sliderGallery?: {
+    src: string;
+    alt: string;
+  }[];
+
   links?: {
     live?: string;
     github?: string;

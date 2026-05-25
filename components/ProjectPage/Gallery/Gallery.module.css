@@ -47,7 +47,7 @@
 }
 
 .imgContainer {
-  border: 1px solid var(--border);
+  border: 2px solid var(--secondary-back-border);
   border-radius: 4px;
   aspect-ratio: 1/1;
 }

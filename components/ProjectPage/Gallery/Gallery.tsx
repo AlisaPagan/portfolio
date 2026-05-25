@@ -22,9 +22,9 @@ function Gallery({ project }: GalleryProps) {
       >
         {isUx && !isGoRaiding && <h2 className={styles.title}>Screens</h2>}
 
-        {project.gallery && (
+        {project.sliderGallery && (
           <ImageSlider
-            images={project.gallery}
+            images={project.sliderGallery}
             navId={`${project.id}-gallery`}
             className={styles.imgSwiper}
             slideClassName={styles.imgContainer}

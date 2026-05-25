@@ -9,7 +9,7 @@ type DevProcessProps = {
   project: Project;
 };
 function DevProcess({ project }: DevProcessProps) {
-  const processImg = project.gallery?.[2] ?? {
+  const processImg = project.gallery?.[1] ?? {
     src: project.image,
     alt: project.imageAlt,
   };
@@ -30,8 +30,8 @@ function DevProcess({ project }: DevProcessProps) {
               <Image
                 src={processImg.src}
                 alt={processImg.alt}
-                width={400}
-                height={400}
+                width={1920}
+                height={1080}
                 className={styles.img}
               ></Image>
             </div>

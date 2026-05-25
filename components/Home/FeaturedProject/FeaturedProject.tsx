@@ -20,8 +20,8 @@ function FeaturedProject({ project }: FeaturedProjectProps) {
             className={styles.img}
             src={project.image}
             alt={project.imageAlt}
-            width={400}
-            height={400}
+            width={1080}
+            height={1080}
             priority
           ></Image>
           <span className={styles.labelFeat}>Featured Project</span>
