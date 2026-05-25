@@ -199,9 +199,7 @@ function Header() {
               href={"/#skills"}
               onClick={() => handleSectionClick("skills")}
               className={getDesktopLinkClassName("skills")}
-              aria-current={
-                activeSection === "skills" ? "location" : undefined
-              }
+              aria-current={activeSection === "skills" ? "location" : undefined}
             >
               Skills
             </Link>
@@ -268,7 +266,7 @@ function Header() {
         </div>
       </header>
 
-      <section className={styles.mobileBottomBar}>
+      <div className={styles.mobileBottomBar}>
         <nav className={`${styles.mobileNav} container`}>
           <Link
             href="/#about"
@@ -305,9 +303,7 @@ function Header() {
             aria-label="Projects"
             onClick={() => handleSectionClick("projects")}
             className={getMobileLinkClassName("projects")}
-            aria-current={
-              activeSection === "projects" ? "location" : undefined
-            }
+            aria-current={activeSection === "projects" ? "location" : undefined}
           >
             <Icon
               size={30}
@@ -340,9 +336,7 @@ function Header() {
             onClick={() => handleSectionClick("ongoing-and-learning")}
             className={getMobileLinkClassName("ongoing-and-learning")}
             aria-current={
-              activeSection === "ongoing-and-learning"
-                ? "location"
-                : undefined
+              activeSection === "ongoing-and-learning" ? "location" : undefined
             }
           >
             <Icon
@@ -368,7 +362,7 @@ function Header() {
             ></Icon>
           </Link>
         </nav>
-      </section>
+      </div>
     </>
   );
 }

@@ -16,7 +16,7 @@
   position: relative;
   grid-area: image;
   width: 100%;
-  aspect-ratio: 1 / 1;
+  aspect-ratio: 4/3;
   margin: 0 auto;
   display: inline-block;
   overflow: hidden;
@@ -129,9 +129,9 @@
   }
 
   .imageContainer {
-    align-self: stretch;
     display: flex;
     min-height: 0;
+    align-items: stretch;
   }
 
   .img {

@@ -109,7 +109,7 @@ function ProjectHeader({ currentProjectId }: projectHeaderProps) {
         </div>
       </header>
 
-      <section className={`${styles.projectNav} container`}>
+      <div className={`${styles.projectNav} container`}>
         <div className={`${styles.navBtnsWrap} `}>
           <LinkButton
             href={`/projects/${prevProject.id}`}
@@ -141,7 +141,7 @@ function ProjectHeader({ currentProjectId }: projectHeaderProps) {
             className={styles.iconUp}
           ></Icon>
         </Link>
-      </section>
+      </div>
     </>
   );
 }

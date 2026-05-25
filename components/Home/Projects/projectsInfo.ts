@@ -67,7 +67,7 @@ const projects: Project[] = [
       "Render",
     ],
 
-    image: "/relax-map.webp",
+    image: "/relax-map-new.webp",
     imageAlt: "Relax Map project preview",
 
     gallery: [
@@ -323,7 +323,7 @@ const projects: Project[] = [
       "Raty.js",
     ],
 
-    image: "/mebleria.webp",
+    image: "/mebleria-main.webp",
     imageAlt: "Mebleria furniture store project preview",
 
     gallery: [

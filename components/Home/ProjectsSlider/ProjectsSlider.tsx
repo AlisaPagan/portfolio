@@ -28,7 +28,6 @@ function ProjectGrid({ projects }: ProjectsGridProps) {
           prevEl: ".projectsPrev",
           nextEl: ".projectsNext",
         }}
-        scrollbar={{ draggable: true }}
         breakpoints={{
           768: {
             slidesPerView: 2,

@@ -66,7 +66,6 @@ function ImageSlider({
           modules={modules}
           preventInteractionOnTransition={preventInteractionOnTransition}
           spaceBetween={spaceBetween}
-          scrollbar={{ draggable: true }}
           navigation={{ prevEl: `.${prevClass}`, nextEl: `.${nextClass}` }}
           breakpoints={{
             768: {
