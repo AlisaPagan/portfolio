@@ -2,10 +2,9 @@ import Image from "next/image";
 import styles from "./FeaturedProject.module.css";
 import { Project } from "../Projects/project";
 import Tag from "@/components/UI/Tag/Tag";
-import Button from "@/components/UI/Button/Button";
 import Icon from "@/components/UI/Icon/Icon";
 import { GoDotFill } from "react-icons/go";
-import Link from "next/link";
+import LinkButton from "@/components/UI/LinkButton/LinkButton";
 
 type FeaturedProjectProps = {
   project: Project;
@@ -59,9 +58,12 @@ function FeaturedProject({ project }: FeaturedProjectProps) {
             ))}
           </ul>
           <hr className="divider" />
-          <Link href={`projects/${project.id}`} className={styles.btnLink}>
-            <Button className={styles.btn}>View Details</Button>
-          </Link>
+          <LinkButton
+            href={`projects/${project.id}`}
+            className={styles.btnLink}
+          >
+            View Details
+          </LinkButton>
         </div>
       </div>
     </article>

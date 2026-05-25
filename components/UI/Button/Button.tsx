@@ -1,14 +1,14 @@
 "use client";
 import styles from "./Button.module.css";
 
-type ButtonVariant = "primary" | "secondary" | "text" | "reset";
+type ButtonVariant = "primary" | "secondary" | "text";
 
 type ButtonProps = {
   children: React.ReactNode;
   variant?: ButtonVariant;
   disabled?: boolean;
   onClick?: React.MouseEventHandler<HTMLButtonElement>;
-  type?: "button" | "submit" | "reset";
+  type?: "button" | "submit";
   className?: string;
   ref?: React.Ref<HTMLButtonElement>;
 };

@@ -1,0 +1,35 @@
+.sectionWrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.btn404,
+.btn404link {
+  width: 100%;
+  align-self: center;
+}
+
+@media only screen and (min-width: 768px) {
+  .notFound {
+    padding-bottom: 90px;
+    padding-top: 90px;
+  }
+
+  .btn404,
+  .btn404link {
+    width: 220px;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .notFound {
+    padding-bottom: 120px;
+    padding-top: 120px;
+    gap: 60px;
+  }
+}

@@ -1,8 +1,7 @@
 import Tag from "@/components/UI/Tag/Tag";
 import styles from "./Hero.module.css";
 import { Project } from "@/components/Home/Projects/project";
-import Button from "@/components/UI/Button/Button";
-import Link from "next/link";
+import LinkButton from "@/components/UI/LinkButton/LinkButton";
 
 type HeroProps = {
   project: Project;
@@ -78,21 +77,29 @@ function Hero({ project }: HeroProps) {
         </div>
         <div className={styles.ctaWrapper}>
           {isGoRaiding && gitLink && (
-            <Link href={gitLink} target="_blank" className={styles.ctaLink}>
-              <Button className={styles.ctaBtn}>View Code</Button>
-            </Link>
+            <LinkButton
+              href={gitLink}
+              target="_blank"
+              className={styles.ctaLink}
+            >
+              View Code
+            </LinkButton>
           )}
 
           {isDev && liveLink && (
-            <Link href={liveLink} target="_blank" className={styles.ctaLink}>
-              <Button className={styles.ctaBtn}>View Live</Button>
-            </Link>
+            <LinkButton
+              href={liveLink}
+              target="_blank"
+              className={styles.ctaLink}
+            >
+              View Live
+            </LinkButton>
           )}
 
           {isUx && !isGoRaiding && (
-            <Link href={"/#goals"} className={styles.ctaLink}>
-              <Button className={styles.ctaBtn}>View More</Button>
-            </Link>
+            <LinkButton href={"/#goals"} className={styles.ctaLink}>
+              View More
+            </LinkButton>
           )}
         </div>
       </div>

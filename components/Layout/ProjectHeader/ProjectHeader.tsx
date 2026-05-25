@@ -7,6 +7,7 @@ import { useState, useEffect, useRef } from "react";
 import { PiSunDimThin, PiMoonThin, PiArrowDownThin } from "react-icons/pi";
 import { GoChevronRight, GoChevronLeft } from "react-icons/go";
 import projects from "@/components/Home/Projects/projectsInfo";
+import LinkButton from "@/components/UI/LinkButton/LinkButton";
 
 type projectHeaderProps = {
   currentProjectId: string;
@@ -110,27 +111,23 @@ function ProjectHeader({ currentProjectId }: projectHeaderProps) {
 
       <section className={`${styles.projectNav} container`}>
         <div className={`${styles.navBtnsWrap} `}>
-          <Link
+          <LinkButton
             href={`/projects/${prevProject.id}`}
             aria-label="previous-project"
             className={styles.projectNavLink}
           >
-            <Button type="button" variant="primary" className={styles.navBtn}>
-              <Icon icon={GoChevronLeft} size={28} className={styles.icon} />
-              <span className={styles.btnText}>Previous</span>
-            </Button>
-          </Link>
-          <Link
+            <Icon icon={GoChevronLeft} size={28} className={styles.icon} />
+            <span className={styles.btnText}>Previous</span>
+          </LinkButton>
+
+          <LinkButton
             href={`/projects/${nextProject.id}`}
             aria-label="next-project"
             className={styles.projectNavLink}
           >
-            <Button type="button" variant="primary" className={styles.navBtn}>
-              <span className={styles.btnText}>Next</span>
-
-              <Icon icon={GoChevronRight} size={28} className={styles.icon} />
-            </Button>
-          </Link>
+            <span className={styles.btnText}>Next</span>
+            <Icon icon={GoChevronRight} size={28} className={styles.icon} />
+          </LinkButton>
         </div>
 
         <Link

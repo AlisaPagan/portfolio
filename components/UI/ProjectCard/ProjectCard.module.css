@@ -135,17 +135,14 @@
   font-size: 24px;
 }
 
-.buttonsWrapper {
+.buttonWrapper {
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
-}
-
-.btnLink {
   width: 100%;
 }
 
-.btn {
+.buttonWrapper .btnLink {
   width: 100%;
 }
 

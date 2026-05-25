@@ -8,6 +8,7 @@ import { GoLinkExternal } from "react-icons/go";
 import { PiGithubLogo, PiBrowser } from "react-icons/pi";
 import { CiServer } from "react-icons/ci";
 import Link from "next/link";
+import LinkButton from "../LinkButton/LinkButton";
 
 type projectCardProps = {
   project: Project;
@@ -93,10 +94,13 @@ export function ProjectCard({ project }: projectCardProps) {
             ))}
           </ul>
         </div>
-        <div className={styles.buttonsWrapper}>
-          <Link href={`/projects/${project.id}`} className={styles.btnLink}>
-            <Button className={styles.btn}>View Details</Button>
-          </Link>
+        <div className={styles.buttonWrapper}>
+          <LinkButton
+            href={`/projects/${project.id}`}
+            className={styles.btnLink}
+          >
+            View Details
+          </LinkButton>
         </div>
       </div>
     </article>

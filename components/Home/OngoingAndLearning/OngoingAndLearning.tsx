@@ -1,14 +1,13 @@
 import styles from "./OngoingAndLearning.module.css";
 import projects from "../Projects/projectsInfo";
 import Tag from "@/components/UI/Tag/Tag";
-import Button from "@/components/UI/Button/Button";
-import Link from "next/link";
 import Icon from "@/components/UI/Icon/Icon";
 import { PiGithubLogo } from "react-icons/pi";
 import { FaPython } from "react-icons/fa";
 import { IoLogoReact } from "react-icons/io5";
 import { GoDotFill, GoChevronRight } from "react-icons/go";
 import ImageSlider from "@/components/UI/ImageSlider/ImageSlider";
+import LinkButton from "@/components/UI/LinkButton/LinkButton";
 
 function OngoingAndLearning() {
   const ongoingProject = projects.find((project) =>
@@ -91,33 +90,30 @@ function OngoingAndLearning() {
 
                   <div className={styles.buttons}>
                     {ongoingProject.links?.github && (
-                      <Link
+                      <LinkButton
                         href={ongoingProject.links.github}
                         target="_blank"
                         aria-label="View project on GitHub"
                         className={styles.btnLink}
                       >
-                        <Button className={styles.btn}>
-                          Open on GitHub
-                          <Icon
-                            icon={PiGithubLogo}
-                            size={24}
-                            className={styles.gitIcon}
-                          ></Icon>
-                        </Button>
-                      </Link>
+                        Open on GitHub
+                        <Icon
+                          icon={PiGithubLogo}
+                          size={24}
+                          className={styles.gitIcon}
+                        ></Icon>
+                      </LinkButton>
                     )}
 
-                    <Link
+                    <LinkButton
                       href={`/projects/${ongoingProject.id}`}
                       aria-label="View project on GitHub"
                       className={styles.btnLink}
+                      variant="secondary"
                     >
-                      <Button className={styles.btn} variant="secondary">
-                        View Details
-                        <Icon icon={GoChevronRight} size={24}></Icon>
-                      </Button>
-                    </Link>
+                      View Details
+                      <Icon icon={GoChevronRight} size={24}></Icon>
+                    </LinkButton>
                   </div>
                 </div>
               </article>

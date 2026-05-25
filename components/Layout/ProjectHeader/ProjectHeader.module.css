@@ -129,13 +129,14 @@
   fill: var(--foreground);
 }
 
-.navBtn {
+.projectNavLink {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 42px;
   height: 42px;
   padding: 8px;
+  gap: 12px;
 }
 
 .icon {
