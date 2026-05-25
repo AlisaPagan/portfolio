@@ -20,8 +20,8 @@
   pointer-events: none;
   z-index: 0;
   background-image:
-    radial-gradient(circle at top left, var(--accent) 0%, transparent 45%),
-    radial-gradient(circle at bottom right, var(--accent) 0%, transparent 45%);
+    radial-gradient(circle at top left, var(--glow) 0%, transparent 45%),
+    radial-gradient(circle at bottom right, var(--glow) 0%, transparent 45%);
   background-size: 100%;
   opacity: 0.25;
 }

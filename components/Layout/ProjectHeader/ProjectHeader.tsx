@@ -113,7 +113,7 @@ function ProjectHeader({ currentProjectId }: projectHeaderProps) {
         <div className={`${styles.navBtnsWrap} `}>
           <LinkButton
             href={`/projects/${prevProject.id}`}
-            aria-label="previous-project"
+            aria-label={`Previous project: ${prevProject.title}`}
             className={styles.projectNavLink}
           >
             <Icon icon={GoChevronLeft} size={28} className={styles.icon} />
@@ -122,7 +122,7 @@ function ProjectHeader({ currentProjectId }: projectHeaderProps) {
 
           <LinkButton
             href={`/projects/${nextProject.id}`}
-            aria-label="next-project"
+            aria-label={`Next project: ${nextProject.title}`}
             className={styles.projectNavLink}
           >
             <span className={styles.btnText}>Next</span>
@@ -132,7 +132,7 @@ function ProjectHeader({ currentProjectId }: projectHeaderProps) {
 
         <Link
           href="#top"
-          area-label="go-up"
+          aria-label="Back to top"
           className={`${styles.topLink} ${showLink ? styles.linkVisible : ""}`}
         >
           <Icon

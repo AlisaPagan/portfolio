@@ -2,7 +2,6 @@ import { Project } from "@/components/Home/Projects/project";
 import styles from "./ProjectCard.module.css";
 import Image from "next/image";
 import Tag from "../Tag/Tag";
-import Button from "../Button/Button";
 import Icon from "../Icon/Icon";
 import { GoLinkExternal } from "react-icons/go";
 import { PiGithubLogo, PiBrowser } from "react-icons/pi";
@@ -35,6 +34,7 @@ export function ProjectCard({ project }: projectCardProps) {
             <Link
               href={project.links.github}
               target="_blank"
+              rel="noopener noreferrer"
               aria-label="View GitHub repo"
               className={styles.iconLink}
             >
@@ -46,6 +46,7 @@ export function ProjectCard({ project }: projectCardProps) {
             <Link
               href={project.links.frontend}
               target="_blank"
+              rel="noopener noreferrer"
               aria-label="View GitHub repo frontend"
               className={styles.iconLink}
             >
@@ -57,6 +58,7 @@ export function ProjectCard({ project }: projectCardProps) {
             <Link
               href={project.links.backend}
               target="_blank"
+              rel="noopener noreferrer"
               aria-label="View GitHub repo backend"
               className={styles.iconLink}
             >
@@ -68,6 +70,7 @@ export function ProjectCard({ project }: projectCardProps) {
             <Link
               href={project.links.live}
               target="_blank"
+              rel="noopener noreferrer"
               aria-label="View live project"
               className={styles.iconLink}
             >

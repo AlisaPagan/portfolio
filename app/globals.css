@@ -25,6 +25,7 @@
   --small-accent: #e66e23;
 
   --accent: #6d43cd;
+  --glow: #6d43cd;
 
   --grid-color: rgba(217, 217, 217, 0.05);
 
@@ -68,6 +69,7 @@ html[data-theme="light"] {
 
   --small-accent: #ef772d;
   --accent: #6b3bd8;
+  --glow: #ac98db;
 
   --grid-color: rgba(212, 212, 212, 0.2);
 

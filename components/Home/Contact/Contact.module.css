@@ -11,8 +11,8 @@
   pointer-events: none;
   z-index: 0;
   background-image:
-    radial-gradient(circle at top right, var(--accent) 0%, transparent 45%),
-    radial-gradient(circle at bottom left, var(--accent) 0%, transparent 45%);
+    radial-gradient(circle at top right, var(--glow) 0%, transparent 45%),
+    radial-gradient(circle at bottom left, var(--glow) 0%, transparent 45%);
   background-size: 100%;
   opacity: 0.25;
 }

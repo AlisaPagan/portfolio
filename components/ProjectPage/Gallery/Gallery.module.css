@@ -13,7 +13,7 @@
   z-index: 0;
   background-image: radial-gradient(
     circle at center,
-    var(--accent) 0%,
+    var(--glow) 0%,
     transparent 65%
   );
 

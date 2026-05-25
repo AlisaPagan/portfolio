@@ -13,6 +13,7 @@ function ProjectsFilter({ activeFilter, onFilterChange }: ProjectsFilterProps) {
       <Button
         variant="text"
         onClick={() => onFilterChange("all")}
+        aria-pressed={activeFilter === "all"}
         className={`${activeFilter === "all" ? styles.activeFilter : ""} ${styles.filterBtn}`}
       >
         All
@@ -20,6 +21,7 @@ function ProjectsFilter({ activeFilter, onFilterChange }: ProjectsFilterProps) {
       <Button
         variant="text"
         onClick={() => onFilterChange("dev")}
+        aria-pressed={activeFilter === "dev"}
         className={`${activeFilter === "dev" ? styles.activeFilter : ""} ${styles.filterBtn}`}
       >
         Dev
@@ -27,6 +29,7 @@ function ProjectsFilter({ activeFilter, onFilterChange }: ProjectsFilterProps) {
       <Button
         variant="text"
         onClick={() => onFilterChange("ux")}
+        aria-pressed={activeFilter === "ux"}
         className={`${activeFilter === "ux" ? styles.activeFilter : ""} ${styles.filterBtn}`}
       >
         UX

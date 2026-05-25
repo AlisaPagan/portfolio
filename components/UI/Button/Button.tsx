@@ -11,6 +11,9 @@ type ButtonProps = {
   type?: "button" | "submit";
   className?: string;
   ref?: React.Ref<HTMLButtonElement>;
+  "aria-label"?: string;
+  "aria-pressed"?: boolean;
+  "aria-current"?: React.AriaAttributes["aria-current"];
 };
 
 function Button({
@@ -21,6 +24,9 @@ function Button({
   type = "button",
   className,
   ref,
+  "aria-label": ariaLabel,
+  "aria-pressed": ariaPressed,
+  "aria-current": ariaCurrent,
 }: ButtonProps) {
   return (
     <button
@@ -28,6 +34,9 @@ function Button({
       type={type}
       disabled={disabled}
       onClick={onClick}
+      aria-label={ariaLabel}
+      aria-pressed={ariaPressed}
+      aria-current={ariaCurrent}
       className={`${styles.btn}  ${styles[variant]} ${className ?? ""}`}
     >
       {children}

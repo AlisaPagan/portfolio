@@ -74,7 +74,7 @@ function ContactForm() {
       onSubmit={handleSubmit}
       validationSchema={FormSchema}
     >
-      {({ isSubmitting }) => (
+      {({ errors, isSubmitting, touched }) => (
         <Form className={styles.contactForm}>
           <div className={styles.inputWrapper}>
             <label className={styles.inputLabel} htmlFor={`${fieldId}-name`}>
@@ -88,8 +88,10 @@ function ContactForm() {
               name="name"
               className={styles.input}
               placeholder="John Doe"
+              aria-describedby={`${fieldId}-name-error`}
+              aria-invalid={touched.name && errors.name ? "true" : undefined}
             />
-            <p className={styles.error}>
+            <p className={styles.error} id={`${fieldId}-name-error`}>
               <ErrorMessage name="name" />
             </p>
           </div>
@@ -105,8 +107,10 @@ function ContactForm() {
               name="email"
               className={styles.input}
               placeholder="johndoe@example.com"
+              aria-describedby={`${fieldId}-email-error`}
+              aria-invalid={touched.email && errors.email ? "true" : undefined}
             />
-            <p className={styles.error}>
+            <p className={styles.error} id={`${fieldId}-email-error`}>
               <ErrorMessage name="email" />
             </p>
           </div>
@@ -134,8 +138,12 @@ function ContactForm() {
               className={styles.textArea}
               placeholder="Hi Alisa, I'd like to talk about..."
               as="textarea"
+              aria-describedby={`${fieldId}-message-error`}
+              aria-invalid={
+                touched.message && errors.message ? "true" : undefined
+              }
             ></Field>
-            <p className={styles.error}>
+            <p className={styles.error} id={`${fieldId}-message-error`}>
               <ErrorMessage name="message" />
             </p>
           </div>

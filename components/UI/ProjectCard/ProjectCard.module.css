@@ -43,17 +43,18 @@
   padding: 4px 8px;
   border-radius: 50px;
   box-shadow: 0 2px 2px var(--highlight);
-  color: var(--primary-btn-text);
   text-transform: capitalize;
   text-align: center;
 }
 
 .labelType {
+  color: var(--primary-btn-text);
   background-color: var(--accent);
   border: 1px solid var(--secondary-back-border);
 }
 
 .labelProgress {
+  color: var(--foreground);
   background-color: var(--secondary-btn);
   border: 1px solid var(--secondary-back-border);
 }

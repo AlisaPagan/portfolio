@@ -82,7 +82,9 @@ function Contact() {
                   <Link
                     href={"https://github.com/AlisaPagan"}
                     target="_blank"
+                    rel="noopener noreferrer"
                     className={styles.socialLink}
+                    aria-label="Visit Alisa's GitHub"
                   >
                     <Icon
                       icon={PiGithubLogo}
@@ -95,7 +97,9 @@ function Contact() {
                   <Link
                     href={"https://www.linkedin.com/in/alisa-pagan/"}
                     target="_blank"
+                    rel="noopener noreferrer"
                     className={styles.socialLink}
+                    aria-label="Visit Alisa's LinkedIn"
                   >
                     <Icon
                       icon={PiLinkedinLogoLight}

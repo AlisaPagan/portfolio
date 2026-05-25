@@ -191,6 +191,7 @@ function Header() {
               href={"/#about"}
               onClick={() => handleSectionClick("about")}
               className={getDesktopLinkClassName("about")}
+              aria-current={activeSection === "about" ? "location" : undefined}
             >
               About
             </Link>
@@ -198,6 +199,9 @@ function Header() {
               href={"/#skills"}
               onClick={() => handleSectionClick("skills")}
               className={getDesktopLinkClassName("skills")}
+              aria-current={
+                activeSection === "skills" ? "location" : undefined
+              }
             >
               Skills
             </Link>
@@ -205,6 +209,9 @@ function Header() {
               href={"/#projects"}
               onClick={() => handleSectionClick("projects")}
               className={getDesktopLinkClassName("projects")}
+              aria-current={
+                activeSection === "projects" ? "location" : undefined
+              }
             >
               Projects
             </Link>
@@ -212,6 +219,9 @@ function Header() {
               href={"/#experience"}
               onClick={() => handleSectionClick("experience")}
               className={getDesktopLinkClassName("experience")}
+              aria-current={
+                activeSection === "experience" ? "location" : undefined
+              }
             >
               Experience
             </Link>
@@ -219,6 +229,11 @@ function Header() {
               href={"/#ongoing-and-learning"}
               onClick={() => handleSectionClick("ongoing-and-learning")}
               className={getDesktopLinkClassName("ongoing-and-learning")}
+              aria-current={
+                activeSection === "ongoing-and-learning"
+                  ? "location"
+                  : undefined
+              }
             >
               Ongoing & Learning
             </Link>
@@ -226,6 +241,9 @@ function Header() {
               href={"/#contact"}
               onClick={() => handleSectionClick("contact")}
               className={getDesktopLinkClassName("contact")}
+              aria-current={
+                activeSection === "contact" ? "location" : undefined
+              }
             >
               Contact
             </Link>
@@ -257,6 +275,7 @@ function Header() {
             aria-label="About"
             onClick={() => handleSectionClick("about")}
             className={getMobileLinkClassName("about")}
+            aria-current={activeSection === "about" ? "location" : undefined}
           >
             <Icon
               size={30}
@@ -271,6 +290,7 @@ function Header() {
             aria-label="Skills"
             onClick={() => handleSectionClick("skills")}
             className={getMobileLinkClassName("skills")}
+            aria-current={activeSection === "skills" ? "location" : undefined}
           >
             <Icon
               size={30}
@@ -282,9 +302,12 @@ function Header() {
 
           <Link
             href="/#projects"
-            aria-label="projects"
+            aria-label="Projects"
             onClick={() => handleSectionClick("projects")}
             className={getMobileLinkClassName("projects")}
+            aria-current={
+              activeSection === "projects" ? "location" : undefined
+            }
           >
             <Icon
               size={30}
@@ -299,6 +322,9 @@ function Header() {
             aria-label="Experience"
             onClick={() => handleSectionClick("experience")}
             className={getMobileLinkClassName("experience")}
+            aria-current={
+              activeSection === "experience" ? "location" : undefined
+            }
           >
             <Icon
               size={30}
@@ -310,9 +336,14 @@ function Header() {
 
           <Link
             href="/#ongoing-and-learning"
-            aria-label="Ongoing-and-learning"
+            aria-label="Ongoing projects and learning"
             onClick={() => handleSectionClick("ongoing-and-learning")}
             className={getMobileLinkClassName("ongoing-and-learning")}
+            aria-current={
+              activeSection === "ongoing-and-learning"
+                ? "location"
+                : undefined
+            }
           >
             <Icon
               size={30}
@@ -327,6 +358,7 @@ function Header() {
             aria-label="Contact"
             onClick={() => handleSectionClick("contact")}
             className={getMobileLinkClassName("contact")}
+            aria-current={activeSection === "contact" ? "location" : undefined}
           >
             <Icon
               size={30}
