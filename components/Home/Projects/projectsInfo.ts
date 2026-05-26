@@ -335,28 +335,40 @@ const projects: Project[] = [
       "Raty.js",
     ],
 
-    image: "/mebleria-main.webp",
+    image: "/mebleria-featured.webp",
     imageAlt: "Mebleria furniture store project preview",
 
     gallery: [
       {
-        src: "/mebleria-1.webp",
-        alt: "GoRaiding raid browsing",
+        src: "/mebleria-popular.webp",
+        alt: "Mebleria furniture store popular products preview",
       },
 
       {
-        src: "/mebleria-2.webp",
+        src: "/mebleria-devices.webp",
         alt: "GoRaiding raid creation",
       },
+    ],
 
+    sliderGallery: [
       {
-        src: "/mebleria-3.webp",
-        alt: "GoRaiding raid requests management",
+        src: "/mebleria-preview-1.webp",
+        alt: "Mebleria project home and categories",
       },
 
       {
-        src: "/mebleria-4.webp",
-        alt: "GoRaiding raid user profile",
+        src: "/mebleria-preview-2.webp",
+        alt: "Mebleria project filtered products",
+      },
+
+      {
+        src: "/mebleria-preview-3.webp",
+        alt: "Mebleria project about and popular products",
+      },
+
+      {
+        src: "/mebleria-preview-4.webp",
+        alt: "Mebleria project FAQs and reviews",
       },
     ],
 
@@ -367,8 +379,8 @@ const projects: Project[] = [
   },
 
   {
-    id: "flowbloom",
-    title: "FlowBloom",
+    id: "yogaloom",
+    title: "YogaBloom",
     year: "2025",
     type: "Landing page",
     status: "completed",
@@ -378,7 +390,7 @@ const projects: Project[] = [
     shortDescription:
       "Responsive yoga studio landing page built as a team HTML/CSS project.",
     description:
-      "FlowBloom is a one-page yoga studio landing page focused on clean semantic markup, adaptive layout, optimized assets, SVG sprite icons, and structured landing page sections. The project includes sections for classes, team, gallery, about, testimonials, pricing, and footer content.",
+      "YogaBloom is a one-page yoga studio landing page focused on clean semantic markup, adaptive layout, optimized assets, SVG sprite icons, and structured landing page sections. The project includes sections for classes, team, gallery, about, testimonials, pricing, and footer content.",
 
     role: [
       "Team Lead",
@@ -396,7 +408,7 @@ const projects: Project[] = [
       "A structured one-page website with anchor navigation, service sections, team content, gallery, testimonials, pricing, and footer subscription/contact areas.",
 
     devFocus: [
-      "FlowBloom was built as a responsive HTML/CSS landing page focused on clean structure, semantic markup, and accurate implementation from the design brief. The project included anchor navigation, section-based page layout, optimized images, SVG sprite icons, and responsive styling across common screen sizes.",
+      "YogaBloom was built as a responsive HTML/CSS landing page focused on clean structure, semantic markup, and accurate implementation from the design brief. The project included anchor navigation, section-based page layout, optimized images, SVG sprite icons, and responsive styling across common screen sizes.",
       "As Team Lead, I helped organize the implementation process, divide work between team members, and keep the layout consistent with the technical requirements. The main development focus was building a polished static page with reliable responsive behavior and clean front-end structure.",
     ],
 
@@ -422,8 +434,8 @@ const projects: Project[] = [
       "Responsive Design",
     ],
 
-    image: "/flowbloom.webp",
-    imageAlt: "FlowBloom yoga studio landing page preview",
+    image: "/yoga-bloom-main.webp",
+    imageAlt: "YogaBloom yoga studio landing page preview",
 
     gallery: [
       {

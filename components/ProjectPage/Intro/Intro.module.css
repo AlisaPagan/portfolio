@@ -101,7 +101,7 @@
   .content {
     flex-direction: row-reverse;
     gap: 40px;
-    align-items: flex-end;
+    align-items: center;
   }
 
   .metaList {

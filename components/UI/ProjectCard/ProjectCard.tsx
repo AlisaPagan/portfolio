@@ -20,8 +20,8 @@ export function ProjectCard({ project }: projectCardProps) {
         <Image
           src={project.image}
           alt={project.imageAlt}
-          width={400}
-          height={400}
+          width={1920}
+          height={1920}
           className={styles.cardImage}
         />
         <div className={styles.labelWrapper}>
