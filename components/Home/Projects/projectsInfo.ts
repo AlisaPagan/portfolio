@@ -118,7 +118,7 @@ const projects: Project[] = [
 
   {
     id: "go-raiding",
-    title: "Go Raiding",
+    title: "GoRaiding",
     year: "2026",
     type: "Full-stack app",
     status: "in progress",
@@ -129,7 +129,7 @@ const projects: Project[] = [
       "Mobile-first raid organization platform for World of Warcraft players.",
 
     description:
-      "Go Raiding is an in-progress full-stack platform for World of Warcraft players who want a better way to organize, browse, join, and manage raids outside the game. The project is inspired by OpenRaid and focuses on raid requirements, player reputation, character information, and approval-based raid participation.",
+      "GoRaiding is an in-progress full-stack platform for World of Warcraft players who want a better way to organize, browse, join, and manage raids outside the game. The project is inspired by OpenRaid and focuses on raid requirements, player reputation, character information, and approval-based raid participation.",
 
     role: [
       "Created the product idea, feature direction, and full project scope",
@@ -159,7 +159,7 @@ const projects: Project[] = [
       "World of Warcraft players need a convenient way to organize raids outside the game while still being able to understand who is joining. In-game tools do not give raid organizers enough context about players, and older community tools like OpenRaid are no longer available. Raid leaders need clearer information about item level, role fit, raid history, and player reputation before approving participants.",
 
     solution:
-      "Go Raiding gives players a dedicated place to create, browse, join, and manage raids with stronger player context. Raid leaders can set minimum item level requirements, review applicants, approve or reject join requests, and see player ratings. Players can connect their Blizzard account, import character information, apply for raids that match their characters, and build reputation through reviews and raid history.",
+      "GoRaiding gives players a dedicated place to create, browse, join, and manage raids with stronger player context. Raid leaders can set minimum item level requirements, review applicants, approve or reject join requests, and see player ratings. Players can connect their Blizzard account, import character information, apply for raids that match their characters, and build reputation through reviews and raid history.",
 
     uxPlanning:
       "The UX planning started with research into how OpenRaid worked, how World of Warcraft raiding is organized, and what information raid leaders need before accepting players. I also interviewed an experienced World of Warcraft player to understand missing features, common frustrations, and useful improvements. The planning focused on mobile-first raid discovery, fast raid previews, approval-based joining, character-aware requirements, and reducing unnecessary navigation through bottom sheets and inline confirmations.",
@@ -219,39 +219,59 @@ const projects: Project[] = [
       "Axios",
     ],
 
-    image: "/go-raiding.webp",
+    image: "/go-raiding-hero.webp",
     imageAlt: "GoRaiding mobile app preview",
 
     wireframes: [
       {
-        src: "/go-raiding-wire.webp",
+        src: "/go-raiding-wereframe-1.webp",
         alt: "GoRaiding mobile app preview",
       },
 
       {
-        src: "/go-raiding-wire-1.webp",
+        src: "/go-raiding-wereframe-2.webp",
         alt: "GoRaiding raid browsing",
       },
 
       {
-        src: "/go-raiding-wire-2.webp",
+        src: "/go-raiding-wereframe-3.webp",
         alt: "GoRaiding raid creation",
       },
 
       {
-        src: "/go-raiding-wire-3.webp",
+        src: "/go-raiding-wereframe-4.webp",
         alt: "GoRaiding raid requests management",
       },
 
       {
-        src: "/go-raiding-wire-4.webp",
+        src: "/go-raiding-wereframe-5.webp",
+        alt: "GoRaiding raid user profile",
+      },
+
+      {
+        src: "/go-raiding-wereframe-6.webp",
+        alt: "GoRaiding raid user profile",
+      },
+
+      {
+        src: "/go-raiding-wereframe-7.webp",
+        alt: "GoRaiding raid user profile",
+      },
+
+      {
+        src: "/go-raiding-wereframe-8.webp",
+        alt: "GoRaiding raid user profile",
+      },
+
+      {
+        src: "/go-raiding-wereframe-9.webp",
         alt: "GoRaiding raid user profile",
       },
     ],
 
     gallery: [
       {
-        src: "/go-raiding-1.webp",
+        src: "/go-raiding-landing-raid.webp",
         alt: "GoRaiding raid browsing",
       },
 
@@ -268,6 +288,33 @@ const projects: Project[] = [
       {
         src: "/go-raiding-4.webp",
         alt: "GoRaiding raid user profile",
+      },
+    ],
+
+    sliderGallery: [
+      {
+        src: "/relax-map-preview-1.webp",
+        alt: "Relax Map project advantages and popular locations",
+      },
+
+      {
+        src: "/relax-map-preview-2.webp",
+        alt: "Relax Map project reviews",
+      },
+
+      {
+        src: "/relax-map-preview-3.webp",
+        alt: "Relax Map project edit location",
+      },
+
+      {
+        src: "/relax-map-preview-4.webp",
+        alt: "Relax Map project add location",
+      },
+
+      {
+        src: "/relax-map-preview-5.webp",
+        alt: "Relax Map project leave review",
       },
     ],
 
@@ -346,7 +393,7 @@ const projects: Project[] = [
 
       {
         src: "/mebleria-devices.webp",
-        alt: "GoRaiding raid creation",
+        alt: "Mebleria furniture store preview on different devices",
       },
     ],
 
@@ -439,28 +486,50 @@ const projects: Project[] = [
 
     gallery: [
       {
-        src: "/flowbloom-1.webp",
-        alt: "GoRaiding raid browsing",
+        src: "/yoga-bloom-programs.webp",
+        alt: "YogaBloom yoga studio programs list preview",
       },
 
       {
-        src: "/flowbloom-2.webp",
-        alt: "GoRaiding raid creation",
+        src: "/yoga-bloom-team.webp",
+        alt: "YogaBloom yoga studio teams section preview",
+      },
+    ],
+
+    sliderGallery: [
+      {
+        src: "/yogabloom-preview-1.webp",
+        alt: "Mebleria project home and categories",
       },
 
       {
-        src: "/flowbloom-3.webp",
-        alt: "GoRaiding raid requests management",
+        src: "/yogabloom-preview-2.webp",
+        alt: "Mebleria project filtered products",
       },
 
       {
-        src: "/flowbloom-4.webp",
-        alt: "GoRaiding raid user profile",
+        src: "/yogabloom-preview-3.webp",
+        alt: "Mebleria project about and popular products",
       },
 
       {
-        src: "/flowbloom-5.webp",
-        alt: "GoRaiding raid user profile",
+        src: "/yogabloom-preview-4.webp",
+        alt: "Mebleria project FAQs and reviews",
+      },
+
+      {
+        src: "/yogabloom-preview-5.webp",
+        alt: "Mebleria project FAQs and reviews",
+      },
+
+      {
+        src: "/yogabloom-preview-6.webp",
+        alt: "Mebleria project FAQs and reviews",
+      },
+
+      {
+        src: "/yogabloom-preview-7.webp",
+        alt: "Mebleria project FAQs and reviews",
       },
     ],
 
