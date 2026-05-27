@@ -220,22 +220,22 @@ const projects: Project[] = [
     ],
 
     image: "/go-raiding-hero.webp",
-    imageAlt: "GoRaiding mobile app preview",
+    imageAlt: "GoRaiding mobile app screens preview",
 
     wireframes: [
       {
         src: "/go-raiding-wereframe-1.webp",
-        alt: "GoRaiding mobile app preview",
+        alt: "GoRaiding create account wireframe",
       },
 
       {
         src: "/go-raiding-wereframe-2.webp",
-        alt: "GoRaiding raid browsing",
+        alt: "GoRaiding dashboard wireframe",
       },
 
       {
         src: "/go-raiding-wereframe-3.webp",
-        alt: "GoRaiding raid creation",
+        alt: "GoRaiding raid browsing wireframe",
       },
 
       {
@@ -245,49 +245,59 @@ const projects: Project[] = [
 
       {
         src: "/go-raiding-wereframe-5.webp",
-        alt: "GoRaiding raid user profile",
+        alt: "GoRaiding raid preview wireframe",
       },
 
       {
         src: "/go-raiding-wereframe-6.webp",
-        alt: "GoRaiding raid user profile",
+        alt: "GoRaiding create raid wireframe",
       },
 
       {
         src: "/go-raiding-wereframe-7.webp",
-        alt: "GoRaiding raid user profile",
+        alt: "GoRaiding raid management wireframe",
       },
 
       {
         src: "/go-raiding-wereframe-8.webp",
-        alt: "GoRaiding raid user profile",
+        alt: "GoRaiding user profile wireframe",
       },
 
       {
         src: "/go-raiding-wereframe-9.webp",
-        alt: "GoRaiding raid user profile",
+        alt: "GoRaiding account settings wireframe",
       },
     ],
 
     gallery: [
       {
         src: "/go-raiding-landing-raid.webp",
-        alt: "GoRaiding raid browsing",
+        alt: "GoRaiding landing page and raid browsing",
       },
 
       {
-        src: "/go-raiding-2.webp",
-        alt: "GoRaiding raid creation",
+        src: "/go-raiding-live-landing-page.webp",
+        alt: "GoRaiding landing page live",
       },
 
       {
-        src: "/go-raiding-3.webp",
-        alt: "GoRaiding raid requests management",
+        src: "/go-raiding-live-raid-browsing.webp",
+        alt: "GoRaiding raid browsing live",
       },
 
       {
-        src: "/go-raiding-4.webp",
-        alt: "GoRaiding raid user profile",
+        src: "/go-raiding-bottom-sheet.webp",
+        alt: "GoRaiding raid bottom sheet",
+      },
+
+      {
+        src: "/go-raiding-live-code-1.webp",
+        alt: "GoRaiding bottom sheet code snippet",
+      },
+
+      {
+        src: "/go-raiding-live-code-2.webp",
+        alt: "GoRaiding input code snippet",
       },
     ],
 

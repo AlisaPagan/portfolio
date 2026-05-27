@@ -14,8 +14,8 @@ function CurrentProcess({ project }: CurrentProcessProps) {
       <div className={`${styles.sectionWrapper} container`}>
         {project.gallery && (
           <ImageSlider
-            images={project.gallery}
-            navId={`${project.id}-gallery`}
+            images={project.gallery.slice(1)}
+            navId={`${project.id}-gallery-live`}
             className={styles.imgSwiper}
             slideClassName={styles.imgContainer}
             slidesPerView={1}
