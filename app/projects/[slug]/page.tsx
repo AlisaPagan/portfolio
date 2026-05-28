@@ -56,6 +56,7 @@ async function Project({ params }: Props) {
       {isGoRaiding && <GoRaidingDetails project={project} />}
 
       {/* ux next steps*/}
+
       {isGoRaiding && <Gallery project={project} />}
       {isUx && <NextSteps project={project} />}
 

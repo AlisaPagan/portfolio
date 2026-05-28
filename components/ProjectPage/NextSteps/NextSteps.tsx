@@ -1,7 +1,6 @@
 import styles from "./NextSteps.module.css";
 import { Project } from "@/components/Home/Projects/project";
 import Image from "next/image";
-import Gallery from "../Gallery/Gallery";
 import Icon from "@/components/UI/Icon/Icon";
 import { GoChevronRight } from "react-icons/go";
 
@@ -12,19 +11,22 @@ type NextStepsProps = {
 function NextSteps({ project }: NextStepsProps) {
   const isGoraiding = project.id === "go-raiding";
 
+  const galleryImage = project.gallery?.[1];
+  const showOutcomeImage = !isGoraiding && galleryImage;
+
   return (
     <section className={`${styles.NextStepsSection} section `}>
       <div
         className={`${styles.sectionWrapper} container ${isGoraiding ? styles.grWrapper : ""}`}
       >
         {!isGoraiding && <h2 className={styles.title}>Outcome</h2>}
-        {!isGoraiding && (
+        {showOutcomeImage && (
           <div className={styles.imgWrapper}>
             <Image
-              src={project.image}
-              alt={project.imageAlt}
-              width={500}
-              height={500}
+              src={galleryImage.src}
+              alt={galleryImage.alt}
+              width={1920}
+              height={1920}
               className={styles.img}
             />
           </div>

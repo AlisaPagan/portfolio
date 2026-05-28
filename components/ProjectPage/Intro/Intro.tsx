@@ -37,8 +37,8 @@ function Intro({ project }: IntroProps) {
                 <Image
                   src={introImg.src}
                   alt={introImg.alt}
-                  width={1080}
-                  height={1080}
+                  width={1920}
+                  height={1920}
                   className={styles.img}
                 />
               </div>

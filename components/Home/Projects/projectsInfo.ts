@@ -303,28 +303,58 @@ const projects: Project[] = [
 
     sliderGallery: [
       {
-        src: "/relax-map-preview-1.webp",
-        alt: "Relax Map project advantages and popular locations",
+        src: "/go-raiding-dashboard-preview.webp",
+        alt: "GoRaiding dashboard preview",
       },
 
       {
-        src: "/relax-map-preview-2.webp",
-        alt: "Relax Map project reviews",
+        src: "/go-raiding-browse-raids-preview.webp",
+        alt: "GoRaiding raid browsing preview",
       },
 
       {
-        src: "/relax-map-preview-3.webp",
-        alt: "Relax Map project edit location",
+        src: "/go-raiding-filters-preview.webp",
+        alt: "GoRaiding raid browsing filters preview",
       },
 
       {
-        src: "/relax-map-preview-4.webp",
-        alt: "Relax Map project add location",
+        src: "/go-raiding-join-raid-preview.webp",
+        alt: "GoRaiding join raid preview",
       },
 
       {
-        src: "/relax-map-preview-5.webp",
-        alt: "Relax Map project leave review",
+        src: "/go-raiding-create-raid-preview.webp",
+        alt: "GoRaiding create raid preview",
+      },
+
+      {
+        src: "/go-raiding-complete-raid-preview.webp",
+        alt: "GoRaiding complete raid preview",
+      },
+
+      {
+        src: "/go-raiding-manage-raid-requests-preview.webp",
+        alt: "GoRaiding manage raid requests preview",
+      },
+
+      {
+        src: "/go-raiding-user-profile-preview.webp",
+        alt: "GoRaiding user profile preview",
+      },
+
+      {
+        src: "/go-raiding-user-reviews-preview.webp",
+        alt: "GoRaiding user reviews preview",
+      },
+
+      {
+        src: "/go-raiding-user-settings-preview.webp",
+        alt: "GoRaiding user settings preview",
+      },
+
+      {
+        src: "/go-raiding-edit-characters-preview.webp",
+        alt: "GoRaiding edit characters preview",
       },
     ],
 
@@ -609,50 +639,92 @@ const projects: Project[] = [
 
     techStack: ["Adobe XD", "UX Research", "UI Design", "Visual Design"],
 
-    image: "/artisan-shop.webp",
-    imageAlt: "Artisan home decor shop website design preview",
+    image: "/artisan-shop-main.webp",
+    imageAlt: "Artisan shop website design preview",
 
     wireframes: [
       {
-        src: "/artisan-shop-wire.webp",
-        alt: "GoRaiding mobile app preview",
+        src: "/artisan-shop-landing-hero-wireframe.webp",
+        alt: "Artisan shop landing page hero wireframe",
       },
 
       {
-        src: "/artisan-shop-wire-1.webp",
-        alt: "GoRaiding raid browsing",
+        src: "/artisan-shop-featured-products-wireframe.webp.webp",
+        alt: "Artisan shop featured products wireframe",
       },
 
       {
-        src: "/artisan-shop-wire-2.webp",
-        alt: "GoRaiding raid creation",
+        src: "/artisan-shop-product-page-wireframe.webp",
+        alt: "Artisan shop product page wireframe",
+      },
+
+      {
+        src: "/artisan-shop-product-wireframe.webp",
+        alt: "Artisan shop product wireframe",
+      },
+
+      {
+        src: "/artisan-shop-contact-wireframe.webp",
+        alt: "Artisan shop contacts wireframe",
+      },
+
+      {
+        src: "/artisan-shop-review-newsletter-wireframe.webp",
+        alt: "Artisan shop reviews and newsletter wireframe",
+      },
+
+      {
+        src: "/artisan-shop-FAQs-wireframe.webp",
+        alt: "Artisan shop FAQs wireframe",
       },
     ],
 
     gallery: [
       {
-        src: "/artisan-shop-1.webp",
-        alt: "GoRaiding raid browsing",
+        src: "/artisan-shop-about-us.webp",
+        alt: "Artisan shop about us design preview",
       },
 
       {
-        src: "/artisan-shop-2.webp",
-        alt: "GoRaiding raid creation",
+        src: "/artisan-shop-product-preview.webp",
+        alt: "Artisan shop product design preview",
+      },
+    ],
+
+    sliderGallery: [
+      {
+        src: "/artisan-shop-homepage.webp",
+        alt: "Artisan shop homepage design preview",
       },
 
       {
-        src: "/artisan-shop-3.webp",
-        alt: "GoRaiding raid requests management",
+        src: "/artisan-shop-products-list.webp",
+        alt: "Artisan shop products list design preview",
       },
 
       {
-        src: "/artisan-shop-4.webp",
-        alt: "GoRaiding raid user profile",
+        src: "/artisan-shop-product-page.webp",
+        alt: "Artisan shop product page design preview",
       },
 
       {
-        src: "/artisan-shop-5.webp",
-        alt: "GoRaiding raid user profile",
+        src: "/artisan-shop-story.webp",
+        alt: "Artisan shop our story page design preview",
+      },
+
+      {
+        src: "/artisan-shop-contact-page.webp",
+        alt: "Artisan shop contact page design preview",
+      },
+
+      {
+        src: "/artisan-shop-about-us-faqs-page.webp",
+        alt: "Artisan shop FAQs page design preview",
+      },
+
+      {
+        src: "/artisan-shop-nav-menu-open.webp",
+        alt: "Artisan shop navigation menu design preview",
       },
     ],
   },

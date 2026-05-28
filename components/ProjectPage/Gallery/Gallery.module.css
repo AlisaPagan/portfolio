@@ -55,6 +55,14 @@
 .imgContainerVert {
   aspect-ratio: 9 / 16;
   max-height: 1080px;
+  max-height: 1920px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.note {
+  font-style: italic;
+  align-self: flex-start;
 }
 
 @media only screen and (min-width: 768px) {

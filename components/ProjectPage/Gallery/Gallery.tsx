@@ -9,9 +9,6 @@ type GalleryProps = {
 function Gallery({ project }: GalleryProps) {
   const isUx = project.categories.includes("ux");
   const isGoRaiding = project.id === "go-raiding";
-  const isWildcat = project.id === "wildcatworks";
-
-  const useNarrowGallery = isGoRaiding || isWildcat;
 
   return (
     <section
@@ -24,16 +21,18 @@ function Gallery({ project }: GalleryProps) {
         className={`${styles.sectionWrapper} container ${isGoRaiding ? styles.grWrapper : ""}`}
       >
         {isUx && !isGoRaiding && <h2 className={styles.title}>Screens</h2>}
-
+        {isUx && (
+          <p className={styles.note}>* Scroll the images to see full screen</p>
+        )}
         {project.sliderGallery && (
           <ImageSlider
             images={project.sliderGallery}
             navId={`${project.id}-gallery`}
             className={styles.imgSwiper}
-            slideClassName={`${styles.imgContainer} ${isGoRaiding ? styles.imgContainerVert : ""} ${isWildcat ? styles.imgContainerVert : ""}`}
+            slideClassName={`${styles.imgContainer} ${isUx ? styles.imgContainerVert : ""}  customScrollbar`}
             slidesPerView={1}
             slidesPerViewTablet={2}
-            slidesPerViewDesktop={useNarrowGallery ? 3 : 2}
+            slidesPerViewDesktop={isUx ? 3 : 2}
           />
         )}
       </div>
