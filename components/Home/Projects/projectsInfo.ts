@@ -753,6 +753,43 @@ const projects: Project[] = [
       },
     ],
 
+    sliderGallery: [
+      {
+        src: "/yogabloom-preview-1.webp",
+        alt: "Mebleria project home and categories",
+      },
+
+      {
+        src: "/yogabloom-preview-2.webp",
+        alt: "Mebleria project filtered products",
+      },
+
+      {
+        src: "/yogabloom-preview-3.webp",
+        alt: "Mebleria project about and popular products",
+      },
+
+      {
+        src: "/yogabloom-preview-4.webp",
+        alt: "Mebleria project FAQs and reviews",
+      },
+
+      {
+        src: "/yogabloom-preview-5.webp",
+        alt: "Mebleria project FAQs and reviews",
+      },
+
+      {
+        src: "/yogabloom-preview-6.webp",
+        alt: "Mebleria project FAQs and reviews",
+      },
+
+      {
+        src: "/yogabloom-preview-7.webp",
+        alt: "Mebleria project FAQs and reviews",
+      },
+    ],
+
     gallery: [
       {
         src: "/wildcatworks-1.webp",

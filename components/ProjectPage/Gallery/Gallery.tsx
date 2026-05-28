@@ -9,6 +9,9 @@ type GalleryProps = {
 function Gallery({ project }: GalleryProps) {
   const isUx = project.categories.includes("ux");
   const isGoRaiding = project.id === "go-raiding";
+  const isWildcat = project.id === "wildcatworks";
+
+  const useNarrowGallery = isGoRaiding || isWildcat;
 
   return (
     <section
@@ -27,10 +30,10 @@ function Gallery({ project }: GalleryProps) {
             images={project.sliderGallery}
             navId={`${project.id}-gallery`}
             className={styles.imgSwiper}
-            slideClassName={styles.imgContainer}
+            slideClassName={`${styles.imgContainer} ${isGoRaiding ? styles.imgContainerVert : ""} ${isWildcat ? styles.imgContainerVert : ""}`}
             slidesPerView={1}
             slidesPerViewTablet={2}
-            slidesPerViewDesktop={2}
+            slidesPerViewDesktop={useNarrowGallery ? 3 : 2}
           />
         )}
       </div>
