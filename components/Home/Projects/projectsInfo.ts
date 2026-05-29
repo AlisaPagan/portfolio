@@ -224,48 +224,38 @@ const projects: Project[] = [
 
     wireframes: [
       {
-        src: "/go-raiding-wereframe-1.webp",
-        alt: "GoRaiding create account wireframe",
+        src: "/goraiding-create-acc-dashboard-wireframe.webp",
+        alt: "GoRaiding create account and dashboard wireframe",
       },
 
       {
-        src: "/go-raiding-wereframe-2.webp",
-        alt: "GoRaiding dashboard wireframe",
+        src: "/goraiding-raid-browsing-and-filters-wireframe.webp",
+        alt: "GoRaiding raid browsing with filters wireframe",
       },
 
       {
-        src: "/go-raiding-wereframe-3.webp",
-        alt: "GoRaiding raid browsing wireframe",
+        src: "/goraiding-join-raid-wireframe.webp",
+        alt: "GoRaiding join raid wireframe",
       },
 
       {
-        src: "/go-raiding-wereframe-4.webp",
-        alt: "GoRaiding raid requests management",
-      },
-
-      {
-        src: "/go-raiding-wereframe-5.webp",
-        alt: "GoRaiding raid preview wireframe",
-      },
-
-      {
-        src: "/go-raiding-wereframe-6.webp",
+        src: "/goraiding-create-raid-wireframe.webp",
         alt: "GoRaiding create raid wireframe",
       },
 
       {
-        src: "/go-raiding-wereframe-7.webp",
-        alt: "GoRaiding raid management wireframe",
+        src: "/goraiding-manage-raid-wireframe.webp",
+        alt: "GoRaiding raid namagement wireframe",
       },
 
       {
-        src: "/go-raiding-wereframe-8.webp",
+        src: "/goraiding-user-profile-wireframe.webp",
         alt: "GoRaiding user profile wireframe",
       },
 
       {
-        src: "/go-raiding-wereframe-9.webp",
-        alt: "GoRaiding account settings wireframe",
+        src: "/goraiding-reviews-wireframe.webp",
+        alt: "GoRaiding reviews wireframe",
       },
     ],
 
@@ -800,28 +790,38 @@ const projects: Project[] = [
 
     wireframes: [
       {
-        src: "/wildcatworks-wereframe-1.webp",
+        src: "/wildcatworks-dashboard-wireframe.webp",
         alt: "WildcatWorks app dashboard wireframe",
       },
 
       {
-        src: "/wildcatworks-wereframe-2.webp",
+        src: "/wildcatworks-formula-calculation-wireframe.webp",
         alt: "WildcatWorks app formula calculation wireframe",
       },
 
       {
-        src: "/wildcatworks-wereframe-3.webp",
+        src: "/wildcatworks-unit-conversion-wireframe.webp",
         alt: "WildcatWorks app unit conversion wireframe",
       },
 
       {
-        src: "/wildcatworks-wereframe-4.webp",
+        src: "/wildcatworks-saved-results-wireframe.webp",
         alt: "WildcatWorks app saved calculation results wireframe",
       },
 
       {
-        src: "/wildcatworks-wereframe-5.webp",
-        alt: "WildcatWorks app adding new asset wireframe",
+        src: "/wildcatworks-assets-wireframe.webp",
+        alt: "WildcatWorks app assets wireframe",
+      },
+
+      {
+        src: "/wildcatworks-account-wireframe.webp",
+        alt: "WildcatWorks app user account wireframe",
+      },
+
+      {
+        src: "/wildcatworks-interactive-unit-wireframe.webp",
+        alt: "WildcatWorks app interactive unit conversions wireframe",
       },
     ],
 
