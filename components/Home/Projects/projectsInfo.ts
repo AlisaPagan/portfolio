@@ -795,33 +795,33 @@ const projects: Project[] = [
       "Python planned",
     ],
 
-    image: "/wildcatworks.webp",
-    imageAlt: "WildcatWorks app concept preview",
+    image: "/wildcatworks-hero.webp",
+    imageAlt: "WildcatWorks app dashboard preview",
 
     wireframes: [
       {
-        src: "/wildcatworks-wire.webp",
-        alt: "GoRaiding mobile app preview",
+        src: "/wildcatworks-wereframe-1.webp",
+        alt: "WildcatWorks app dashboard wireframe",
       },
 
       {
-        src: "/wildcatworks-wire-1.webp",
-        alt: "GoRaiding raid browsing",
+        src: "/wildcatworks-wereframe-2.webp",
+        alt: "WildcatWorks app formula calculation wireframe",
       },
 
       {
-        src: "/wildcatworks-wire-2.webp",
-        alt: "GoRaiding raid creation",
+        src: "/wildcatworks-wereframe-3.webp",
+        alt: "WildcatWorks app unit conversion wireframe",
       },
 
       {
-        src: "/wildcatworks-wire-3.webp",
-        alt: "GoRaiding raid requests management",
+        src: "/wildcatworks-wereframe-4.webp",
+        alt: "WildcatWorks app saved calculation results wireframe",
       },
 
       {
-        src: "/wildcatworks-wire-4.webp",
-        alt: "GoRaiding raid user profile",
+        src: "/wildcatworks-wereframe-5.webp",
+        alt: "WildcatWorks app adding new asset wireframe",
       },
     ],
 
@@ -864,7 +864,7 @@ const projects: Project[] = [
 
     gallery: [
       {
-        src: "/wildcatworks-1.webp",
+        src: "/wildcatworks-formula-calculation-mockup.webp",
         alt: "GoRaiding raid browsing",
       },
 
