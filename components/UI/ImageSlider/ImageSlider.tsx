@@ -86,6 +86,7 @@ function ImageSlider({
                 width={1920}
                 height={1920}
                 className={styles.img}
+                unoptimized
               ></Image>
             </SwiperSlide>
           ))}

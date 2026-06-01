@@ -293,58 +293,63 @@ const projects: Project[] = [
 
     sliderGallery: [
       {
-        src: "/go-raiding-dashboard-preview.webp",
-        alt: "GoRaiding dashboard preview",
+        src: "/goraiding-dashboard.png",
+        alt: "GoRaiding dashboard screen",
       },
 
       {
-        src: "/go-raiding-browse-raids-preview.webp",
-        alt: "GoRaiding raid browsing preview",
+        src: "/goraiding-raid-browsing.png",
+        alt: "GoRaiding raid browsing screen",
       },
 
       {
-        src: "/go-raiding-filters-preview.webp",
-        alt: "GoRaiding raid browsing filters preview",
+        src: "/goraiding-raid-browsing-filters.png",
+        alt: "GoRaiding raid browsing filters screen",
       },
 
       {
-        src: "/go-raiding-join-raid-preview.webp",
-        alt: "GoRaiding join raid preview",
+        src: "/goraiding-join-raid.png",
+        alt: "GoRaiding join raid screen",
       },
 
       {
-        src: "/go-raiding-create-raid-preview.webp",
-        alt: "GoRaiding create raid preview",
+        src: "/goraiding-create-raid.png",
+        alt: "GoRaiding create raid screen",
       },
 
       {
-        src: "/go-raiding-complete-raid-preview.webp",
-        alt: "GoRaiding complete raid preview",
+        src: "/goraiding-completed-raid.png",
+        alt: "GoRaiding complete raid screen",
       },
 
       {
-        src: "/go-raiding-manage-raid-requests-preview.webp",
-        alt: "GoRaiding manage raid requests preview",
+        src: "/goraiding-raid-management.png",
+        alt: "GoRaiding manage raid requests screen",
       },
 
       {
-        src: "/go-raiding-user-profile-preview.webp",
-        alt: "GoRaiding user profile preview",
+        src: "/goraiding-user-profile.png",
+        alt: "GoRaiding user profile screen",
       },
 
       {
-        src: "/go-raiding-user-reviews-preview.webp",
-        alt: "GoRaiding user reviews preview",
+        src: "/goraiding-user-reviews.png",
+        alt: "GoRaiding user reviews screen",
       },
 
       {
-        src: "/go-raiding-user-settings-preview.webp",
-        alt: "GoRaiding user settings preview",
+        src: "/goraiding-leave-review.png",
+        alt: "GoRaiding leave review screen",
       },
 
       {
-        src: "/go-raiding-edit-characters-preview.webp",
-        alt: "GoRaiding edit characters preview",
+        src: "/goraiding-user-settings.png",
+        alt: "GoRaiding user settings screen",
+      },
+
+      {
+        src: "/goraiding-characters-management.png",
+        alt: "GoRaiding edit characters screens",
       },
     ],
 
