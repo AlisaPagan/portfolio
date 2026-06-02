@@ -534,37 +534,37 @@ const projects: Project[] = [
     sliderGallery: [
       {
         src: "/yogabloom-preview-1.webp",
-        alt: "Mebleria project home and categories",
+        alt: "YogaBloom hero section and about",
       },
 
       {
         src: "/yogabloom-preview-2.webp",
-        alt: "Mebleria project filtered products",
+        alt: "YogaBloom classes section",
       },
 
       {
         src: "/yogabloom-preview-3.webp",
-        alt: "Mebleria project about and popular products",
+        alt: "YogaBloom team section",
       },
 
       {
         src: "/yogabloom-preview-4.webp",
-        alt: "Mebleria project FAQs and reviews",
+        alt: "YogaBloom gallery section",
       },
 
       {
         src: "/yogabloom-preview-5.webp",
-        alt: "Mebleria project FAQs and reviews",
+        alt: "YogaBloom advantages and testimonials sections",
       },
 
       {
         src: "/yogabloom-preview-6.webp",
-        alt: "Mebleria project FAQs and reviews",
+        alt: "YogaBloom pricing plans and footer section",
       },
 
       {
         src: "/yogabloom-preview-7.webp",
-        alt: "Mebleria project FAQs and reviews",
+        alt: "YogaBloom join now modal window",
       },
     ],
 
@@ -832,75 +832,80 @@ const projects: Project[] = [
 
     sliderGallery: [
       {
-        src: "/yogabloom-preview-1.webp",
-        alt: "Mebleria project home and categories",
+        src: "/wildcatworks-dashboard-logged-in-user-online-screen.png",
+        alt: "Wildcatworks dashboards for logged in online user screen",
       },
 
       {
-        src: "/yogabloom-preview-2.webp",
-        alt: "Mebleria project filtered products",
+        src: "/wildcatworks-formula-calculation-logged-in-user-online-screen.png",
+        alt: "Wildcatworks calculation result for logged in online user screen",
       },
 
       {
-        src: "/yogabloom-preview-3.webp",
-        alt: "Mebleria project about and popular products",
+        src: "/wildcatworks-save-calculation-result-logged-in-online-screen.png",
+        alt: "Wildcatworks save calculation result for logged in online user screen",
       },
 
       {
-        src: "/yogabloom-preview-4.webp",
-        alt: "Mebleria project FAQs and reviews",
+        src: "/wildcatworks-saved-calculation-result-logged-in-online-screen.png",
+        alt: "Wildcatworks saved calculation result for logged in online user screen",
       },
 
       {
-        src: "/yogabloom-preview-5.webp",
-        alt: "Mebleria project FAQs and reviews",
+        src: "/wildcatworks-single-unit-conversion-logged-in-online-screen.png",
+        alt: "Wildcatworks single unit conversion for logged in online user screen",
       },
 
       {
-        src: "/yogabloom-preview-6.webp",
-        alt: "Mebleria project FAQs and reviews",
+        src: "/wildcatworks-batch-units-conversion-logged-in-online-screen.png",
+        alt: "Wildcatworks batch units conversion for logged in online user screen",
       },
 
       {
-        src: "/yogabloom-preview-7.webp",
-        alt: "Mebleria project FAQs and reviews",
+        src: "/wildcatworks-multiple-units-conversion-logged-in-online-screen.png",
+        alt: "Wildcatworks multiple units conversion for logged in online user screen",
+      },
+
+      {
+        src: "/wildcatworks-account-management-logged-in-online-screen.png",
+        alt: "Wildcatworks account management for logged in online user screen",
+      },
+
+      {
+        src: "/wildcatworks-recent-calculation-result-logged-in-online-screen.png",
+        alt: "Wildcatworks recent calculations for logged in online user screen",
+      },
+
+      {
+        src: "/wildcatworks-interactive-unit-conversion-dashboard-logged-in-online-screen.png",
+        alt: "Wildcatworks interactive unit conversion dashboard for logged in online user screen",
+      },
+
+      {
+        src: "/wildcatworks-interactive-unit-conversion-tool-logged-in-online-screen.png",
+        alt: "Wildcatworks interactive unit conversion tool for logged in online user screen",
+      },
+
+      {
+        src: "/wildcatworks-assets-logged-in-online-screen.png",
+        alt: "Wildcatworks assets for logged in online user screen",
+      },
+
+      {
+        src: "/wildcatworks-formula-list-logged-in-online-screen.png",
+        alt: "Wildcatworks formula list for logged in online user screen",
       },
     ],
 
     gallery: [
       {
         src: "/wildcatworks-formula-calculation-mockup.webp",
-        alt: "GoRaiding raid browsing",
+        alt: "Wildcatworks formula calculation screen mockup",
       },
 
       {
-        src: "/wildcatworks-2.webp",
-        alt: "GoRaiding raid creation",
-      },
-
-      {
-        src: "/wildcatworks-3.webp",
-        alt: "GoRaiding raid requests management",
-      },
-
-      {
-        src: "/wildcatworks-4.webp",
-        alt: "GoRaiding raid user profile",
-      },
-
-      {
-        src: "/wildcatworks-5.webp",
-        alt: "GoRaiding raid user profile",
-      },
-
-      {
-        src: "/wildcatworks-6.webp",
-        alt: "GoRaiding raid user profile",
-      },
-
-      {
-        src: "/wildcatworks-7.webp",
-        alt: "GoRaiding raid user profile",
+        src: "/wildcatworks-dashboard-mockup.webp",
+        alt: "Wildcatworks dashboard screen mockup",
       },
     ],
   },
