@@ -42,3 +42,10 @@
   color: var(--btn-disabled-text);
   cursor: not-allowed;
 }
+
+@media only screen and (min-width: 768px) {
+  .img {
+    object-position: center;
+    height: 100%;
+  }
+}
