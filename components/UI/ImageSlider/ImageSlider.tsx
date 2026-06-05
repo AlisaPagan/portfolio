@@ -18,8 +18,11 @@ type GalleryImage = {
   alt: string;
 };
 
+type ImageSliderVariant = "cover" | "scroll";
+
 type ImageSliderProps = {
   images: GalleryImage[];
+  variant?: ImageSliderVariant;
   className?: string;
   slideClassName?: string;
   navId: string;
@@ -39,6 +42,7 @@ type ImageSliderProps = {
 
 function ImageSlider({
   images,
+  variant,
   className,
   slideClassName,
   navId,
@@ -55,6 +59,11 @@ function ImageSlider({
 }: ImageSliderProps) {
   const prevClass = `${navId}Prev`;
   const nextClass = `${navId}Next`;
+
+  const frameClass =
+    variant === "scroll" ? styles.scrollFrame : styles.coverFrame;
+
+  const imgClass = variant === "scroll" ? styles.scrollImg : styles.coverImg;
 
   return (
     <>
@@ -79,14 +88,18 @@ function ImageSlider({
           }}
         >
           {images.map((image) => (
-            <SwiperSlide key={image.src} className={slideClassName}>
-              <Image
-                src={image.src}
-                alt={image.alt}
-                width={1920}
-                height={1920}
-                className={styles.img}
-              ></Image>
+            <SwiperSlide key={image.src}>
+              <div
+                className={`${frameClass} ${slideClassName ?? ""}`.trim()}
+              >
+                <Image
+                  src={image.src}
+                  alt={image.alt}
+                  width={1920}
+                  height={1920}
+                  className={imgClass}
+                ></Image>
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>

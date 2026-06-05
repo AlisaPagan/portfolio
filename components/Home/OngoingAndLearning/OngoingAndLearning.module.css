@@ -55,10 +55,7 @@
 .imageContainer {
   border-radius: 4px;
   border: 1px solid var(--border);
-  width: 100%;
-  aspect-ratio: 2 / 3;
-  display: block;
-  overflow: hidden;
+  --image-slider-cover-aspect-ratio: 2 / 3;
 }
 
 .gallery {
@@ -193,8 +190,7 @@
   }
 
   .imageContainer {
-    height: 100%;
-    aspect-ratio: 1/2.2;
+    --image-slider-cover-aspect-ratio: 1 / 2.2;
   }
 
   .contentWrapper {
@@ -248,7 +244,7 @@
   }
 
   .imageContainer {
-    aspect-ratio: 1 / 1;
+    --image-slider-cover-aspect-ratio: 1 / 1;
   }
 
   .contentWrapper {

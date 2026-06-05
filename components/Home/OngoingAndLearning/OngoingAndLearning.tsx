@@ -37,6 +37,7 @@ function OngoingAndLearning() {
                       images={ongoingProject.gallery}
                       navId={`${ongoingProject.id}-gallery`}
                       className={styles.gallery}
+                      variant="cover"
                       slideClassName={styles.imageContainer}
                       slidesPerView={1}
                       slidesPerViewTablet={1}

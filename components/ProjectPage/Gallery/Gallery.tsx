@@ -9,6 +9,7 @@ type GalleryProps = {
 function Gallery({ project }: GalleryProps) {
   const isUx = project.categories.includes("ux");
   const isGoRaiding = project.id === "go-raiding";
+  const galleryVariant = isUx || isGoRaiding ? "scroll" : "cover";
 
   return (
     <section
@@ -28,6 +29,7 @@ function Gallery({ project }: GalleryProps) {
           <ImageSlider
             images={project.sliderGallery}
             navId={`${project.id}-gallery`}
+            variant={galleryVariant}
             className={styles.imgSwiper}
             slideClassName={`${styles.imgContainer} ${isUx ? styles.imgContainerVert : ""}  customScrollbar`}
             slidesPerView={1}

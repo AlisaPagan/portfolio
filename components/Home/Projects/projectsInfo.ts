@@ -644,7 +644,7 @@ const projects: Project[] = [
       },
 
       {
-        src: "/artisan-shop-featured-products-wireframe.webp.webp",
+        src: "/artisan-shop-featured-products-wireframe.webp",
         alt: "Artisan shop featured products wireframe",
       },
 

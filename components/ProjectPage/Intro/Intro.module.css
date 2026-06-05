@@ -37,6 +37,8 @@
 }
 
 .imageContainer {
+  display: flex;
+  align-items: flex-end;
   width: 100%;
 }
 
@@ -101,7 +103,7 @@
   .content {
     flex-direction: row-reverse;
     gap: 40px;
-    align-items: center;
+    align-items: flex-end;
   }
 
   .metaList {
