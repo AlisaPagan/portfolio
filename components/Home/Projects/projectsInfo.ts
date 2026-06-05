@@ -245,7 +245,7 @@ const projects: Project[] = [
 
       {
         src: "/goraiding-manage-raid-wireframe.webp",
-        alt: "GoRaiding raid namagement wireframe",
+        alt: "GoRaiding raid management wireframe",
       },
 
       {
@@ -319,7 +319,7 @@ const projects: Project[] = [
 
       {
         src: "/goraiding-completed-raid.png",
-        alt: "GoRaiding complete raid screen",
+        alt: "GoRaiding completed raid screen",
       },
 
       {
@@ -349,7 +349,7 @@ const projects: Project[] = [
 
       {
         src: "/goraiding-characters-management.png",
-        alt: "GoRaiding edit characters screens",
+        alt: "GoRaiding character management screen",
       },
     ],
 
@@ -527,7 +527,7 @@ const projects: Project[] = [
 
       {
         src: "/yoga-bloom-team.webp",
-        alt: "YogaBloom yoga studio teams section preview",
+        alt: "YogaBloom yoga studio team section preview",
       },
     ],
 
@@ -660,7 +660,7 @@ const projects: Project[] = [
 
       {
         src: "/artisan-shop-contact-wireframe.webp",
-        alt: "Artisan shop contacts wireframe",
+        alt: "Artisan shop contact page wireframe",
       },
 
       {
@@ -833,79 +833,79 @@ const projects: Project[] = [
     sliderGallery: [
       {
         src: "/wildcatworks-dashboard-logged-in-user-online-screen.png",
-        alt: "Wildcatworks dashboards for logged in online user screen",
+        alt: "WildcatWorks dashboard for logged-in online user screen",
       },
 
       {
         src: "/wildcatworks-formula-calculation-logged-in-user-online-screen.png",
-        alt: "Wildcatworks calculation result for logged in online user screen",
+        alt: "WildcatWorks formula calculation for logged-in online user screen",
       },
 
       {
         src: "/wildcatworks-save-calculation-result-logged-in-online-screen.png",
-        alt: "Wildcatworks save calculation result for logged in online user screen",
+        alt: "WildcatWorks save calculation result for logged-in online user screen",
       },
 
       {
         src: "/wildcatworks-saved-calculation-result-logged-in-online-screen.png",
-        alt: "Wildcatworks saved calculation result for logged in online user screen",
+        alt: "WildcatWorks saved calculation result for logged-in online user screen",
       },
 
       {
         src: "/wildcatworks-single-unit-conversion-logged-in-online-screen.png",
-        alt: "Wildcatworks single unit conversion for logged in online user screen",
+        alt: "WildcatWorks single unit conversion for logged-in online user screen",
       },
 
       {
         src: "/wildcatworks-batch-units-conversion-logged-in-online-screen.png",
-        alt: "Wildcatworks batch units conversion for logged in online user screen",
+        alt: "WildcatWorks batch unit conversion for logged-in online user screen",
       },
 
       {
         src: "/wildcatworks-multiple-units-conversion-logged-in-online-screen.png",
-        alt: "Wildcatworks multiple units conversion for logged in online user screen",
+        alt: "WildcatWorks multiple unit conversion for logged-in online user screen",
       },
 
       {
         src: "/wildcatworks-account-management-logged-in-online-screen.png",
-        alt: "Wildcatworks account management for logged in online user screen",
+        alt: "WildcatWorks account management for logged-in online user screen",
       },
 
       {
         src: "/wildcatworks-recent-calculation-result-logged-in-online-screen.png",
-        alt: "Wildcatworks recent calculations for logged in online user screen",
+        alt: "WildcatWorks recent calculations for logged-in online user screen",
       },
 
       {
         src: "/wildcatworks-interactive-unit-conversion-dashboard-logged-in-online-screen.png",
-        alt: "Wildcatworks interactive unit conversion dashboard for logged in online user screen",
+        alt: "WildcatWorks interactive unit conversion dashboard for logged-in online user screen",
       },
 
       {
         src: "/wildcatworks-interactive-unit-conversion-tool-logged-in-online-screen.png",
-        alt: "Wildcatworks interactive unit conversion tool for logged in online user screen",
+        alt: "WildcatWorks interactive unit conversion tool for logged-in online user screen",
       },
 
       {
         src: "/wildcatworks-assets-logged-in-online-screen.png",
-        alt: "Wildcatworks assets for logged in online user screen",
+        alt: "WildcatWorks assets for logged-in online user screen",
       },
 
       {
         src: "/wildcatworks-formula-list-logged-in-online-screen.png",
-        alt: "Wildcatworks formula list for logged in online user screen",
+        alt: "WildcatWorks formula list for logged-in online user screen",
       },
     ],
 
     gallery: [
       {
         src: "/wildcatworks-formula-calculation-mockup.webp",
-        alt: "Wildcatworks formula calculation screen mockup",
+        alt: "WildcatWorks formula calculation screen mockup",
       },
 
       {
         src: "/wildcatworks-dashboard-mockup.webp",
-        alt: "Wildcatworks dashboard screen mockup",
+        alt: "WildcatWorks dashboard screen mockup",
       },
     ],
   },

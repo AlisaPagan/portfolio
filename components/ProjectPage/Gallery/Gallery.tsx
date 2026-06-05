@@ -23,7 +23,9 @@ function Gallery({ project }: GalleryProps) {
       >
         {isUx && !isGoRaiding && <h2 className={styles.title}>Screens</h2>}
         {isUx && (
-          <p className={styles.note}>* Scroll the images to see full screen</p>
+          <p className={styles.note}>
+            * Scroll inside the images to view full screens.
+          </p>
         )}
         {project.sliderGallery && (
           <ImageSlider

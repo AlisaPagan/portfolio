@@ -6,7 +6,6 @@ type IconProps = {
   size?: number;
   className?: string;
   ariaHidden?: boolean;
-  href?: string;
 };
 
 function Icon({
@@ -14,14 +13,12 @@ function Icon({
   size = 24,
   className = "",
   ariaHidden = true,
-  href,
 }: IconProps) {
   return (
     <Icon
       size={size}
       className={`${styles.icon} ${className}`}
       aria-hidden={ariaHidden}
-      href={href}
     />
   );
 }

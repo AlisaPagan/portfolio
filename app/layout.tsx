@@ -26,8 +26,38 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Alisa Pagan Portfolio",
-  description: "Junior Full Stack Developer from Artesia, NM",
+  metadataBase: new URL("https://alisapagan.dev"),
+  title: {
+    default: "Alisa Pagan | Junior Full-Stack Developer & UX Designer",
+    template: "%s | Alisa Pagan",
+  },
+  description:
+    "Portfolio of Alisa Pagan, a junior full-stack developer and UX designer building responsive web applications with React, Next.js, TypeScript, Node.js, and modern UI/UX practices.",
+  openGraph: {
+    title: "Alisa Pagan | Junior Full-Stack Developer & UX Designer",
+    description:
+      "Portfolio of Alisa Pagan, featuring full-stack development, UX/UI design, and responsive web application projects.",
+    url: "https://alisapagan.dev",
+    siteName: "Alisa Pagan Portfolio",
+    images: [
+      {
+        // TODO: Replace with /og-image.webp after creating a dedicated 1200x630 social preview.
+        url: "/Alisa_Pagan.webp",
+        width: 1200,
+        height: 630,
+        alt: "Alisa Pagan portfolio preview",
+      },
+    ],
+    locale: "en_US",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Alisa Pagan | Junior Full-Stack Developer & UX Designer",
+    description:
+      "Portfolio featuring full-stack development, UX/UI design, and responsive web application projects.",
+    images: ["/Alisa_Pagan.webp"],
+  },
 };
 
 export default function RootLayout({

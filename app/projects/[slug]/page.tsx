@@ -1,4 +1,5 @@
 import styles from "./ProjectPage.module.css";
+import type { Metadata } from "next";
 import projects from "@/components/Home/Projects/projectsInfo";
 import type { Project } from "@/components/Home/Projects/project";
 import { notFound } from "next/navigation";
@@ -16,6 +17,54 @@ import ProjectHeader from "@/components/Layout/ProjectHeader/ProjectHeader";
 type Props = {
   params: Promise<{ slug: string }>;
 };
+
+export function generateStaticParams() {
+  return projects.map((project) => ({
+    slug: project.id,
+  }));
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+
+  const project = projects.find((project) => project.id === slug);
+
+  if (!project) {
+    return {
+      title: "Project Not Found",
+    };
+  }
+
+  const title = `${project.title} | Project`;
+  const description = project.shortDescription || project.description;
+  const image = project.image;
+
+  return {
+    title,
+    description,
+    openGraph: {
+      title: `${project.title} | Alisa Pagan Portfolio`,
+      description,
+      url: `/projects/${project.id}`,
+      siteName: "Alisa Pagan Portfolio",
+      images: [
+        {
+          url: image,
+          width: 1200,
+          height: 630,
+          alt: project.imageAlt,
+        },
+      ],
+      type: "article",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: `${project.title} | Alisa Pagan Portfolio`,
+      description,
+      images: [image],
+    },
+  };
+}
 
 async function Project({ params }: Props) {
   const { slug } = await params;
