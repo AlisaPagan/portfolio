@@ -11,46 +11,51 @@ const projects: Project[] = [
     featured: true,
 
     shortDescription:
-      "Full-stack platform for discovering, reviewing, creating, and editing relaxation locations.",
+      "Team-built full-stack platform for discovering, reviewing, creating, and editing relaxation locations.",
     description:
-      "Relax Map is a full-stack web platform where users can discover relaxation locations, read reviews, share their own places, and manage public user profiles. The project includes location browsing, filtering, content creation, editing flows, and profile-related functionality.",
+      "Relax Map is a full-stack team project where users can discover relaxation locations, filter and browse places, read reviews, share their own locations, and manage public user profiles. My work focused on connecting frontend features to backend data, replacing mock-data flows with real API calls, improving location and profile experiences, and helping coordinate the team through final implementation and cleanup.",
 
     role: [
       "Full-Stack Developer",
       "Scrum Master",
-      "Developed backend user endpoints for current user data and profile updates",
-      "Built frontend API utilities and proxy setup for frontend-backend communication",
-      "Worked on the frontend user profile experience",
-      "Organized team calls, workflow, and sprint communication",
-      "Collaborated with the Team Lead on code review, debugging, and final cleanup",
+      "Built backend user endpoints for profile-related functionality",
+      "Created frontend API utilities and proxy setup for backend communication",
+      "Built the populated user profile view with user-specific locations",
+      "Improved the locations page with real API data, filters, layout fixes, and show-more behavior",
+      "Fixed homepage reviews, popular locations, and location card data display",
+      "Finished create/edit location flows, including image upload handling with Cloudinary",
+      "Tested and debugged backend endpoints with Postman",
+      "Reviewed and fixed code across teammate contributions",
+      "Organized team calls, task coordination, and final cleanup with the Team Lead",
     ],
 
-    mainRole: "Full-Stack Developer",
+    mainRole: "Full-Stack Developer / Scrum Master",
 
     featuredRole: [
-      "Developed backend user endpoints for current user data and profile updates",
-      "Built frontend API utilities and proxy setup for frontend-backend communication",
-      "Worked on the frontend user profile experience",
+      "Built backend user endpoints and frontend API utilities",
+      "Connected location/profile features to real backend data",
+      "Improved locations, reviews, cards, filters, and create/edit flows",
     ],
 
     problem:
-      "Users need a simple way to find relaxing places, compare options, read real feedback, and share their own recommendations.",
+      "Users need a simple way to discover relaxing places, compare options, read real feedback, and share their own recommendations without relying on scattered lists or generic travel content.",
     solution:
-      "A searchable relaxation location platform with reviews, profiles, and tools for creating and editing user-generated content.",
+      "A full-stack location platform with searchable places, filters, reviews, user profiles, and create/edit flows for user-generated relaxation locations.",
 
     devFocus: [
-      "Relax Map was built as a full-stack team project with a Next.js frontend and an Express/MongoDB backend. My development work focused on connecting frontend features to backend data, including API utilities, proxy setup, user-related backend endpoints, and the profile update flow. I also worked on frontend UI fixes, debugging, and cleanup across location and profile-related sections.",
-      "Since this was a collaborative project, part of the technical process involved keeping implementation organized across frontend and backend tasks. I helped coordinate team workflow as Scrum Master, supported code review and debugging with the Team Lead, and made sure the final user-facing experience was more consistent before deployment.",
+      "Relax Map was built as a full-stack team project with a Next.js frontend and an Express/MongoDB backend. My main development work focused on making frontend features communicate correctly with backend data: user-related backend endpoints, frontend API utilities, proxy setup, profile functionality, location data display, filters, and create/edit location flows.",
+      "A large part of my contribution was turning incomplete or mock-data-based sections into working user-facing features. I fixed homepage reviews, popular locations, location cards, the all-locations page, image upload behavior, modal interactions, responsive styling issues, and several data display bugs. I also helped coordinate team workflow as Scrum Master, reviewed and fixed code, handled some pull requests and conflicts, and supported final cleanup with the Team Lead.",
     ],
 
     keyFeatures: [
       "Location discovery",
-      "Reviews",
-      "User profiles",
-      "Create and edit content",
-      "Filtering",
+      "Real API-driven location data",
+      "Filtering and show-more behavior",
+      "Reviews and ratings",
+      "User profiles with user-specific locations",
+      "Create and edit location flows",
+      "Cloudinary image upload handling",
       "Frontend-backend API integration",
-      "Profile update functionality",
     ],
 
     techStack: [
@@ -63,6 +68,8 @@ const projects: Project[] = [
       "Mongoose",
       "REST APIs",
       "Axios",
+      "Postman",
+      "Cloudinary",
       "Vercel",
       "Render",
     ],
@@ -129,94 +136,91 @@ const projects: Project[] = [
       "Mobile-first raid organization platform for World of Warcraft players.",
 
     description:
-      "GoRaiding is an in-progress full-stack platform for World of Warcraft players who want a better way to organize, browse, join, and manage raids outside the game. The project is inspired by OpenRaid and focuses on raid requirements, player reputation, character information, and approval-based raid participation.",
+      "GoRaiding is an in-progress full-stack product for World of Warcraft players who need a better way to organize, browse, join, and manage raids outside the game. I created the product idea, designed the full mobile-first experience in Figma, and started the frontend implementation with reusable UI components, layout patterns, and raid browsing interactions. The planned full-stack build includes user accounts, Blizzard account connection, character import, raid applications, reviews, ratings, and approval-based raid participation.",
 
     role: [
       "Created the product idea, feature direction, and full project scope",
-      "Led the mobile-first UX planning and product design for the full app experience",
-      "Researched OpenRaid, World of Warcraft raid organization, and player needs",
+      "Designed the full mobile-first UX/UI experience in Figma",
+      "Researched OpenRaid, current World of Warcraft raid organization workflows, and player needs",
       "Interviewed an experienced World of Warcraft player to define core use cases, pain points, and missing features",
       "Designed user flows for authentication, Blizzard account connection, character management, raid browsing, raid creation, raid applications, approvals, reviews, and user profiles",
-      "Planned the full-stack architecture for users, raids, characters, raid applications, reviews, ratings, and Blizzard account integration",
-      "Built the main frontend application structure with reusable UI components, layout patterns, modals, and bottom sheets",
-      "Implemented mobile-first raid browsing, raid details, creation, management, and user profile interfaces",
-      "Developed backend API functionality for raid organization, user data, character data, applications, reviews, and profile-related features",
-      "Integrated frontend data flows with the backend using Axios and TanStack Query",
-      "Implemented gated raid joining logic based on role availability, character requirements, item level, and raid status",
-      "Planned and integrated Blizzard OAuth and character import functionality",
-      "Coordinated project direction with two collaborators while owning the main product concept, UX direction, and core development work",
+      "Planned user flows for authentication, Blizzard account connection, character import, raid browsing, raid creation, raid applications, approvals, reviews, user profiles, settings, and character management",
+      "Planned the full-stack architecture for users, raids, characters, applications, reviews, ratings, and Blizzard account integration",
+      "Built the pre-auth landing page and started the frontend application structure",
+      "Built a reusable bottom sheet component for mobile modal-style interactions",
+      "Worked on reusable UI patterns for inputs, search, text areas, buttons, and raid browsing components",
+      "Collaborated with two developers while owning the product concept, UX direction, and main design system",
     ],
-    mainRole: "UX/UI Designer / Full-Stack Developer",
+    mainRole: "Product Designer / Full-Stack Developer",
 
     featuredRole: [
-      "Product owner and main developer",
-      "Designed the mobile-first UX and core user flows",
-      "Built the main frontend structure and reusable UI system",
-      "Planned and implemented raid organization logic",
+      "Created the product idea and full app scope",
+      "Designed the mobile-first UX/UI and core user flows",
+      "Built the landing page and reusable bottom sheet component",
+      "Planned full-stack raid, character, review, and Blizzard integration logic",
     ],
 
     problem:
-      "World of Warcraft players need a convenient way to organize raids outside the game while still being able to understand who is joining. In-game tools do not give raid organizers enough context about players, and older community tools like OpenRaid are no longer available. Raid leaders need clearer information about item level, role fit, raid history, and player reputation before approving participants.",
-
+      "World of Warcraft players often need to organize raids outside the game, but raid leaders still need reliable context before accepting participants. In-game tools do not provide enough information about a player’s item level, role fit, raid history, reputation, or reliability, and older community tools like OpenRaid are no longer available.",
     solution:
-      "GoRaiding gives players a dedicated place to create, browse, join, and manage raids with stronger player context. Raid leaders can set minimum item level requirements, review applicants, approve or reject join requests, and see player ratings. Players can connect their Blizzard account, import character information, apply for raids that match their characters, and build reputation through reviews and raid history.",
-
+      "GoRaiding gives players a dedicated place to create, browse, join, and manage raids with stronger player context. Raid leaders can review applicants, check character details, see ratings, and approve or reject requests. Players can browse available raids, select eligible characters, request to join groups, and build reputation through raid history and reviews.",
     uxPlanning:
-      "The UX planning started with research into how OpenRaid worked, how World of Warcraft raiding is organized, and what information raid leaders need before accepting players. I also interviewed an experienced World of Warcraft player to understand missing features, common frustrations, and useful improvements. The planning focused on mobile-first raid discovery, fast raid previews, approval-based joining, character-aware requirements, and reducing unnecessary navigation through bottom sheets and inline confirmations.",
-
+      "The UX planning started with research into old OpenRaid-style workflows, current World of Warcraft raid organization problems, and feedback from an experienced player. The main product decisions focused on mobile-first raid discovery, clear raid requirements, player reputation, character-aware joining, approval-based participation, and reducing navigation friction through bottom sheets and inline actions.",
     designProcess:
-      "I designed the mobile version first, including the sign-up flow, dashboard states with and without a connected Blizzard account, user profile, raid browsing, raid creation, raid management, character management, review flow, and gated join interactions. The interface uses bottom navigation for the main app areas and bottom sheets for raid previews, filters, creation steps, and confirmations so users can complete actions without losing their place.",
+      "I designed the full mobile-first flow in Figma, including authentication, Blizzard account connection, dashboard states, raid browsing, filters, raid details, raid creation, raid management, approval requests, reviews, user profiles, settings, and character management. The interface uses bottom navigation for core app areas and bottom sheets for previews, filters, creation steps, and confirmations so players can act without losing context.",
 
     uxDecisions: [
-      "Designed mobile-first so players can browse, manage, or check raid activity quickly from anywhere.",
-      "Used bottom navigation for the main app sections because it is easier to reach on mobile screens.",
-      "Planned gated raid joining so users can only apply when their character, role, and item level match the raid requirements.",
-      "Used bottom sheets for raid previews, filters, raid creation, and management actions to avoid sending users through too many separate pages.",
-      "Added inline confirmations for actions like leaving or deleting a raid to avoid stacking modals on top of bottom sheets.",
-      "Prioritized at-a-glance dashboard information for raids created by the user and raids the user joined.",
-      "Included ratings and reviews so raid leaders can evaluate players even when full review details are hidden.",
+      "Designed mobile-first so players can browse raids, check requests, and manage raid activity quickly from anywhere.",
+      "Used bottom navigation for the main app areas because raid browsing, dashboard access, and profiles need to stay reachable on mobile.",
+      "Planned gated raid joining so players can only request to join when their selected character meets role, item level, and raid status requirements.",
+      "Used bottom sheets for raid previews, filters, join requests, creation steps, and management actions to reduce page-hopping.",
+      "Added inline confirmations for actions like leaving or deleting a raid to avoid stacking multiple modal layers.",
+      "Prioritized dashboard previews for raids created by the user, raids joined by the user, and pending raid activity.",
+      "Included ratings and reviews so raid leaders can evaluate player reliability before approving requests.",
     ],
 
     currentDevProcess: [
-      "Built most of the core UI components.",
-      "Built a reusable bottom sheet component for modal-like mobile interactions.",
-      "Set up infinite query logic for paginated list loading.",
       "Built the pre-auth landing page.",
-      "Paused active development while finishing course projects and the portfolio.",
-      "Next step is finishing reusable UI components, then building login, sign-up, and core raid browsing flows.",
+      "Built a reusable bottom sheet component for modal-like mobile interactions.",
+      "Started the reusable frontend UI system for buttons, inputs, search, text areas, and raid browsing components.",
+      "Using mock raid data while the backend and database are still planned.",
+      "Collaborating with two developers on reusable components and frontend structure.",
+      "Next step is building login and sign-up pages, then moving into core raid browsing and account flows.",
     ],
 
     nextSteps: [
-      "Finish reusable UI components used across raid cards, profiles, forms, and bottom sheets.",
-      "Build login and sign-up UI with basic authentication logic.",
-      "Implement raid browsing and raid card components.",
+      "Finish reusable UI components used across forms, raid cards, filters, and bottom sheets.",
+      "Build login and sign-up screens.",
+      "Implement raid browsing, raid cards, filters, and raid details flows.",
       "Build raid creation and raid management flows.",
-      "Create backend models and API routes for users, raids, characters, applications, and reviews.",
-      "Add Blizzard OAuth and character import later in the development process.",
-      "Connect item level and character requirements to raid application logic.",
+      "Create backend models and API routes for users, raids, characters, applications, reviews, and ratings.",
+      "Add Blizzard account connection and character import.",
+      "Connect item level, role availability, character selection, and raid status to gated join logic.",
     ],
 
     keyFeatures: [
-      "Raid creation and management",
+      "Mobile-first raid browsing",
+      "Raid creation and management planning",
       "Approval-based raid joining",
-      "Minimum item level requirements",
+      "Character-aware raid applications",
+      "Minimum item level and role checks",
       "Player reviews and ratings",
-      "Raid history",
-      "Character previews for applicants",
-      "Raid browsing filters",
+      "Raid history and reputation planning",
+      "Blizzard account connection planning",
+      "Reusable bottom sheet interactions",
       "Dashboard previews for created and joined raids",
-      "Blizzard account connection and character import",
     ],
 
     techStack: [
       "Next.js",
       "React",
-      "TypeScript",
       "Node.js",
+      "TypeScript",
       "Express.js",
       "MongoDB",
       "TanStack Query",
       "Axios",
+      "Figma",
     ],
 
     image: "/go-raiding-hero.webp",
@@ -368,34 +372,40 @@ const projects: Project[] = [
     featured: false,
 
     shortDescription:
-      "Responsive furniture store web app built with vanilla JavaScript and API integration.",
+      "Responsive furniture store web app built as a JavaScript team project.",
     description:
-      "Mebleria is a student team project for an online furniture store. The app uses a provided Furniture Store API and includes product browsing, interactive UI components, notifications, sliders, FAQ accordion behavior, rating display, and HTTP requests through Axios.",
-
+      "Mebleria is a responsive furniture store web app built by a team using vanilla JavaScript, a provided Furniture Store API, and interactive UI libraries. My main contributions were building the responsive header and navigation, supporting team coordination as Scrum Master, helping with final UI polish, and assisting with visual and interaction fixes before deployment.",
     role: [
-      "Scrum Master",
       "Frontend Developer",
-      "Supported team workflow and communication",
-      "Worked with JavaScript-based frontend functionality",
-      "Helped connect interface behavior with API-driven content",
+      "Scrum Master",
+      "Built the responsive header and navigation across breakpoints",
+      "Implemented burger menu and anchor navigation behavior",
+      "Handled responsive styling for the header, including tablet layout adjustments",
+      "Helped fix visual layout issues in sections like reviews and popular products",
+      "Supported final UI polish and small CSS/JavaScript fixes before deployment",
+      "Organized team calls, standups, task division, and Trello workflow",
+      "Helped teammates stay on track and supported debugging during final cleanup",
+      "Prepared the project presentation",
     ],
 
-    mainRole: "Frontend Developer",
+    mainRole: "Frontend Developer / Scrum Master",
 
     problem:
-      "Furniture shoppers need a fast, mobile-friendly way to browse products, filter options, compare details, and interact with store content without unnecessary friction.",
+      "Furniture shoppers need a responsive storefront where they can browse products, view store content, and interact with key sections without layout issues or confusing navigation.",
     solution:
-      "A responsive furniture storefront with API-powered product data, interactive UI elements, notifications, ratings, and user-friendly browsing behavior.",
+      "A responsive furniture store interface with clear navigation, product sections, interactive UI components, reviews, FAQ behavior, notifications, and API-powered product content.",
 
     devFocus: [
-      "Mebleria was built as a JavaScript team project using a REST API to render product data, handle filtering, pagination, modals, and interactive page behavior. My work focused on frontend logic, responsive layout, styling fixes, and improving the user experience across product browsing and navigation interactions.",
-      "The project required combining UI structure with API-driven data, so a big part of the process was making sure dynamic content worked smoothly with the visual layout. I also helped coordinate the team as Scrum Master, debug issues, and polish the final implementation before deployment.",
+      "Mebleria was built as a JavaScript team project for a furniture store interface. My main development contribution was the responsive header and navigation, including the burger menu, anchor navigation behavior, and tablet-specific layout adjustments.",
+      "As Scrum Master, I helped organize calls, standups, task division, and Trello workflow for a team of about 10–11 people. Near the end of the project, I also helped with final polish, visual fixes, and small CSS/JavaScript debugging, including layout issues around the reviews and popular products sections.",
     ],
 
     keyFeatures: [
+      "Responsive header and navigation",
+      "Burger menu",
+      "Anchor navigation",
       "Product browsing",
-      "REST API integration",
-      "Axios HTTP requests",
+      "API-powered product content",
       "Interactive notifications",
       "Reviews slider",
       "FAQ accordion",
@@ -408,7 +418,6 @@ const projects: Project[] = [
       "REST API",
       "HTML5",
       "CSS3",
-      "SCSS",
       "Vite",
       "Axios",
       "Swiper.js",
@@ -472,36 +481,42 @@ const projects: Project[] = [
     shortDescription:
       "Responsive yoga studio landing page built as a team HTML/CSS project.",
     description:
-      "YogaBloom is a one-page yoga studio landing page focused on clean semantic markup, adaptive layout, optimized assets, SVG sprite icons, and structured landing page sections. The project includes sections for classes, team, gallery, about, testimonials, pricing, and footer content.",
-
+      "YogaBloom is a responsive one-page landing page for a yoga studio. The project focused on semantic HTML, adaptive CSS layout, optimized assets, SVG sprite usage, and structured landing page sections for classes, team, gallery, testimonials, pricing, and footer content.",
     role: [
-      "Team Lead",
       "Frontend Developer",
-      "Helped organize team implementation",
-      "Worked on HTML/CSS layout and responsive structure",
-      "Followed project technical requirements and code quality standards",
+      "Team Lead",
+      "Set up the project repository and supported the team Git workflow",
+      "Built the modal window layout and related open/close interaction styling",
+      "Implemented responsive HTML/CSS for assigned sections",
+      "Reviewed pull requests before merging into the main branch",
+      "Helped teammates debug layout issues and understand Git workflow",
+      "Fixed layout and styling issues across teammate sections when needed",
+      "Helped optimize image assets for the project",
+      "Checked final implementation against technical requirements before submission",
     ],
 
-    mainRole: "Frontend Developer",
+    mainRole: "Frontend Developer / Team Lead",
 
     problem:
-      "A yoga studio needs a simple landing page that explains the offer, presents classes and trainers, builds trust, and drives users toward joining a pricing package.",
+      "A yoga studio needs a clear landing page that explains the offer, presents classes and trainers, builds trust, and guides visitors toward joining a pricing plan.",
     solution:
-      "A structured one-page website with anchor navigation, service sections, team content, gallery, testimonials, pricing, and footer subscription/contact areas.",
-
+      "A structured one-page website with responsive sections, anchor navigation, class and team content, gallery, testimonials, pricing plans, modal interaction, and footer subscription/contact areas.",
     devFocus: [
-      "YogaBloom was built as a responsive HTML/CSS landing page focused on clean structure, semantic markup, and accurate implementation from the design brief. The project included anchor navigation, section-based page layout, optimized images, SVG sprite icons, and responsive styling across common screen sizes.",
-      "As Team Lead, I helped organize the implementation process, divide work between team members, and keep the layout consistent with the technical requirements. The main development focus was building a polished static page with reliable responsive behavior and clean front-end structure.",
+      "YogaBloom was built as a responsive HTML/CSS team project focused on semantic markup, adaptive layout, optimized assets, SVG sprite usage, and accurate implementation from the design brief. My direct development work included the modal window layout, related styling, responsive section work, and final visual fixes.",
+      "As Team Lead, I set up the repository, reviewed pull requests, helped teammates with Git and layout issues, and checked the implementation against project requirements before merging. This project strengthened my HTML/CSS fundamentals, responsive layout skills, and ability to coordinate code quality in a team workflow.",
     ],
 
     keyFeatures: [
       "One-page landing page",
-      "Anchor navigation",
       "Responsive layout",
       "Semantic HTML5 structure",
+      "Modal window interaction",
+      "Anchor navigation",
       "Optimized images",
       "SVG sprite icons",
       "Retina image support",
+      "Gallery section",
+      "Testimonials section",
       "Pricing section",
       "Footer subscription form",
     ],
@@ -510,6 +525,7 @@ const projects: Project[] = [
       "HTML5",
       "CSS3",
       "JavaScript",
+      "Vite",
       "modern-normalize",
       "Prettier",
       "SVG Sprite",

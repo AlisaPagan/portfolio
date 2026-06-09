@@ -7,20 +7,7 @@ import { RiLayoutMasonryLine } from "react-icons/ri";
 
 const skillGroups = [
   {
-    title: "Backend & APIs",
-    icon: CiServer,
-    skills: [
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Mongoose",
-      "REST APIs",
-      "Postman",
-    ],
-  },
-
-  {
-    title: "Frontend & CMS",
+    title: "Frontend",
     icon: PiBrowser,
     skills: [
       "JavaScript",
@@ -31,6 +18,19 @@ const skillGroups = [
       "CSS3",
       "WordPress",
       "Elementor",
+    ],
+  },
+
+  {
+    title: "Backend & APIs",
+    icon: CiServer,
+    skills: [
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "Mongoose",
+      "REST APIs",
+      "Postman",
     ],
   },
 

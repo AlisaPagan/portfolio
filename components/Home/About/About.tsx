@@ -25,26 +25,24 @@ function About() {
               <ul className={styles.highlightsList}>
                 <li className={styles.highlightsItem}>
                   <p className={styles.itemLabel}>Location:</p>
-                  <p className={styles.itemValue}>Artesia, NM</p>
+                  <p className={styles.itemValue}>Artesia, NM / Remote</p>
                 </li>
                 <li className={styles.highlightsItem}>
                   <p className={styles.itemLabel}>Background:</p>
                   <p className={styles.itemValue}>
-                    Designer turned full-stack developer
+                    Designer turned front-end developer
                   </p>
                 </li>
                 <li className={styles.highlightsItem}>
                   <p className={styles.itemLabel}>Focus:</p>
                   <p className={styles.itemValue}>
-                    Building full-stack web applications with modern JavaScript
-                    tools
+                    React, Next.js, TypeScript, responsive UI
                   </p>
                 </li>
                 <li className={styles.highlightsItem}>
                   <p className={styles.itemLabel}>Strengths:</p>
                   <p className={styles.itemValue}>
-                    UX-aware development, responsive interfaces, clean
-                    implementation
+                    UX-aware development, clean interfaces, clear communication
                   </p>
                 </li>
                 <li className={styles.highlightsItem}>
@@ -52,31 +50,39 @@ function About() {
                   <p className={styles.itemValue}>WordPress, Elementor</p>
                 </li>
                 <li className={styles.highlightsItem}>
+                  <p className={styles.itemLabel}>EXPERIENCE:</p>
+                  <p className={styles.itemValue}>
+                    5+ years in design and web work
+                  </p>
+                </li>
+                <li className={styles.highlightsItem}>
                   <p className={styles.itemLabel}>Availability:</p>
                   <p className={styles.itemValue}>
-                    Open to junior full-stack roles
+                    Open to junior front-end and web developer roles
                   </p>
                 </li>
               </ul>
               <div className={styles.descriptionWrapper}>
                 <p className={styles.description}>
-                  is simply dummy text of the printing and typesetting industry.
-                  Lorem Ipsum has been the standard dummy text ever since the
-                  1500s, when an unknown printer took a galley of type and
-                  scrambled it to make a type specimen book.
+                  Junior front-end developer with a background in UX/UI, web
+                  design, and visual design. Development became my next step
+                  because building the products behind the designs mattered as
+                  much as designing them.
                 </p>
 
                 <p className={styles.description}>
-                  It has survived not only five centuries, but also the leap
-                  into electronic typesetting, remaining essentially unchanged.
-                  It was popularised in the 1960s with the release of Letraset
-                  sheets containing
+                  15+ years of IT-adjacent experience across content, sales,
+                  project coordination, business analysis, WordPress/web design,
+                  and graphic design, including 5+ years focused on design and
+                  web work.
                 </p>
 
                 <p className={styles.description}>
-                  Lorem Ipsum passages, and more recently with desktop
-                  publishing software like Aldus PageMaker including versions of
-                  Lorem Ipsum.
+                  I’m looking for junior front-end and web developer roles where
+                  I can help build clean, responsive, user-facing interfaces. My
+                  strongest tools are HTML, CSS, JavaScript, React, and Next.js,
+                  with current full-stack project work using Node.js, Express,
+                  MongoDB, and REST APIs.
                 </p>
                 <a
                   href="/Alisa_Pagan_Fullstack_Developer.pdf"
