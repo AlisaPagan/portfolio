@@ -18,8 +18,8 @@ function Footer() {
               Alisa Pagan
             </Link>
             <p className={styles.position}>
-              Full Stack Engineer & <br />
-              UX Designer
+              Front-End Developer & <br />
+              UX/UI Designer
             </p>
           </div>
           <div className={styles.footerSection}>
