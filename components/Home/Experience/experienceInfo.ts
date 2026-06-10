@@ -22,9 +22,9 @@ export const jobs: Experience[] = [
     years: "2021 - present",
     location: "Remote",
     responsibilities: [
-      "Created marketing materials (ad banners, videos, store assets) for paid ad platforms.",
-      "Assisted with level assembly and playable ads for mobile games.",
-      "Collaborated with developers using JavaScript-based ad formats.",
+      "Created ad banners, video creatives, and store assets for paid advertising platforms.",
+      "Assisted with level assembly and playable ad content for mobile games.",
+      "Collaborated with developers on JavaScript-based playable ad formats.",
     ],
   },
 
@@ -36,8 +36,8 @@ export const jobs: Experience[] = [
     location: "Remote",
     responsibilities: [
       "Built client websites using WordPress and Elementor.",
-      "Designed logos and print materials for small businesses.",
-      "Assisted with content and digital marketing materials.",
+      "Designed logos, brand assets, and print materials for small businesses.",
+      "Created content and digital marketing materials for client projects.",
     ],
   },
 ];
@@ -45,7 +45,7 @@ export const jobs: Experience[] = [
 export const certifications: Certification[] = [
   {
     id: "full-stack-dev",
-    name: "Full-Stack Developer",
+    name: "Full-Stack Developer Certificate",
     company: "GoIT",
     year: "2026",
   },

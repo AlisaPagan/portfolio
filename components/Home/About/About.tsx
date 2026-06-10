@@ -11,10 +11,10 @@ function About() {
           <div className={styles.imageContainer}>
             <Image
               className={styles.img}
-              src="/Alisa_Pagan.webp"
-              alt="Alisa Pagan"
-              width={400}
-              height={400}
+              src="/Alisa_Pagan_image.webp"
+              alt="Alisa Pagan sitting at her desk"
+              width={1920}
+              height={1920}
               priority
             ></Image>
           </div>
@@ -46,11 +46,11 @@ function About() {
                   </p>
                 </li>
                 <li className={styles.highlightsItem}>
-                  <p className={styles.itemLabel}>CMS:</p>
+                  <p className={styles.itemLabel}>Web/CMS:</p>
                   <p className={styles.itemValue}>WordPress, Elementor</p>
                 </li>
                 <li className={styles.highlightsItem}>
-                  <p className={styles.itemLabel}>EXPERIENCE:</p>
+                  <p className={styles.itemLabel}>Experience:</p>
                   <p className={styles.itemValue}>
                     5+ years in design and web work
                   </p>
@@ -65,9 +65,9 @@ function About() {
               <div className={styles.descriptionWrapper}>
                 <p className={styles.description}>
                   Junior front-end developer with a background in UX/UI, web
-                  design, and visual design. Development became my next step
-                  because building the products behind the designs mattered as
-                  much as designing them.
+                  design, and visual design. Development became the next step
+                  because I wanted to build the products behind the designs, not
+                  only design them.
                 </p>
 
                 <p className={styles.description}>
@@ -81,8 +81,8 @@ function About() {
                   I’m looking for junior front-end and web developer roles where
                   I can help build clean, responsive, user-facing interfaces. My
                   strongest tools are HTML, CSS, JavaScript, React, and Next.js,
-                  with current full-stack project work using Node.js, Express,
-                  MongoDB, and REST APIs.
+                  alongside current full-stack project work with Node.js,
+                  Express, MongoDB, and REST APIs.
                 </p>
                 <a
                   href="/Alisa_Pagan_Fullstack_Developer.pdf"

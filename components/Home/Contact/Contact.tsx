@@ -20,7 +20,8 @@ function Contact() {
         <div className={styles.topInfo}>
           <h3 className={styles.subheading}>Get in Touch with Me</h3>
           <p className={styles.intro}>
-            is simply dummy text of the printing and typesetting industry.
+            Looking for a junior front-end developer with strong design sense?
+            Send me a message and let’s talk.
           </p>
         </div>
         <hr className="divider" />
