@@ -3,6 +3,7 @@ import { Poppins, Roboto, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import ToasterProvider from "@/components/UI/ToasterProvider/Toaster";
 import Footer from "@/components/Layout/Footer/Footer";
+import { Analytics } from "@vercel/analytics/next";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -75,6 +76,7 @@ export default function RootLayout({
         <ToasterProvider />
         {children}
         <Footer />
+        <Analytics />
       </body>
     </html>
   );
