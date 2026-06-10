@@ -7,7 +7,8 @@ export type ProjectType =
   | "Frontend app"
   | "Landing page"
   | "UX case study"
-  | "Concept app";
+  | "Concept app"
+  | "E-commerce concept";
 
 export type Project = {
   id: string;
@@ -32,6 +33,7 @@ export type Project = {
   uxPlanning?: string;
   currentDevProcess?: string[];
   devFocus?: string[];
+  outcome?: string;
 
   keyFeatures: string[];
   techStack: string[];

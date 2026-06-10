@@ -19,7 +19,12 @@ function NextSteps({ project }: NextStepsProps) {
       <div
         className={`${styles.sectionWrapper} container ${isGoraiding ? styles.grWrapper : ""}`}
       >
-        {!isGoraiding && <h2 className={styles.title}>Outcome</h2>}
+        {!isGoraiding && (
+          <>
+            <h2 className={styles.title}>Outcome</h2>
+            <p>{project.outcome}</p>
+          </>
+        )}
         {showOutcomeImage && (
           <div className={styles.imgWrapper}>
             <Image

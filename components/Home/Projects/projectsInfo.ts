@@ -592,63 +592,77 @@ const projects: Project[] = [
 
   {
     id: "artisan-shop",
-    title: "Artisan Home Decor Shop",
+    title: "Artisan Goods Shop",
     year: "2024",
-    type: "UX case study",
+    type: "E-commerce concept",
     status: "completed",
     categories: ["ux"],
     featured: false,
 
     shortDescription:
-      "E-commerce website concept for an artisan home decor shop.",
+      "Desktop e-commerce concept for a cozy artisan goods shop.",
     description:
-      "A desktop website concept for a small artisan home decor shop, focused on warm visual direction, product browsing, brand storytelling, and a polished boutique shopping experience. This is a design concept, not a live product.",
+      "Artisan Goods Shop is a desktop e-commerce concept created as a website template idea for a small handmade goods store. The design focuses on boutique product presentation, warm visual direction, large product photography, brand storytelling, and flexible product listing layouts for shops with small or growing inventories.",
 
     role: [
       "UX/UI Designer",
       "Visual Designer",
-      "Created desktop page designs",
-      "Designed product, category, story, FAQ, and contact-focused screens",
-      "Built the visual direction and layout system",
+      "Created the concept, visual direction, wireframes, and high-fidelity desktop screens",
+      "Designed homepage, product listing, product detail, story/about, FAQ, contact, and full-screen navigation screens",
+      "Created two product listing approaches for different inventory sizes",
+      "Designed custom decorative graphics and visual details",
+      "Planned the concept as a future frontend build with responsive layouts and custom shopping flow",
     ],
 
-    mainRole: "UX/UI Designer",
+    mainRole: "UX/UI Designer / Visual Designer",
 
     problem:
-      "Small artisan shops need to present products in a way that feels trustworthy, curated, and personal without looking like a generic marketplace.",
+      "Small artisan shops need a way to present handmade products as curated, personal, and trustworthy without looking like a generic marketplace or a mass-produced gift shop.",
     solution:
-      "A boutique-style e-commerce concept with editorial layouts, product-focused pages, brand storytelling, and clear shopping paths.",
-
+      "A boutique-style e-commerce concept with editorial layouts, large product photography, brand storytelling, flexible product listing options, and clear shopping paths for handmade goods.",
     designProcess:
-      "I designed this concept around the needs of a small artisan home decor brand: strong visual identity, product discovery, brand storytelling, and a calm boutique-style shopping experience. The design focuses on presenting products as curated pieces rather than generic catalog items.",
+      "The concept started as a template idea for a cozy artisan goods shop. I explored similar websites for visual inspiration, then created wireframes and high-fidelity desktop screens in Adobe XD. The design direction uses natural colors, deep navy accents, serif typography, large whitespace, and product-focused layouts to make the shop feel calm, curated, and more elevated than a standard catalog page.",
     uxDecisions: [
-      "Used an editorial-style layout to make the shop feel more curated and premium.",
-      "Separated product, category, story, FAQ, and contact screens to keep browsing clear and focused.",
-      "Added brand storytelling sections to make the shop feel personal and trustworthy.",
-      "Kept the visual direction warm, minimal, and product-focused so the handmade/decor items remain the main focus.",
-      "Designed desktop screens first as a polished concept, with responsive development planned as a future step.",
+      "Used an editorial-style layout to make the shop feel curated and boutique rather than marketplace-like.",
+      "Designed large product photography and generous whitespace to give handmade items more visual value and breathing room.",
+      "Created two product listing approaches: one for smaller inventories and one for shops that need category or grid-based browsing.",
+      "Separated homepage, product listing, product detail, story/about, FAQ, contact, and navigation screens to keep the template flexible.",
+      "Used brand storytelling sections to make the shop feel personal and trustworthy.",
+      "Chose natural colors, deep navy accents, serif typography, and soft visual details to support a handmade artisan feel.",
+      "Designed desktop screens first, with responsive tablet/mobile layouts planned as a future step.",
     ],
 
     nextSteps: [
       "Create responsive tablet and mobile layouts.",
       "Build the concept as a frontend e-commerce demo.",
-      "Add product data structure and filtering.",
-      "Connect product pages to dynamic routing.",
-      "Explore cart and checkout flow as a later phase.",
+      "Add product data structure, categories, and filtering.",
+      "Connect product and category pages to dynamic routing.",
+      "Design and build a custom cart and checkout flow.",
     ],
+
+    outcome:
+      "The final concept presents a polished boutique storefront for handmade goods, with a warm visual system, clear product browsing paths, and flexible page layouts that could be adapted for different artisan shop inventories. The result is a design direction that feels personal and curated while still leaving room for a future responsive frontend build with product data, dynamic routing, cart, and checkout.",
 
     keyFeatures: [
       "Homepage concept",
-      "Product listing pages",
+      "Full-screen navigation menu",
+      "Product listing variations",
       "Product detail page",
-      "Category page",
-      "Brand story page",
+      "Category browsing concept",
+      "Brand story/about page",
       "Contact page",
       "FAQ page",
       "Editorial-style visual direction",
+      "Custom decorative graphics",
     ],
 
-    techStack: ["Adobe XD", "UX Research", "UI Design", "Visual Design"],
+    techStack: [
+      "Adobe XD",
+      "Wireframing",
+      "UX/UI Design",
+      "Visual Design",
+      "E-commerce Design",
+    ],
 
     image: "/artisan-shop-main.webp",
     imageAlt: "Artisan shop website design preview",
@@ -711,6 +725,11 @@ const projects: Project[] = [
       {
         src: "/artisan-shop-products-list.webp",
         alt: "Artisan shop products list design preview",
+      },
+
+      {
+        src: "/artisan-shop-products-list-alternative.webp",
+        alt: "Artisan shop products list alternative design preview",
       },
 
       {
