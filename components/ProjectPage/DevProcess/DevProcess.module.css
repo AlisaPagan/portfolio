@@ -78,7 +78,7 @@
   align-items: center;
 }
 
-.icon {
+.infoListItem .icon {
   fill: var(--primary-btn);
   flex-shrink: 0;
 }
