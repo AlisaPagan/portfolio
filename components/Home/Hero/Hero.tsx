@@ -31,9 +31,9 @@ function Hero() {
       <div className={styles.grid}></div>
       <div className={`container ${styles.sectionWrapper}`}>
         <h1 className={styles.homeHeading}>Alisa Pagan</h1>
-        <h4 className={styles.homeSubheading}>
+        <h2 className={styles.homeSubheading}>
           Junior <span>Front-End Developer</span> & UX/UI Designer
-        </h4>
+        </h2>
         <div
           className={styles.scroller}
           data-direction="left"
