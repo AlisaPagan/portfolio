@@ -35,9 +35,9 @@ export const metadata: Metadata = {
   description:
     "Portfolio of Alisa Pagan, a junior front-end developer and UX/UI designer building responsive web applications with React, Next.js, TypeScript, Node.js, and modern UI/UX practices.",
   openGraph: {
-    title: "Alisa Pagan | Junior Front-End Developer & UX Designer",
+    title: "Alisa Pagan | Junior Front-End Developer & UX/UI Designer",
     description:
-      "Portfolio of Alisa Pagan, featuring front-end & full-stack development, UX/UI design, and responsive web application projects.",
+      "Portfolio featuring front-end development, UX/UI design, and full-stack project work.",
     url: "https://alisapagan.dev",
     siteName: "Alisa Pagan Portfolio",
     images: [
@@ -53,9 +53,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alisa Pagan | Junior Front-End Developer & UX Designer",
+    title: "Alisa Pagan | Junior Front-End Developer & UX/UI Designer",
     description:
-      "Portfolio featuring front-end & full-stack development, UX/UI design, and responsive web application projects.",
+      "Portfolio featuring front-end development, UX/UI design, and full-stack project work.",
     images: ["/Alisa_Pagan_OG_image.webp"],
   },
 };
