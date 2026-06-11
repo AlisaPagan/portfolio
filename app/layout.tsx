@@ -29,21 +29,20 @@ const robotoMono = Roboto_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://alisapagan.dev"),
   title: {
-    default: "Alisa Pagan | Junior Full-Stack Developer & UX Designer",
+    default: "Alisa Pagan | Junior Front-End Developer & UX/UI Designer",
     template: "%s | Alisa Pagan",
   },
   description:
-    "Portfolio of Alisa Pagan, a junior full-stack developer and UX designer building responsive web applications with React, Next.js, TypeScript, Node.js, and modern UI/UX practices.",
+    "Portfolio of Alisa Pagan, a junior front-end developer and UX/UI designer building responsive web applications with React, Next.js, TypeScript, Node.js, and modern UI/UX practices.",
   openGraph: {
-    title: "Alisa Pagan | Junior Full-Stack Developer & UX Designer",
+    title: "Alisa Pagan | Junior Front-End Developer & UX Designer",
     description:
-      "Portfolio of Alisa Pagan, featuring full-stack development, UX/UI design, and responsive web application projects.",
+      "Portfolio of Alisa Pagan, featuring front-end & full-stack development, UX/UI design, and responsive web application projects.",
     url: "https://alisapagan.dev",
     siteName: "Alisa Pagan Portfolio",
     images: [
       {
-        // TODO: Replace with /og-image.webp after creating a dedicated 1200x630 social preview.
-        url: "/Alisa_Pagan.webp",
+        url: "/Alisa_Pagan_OG_image.webp",
         width: 1200,
         height: 630,
         alt: "Alisa Pagan portfolio preview",
@@ -54,10 +53,10 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alisa Pagan | Junior Full-Stack Developer & UX Designer",
+    title: "Alisa Pagan | Junior Front-End Developer & UX Designer",
     description:
-      "Portfolio featuring full-stack development, UX/UI design, and responsive web application projects.",
-    images: ["/Alisa_Pagan.webp"],
+      "Portfolio featuring front-end & full-stack development, UX/UI design, and responsive web application projects.",
+    images: ["/Alisa_Pagan_OG_image.webp"],
   },
 };
 
