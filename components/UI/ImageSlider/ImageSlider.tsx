@@ -50,7 +50,7 @@ function ImageSlider({
   slidesPerView = 1,
   slidesPerViewTablet = 2,
   slidesPerViewDesktop = 3,
-  imageSizes = "(max-width: 767px) 100vw, (max-width: 1439px) 364px, 696px",
+  imageSizes = "(max-width: 767px) 375px, (max-width: 1439px) 364px, 696px",
 
   speed = 450,
   modules = [Navigation],

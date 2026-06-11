@@ -21,7 +21,7 @@ function CurrentProcess({ project }: CurrentProcessProps) {
             slidesPerView={1}
             slidesPerViewTablet={1}
             slidesPerViewDesktop={1}
-            imageSizes="(max-width: 767px) 100vw, (max-width: 1439px) 362px, 688px"
+            imageSizes="(max-width: 767px) 373px, (max-width: 1439px) 364px, 696px"
           />
         )}
 

@@ -33,7 +33,7 @@ function DevProcess({ project }: DevProcessProps) {
                 width={1920}
                 height={1080}
                 className={styles.img}
-                sizes="(max-width: 767px) 100vw, (max-width: 1439px) 768px, 1438px"
+                sizes="(max-width: 767px) 375px, (max-width: 1439px) 768px, 1438px"
               ></Image>
             </div>
           </>

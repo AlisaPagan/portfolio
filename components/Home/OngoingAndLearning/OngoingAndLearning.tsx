@@ -42,7 +42,7 @@ function OngoingAndLearning() {
                       slidesPerView={1}
                       slidesPerViewTablet={1}
                       slidesPerViewDesktop={1}
-                      imageSizes="(max-width: 767px) 100vw, (max-width: 1439px) 382px, 718px"
+                      imageSizes="(max-width: 767px) 375px, (max-width: 1439px) 382px, 718px"
                     />
                   )}
                 </div>

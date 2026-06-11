@@ -11,8 +11,8 @@ function UxProcess({ project }: UxProcessProps) {
   const isGoRaiding = project.id === "go-raiding";
 
   const wireframeImageSizes = isGoRaiding
-    ? "(max-width: 767px) 100vw, (max-width: 1439px) 366px, 698px"
-    : "(max-width: 767px) 100vw, (max-width: 1439px) 362px, 688px";
+    ? "(max-width: 767px) 375px, (max-width: 1439px) 366px, 698px"
+    : "(max-width: 767px) 375px, (max-width: 1439px) 362px, 688px";
 
   return (
     <section className={`${styles.uxProcess} section`}>

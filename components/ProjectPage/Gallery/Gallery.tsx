@@ -12,10 +12,10 @@ function Gallery({ project }: GalleryProps) {
   const galleryVariant = isUx || isGoRaiding ? "scroll" : "cover";
 
   const galleryImageSizes = isGoRaiding
-    ? "(max-width: 767px) 100vw, (max-width: 1439px) 364px, 415px"
+    ? "(max-width: 767px) 371px, (max-width: 1439px) 364px, 415px"
     : isUx
-      ? "(max-width: 767px) 100vw, (max-width: 1439px) 364px, 450px"
-      : "(max-width: 767px) 100vw, (max-width: 1439px) 364px, 696px";
+      ? "(max-width: 767px) 371px, (max-width: 1439px) 364px, 450px"
+      : "(max-width: 767px) 371px, (max-width: 1439px) 364px, 696px";
 
   return (
     <section
