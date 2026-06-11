@@ -763,65 +763,80 @@ const projects: Project[] = [
     id: "wildcatworks",
     title: "WildcatWorks",
     year: "2023",
-    type: "Concept app",
+    type: "Oilfield calculator concept",
     status: "planned",
     categories: ["ux", "ongoing"],
     featured: false,
 
     shortDescription:
-      "Oilfield formula calculator app concept for field and production workflows.",
+      "Mobile oilfield calculator concept for formulas, unit conversion, saved results, and field workflow support.",
     description:
-      "WildcatWorks is an app concept for oilfield-related calculations, formula lookup, unit conversion, and workflow support. The design focuses on helping users find formulas by asset type, calculate results, save history, and work with practical field data. Development is planned for the future.",
+      "WildcatWorks is a planned mobile app concept for oilfield workers who need faster access to formulas, unit conversions, saved calculations, notes, photos, and field communication tools. The idea started from real oilfield workflow frustrations and grew from a simple formula calculator into a broader field-support product concept with offline-friendly use, asset-based organization, and future company/team account features.",
 
     role: [
-      "Product idea",
-      "UX/UI Designer",
-      "Created app concept and flow planning",
-      "Designed formula discovery and calculation experience",
-      "Planned future development direction",
+      "Created the product concept based on oilfield workflow feedback",
+      "Researched oilfield calculation needs and field-worker pain points",
+      "Designed wireframes and high-fidelity mobile screens in Adobe XD",
+      "Planned formula lookup, calculation flows, unit conversion, saved results, notes, photo sharing, chat, and account features",
+      "Designed asset-based formula organization for faster field lookup",
+      "Planned online/offline behavior for unreliable field connectivity",
+      "Planned future development direction for a mobile MVP and backend calculation logic",
     ],
 
-    mainRole: "UX/UI Designer",
+    mainRole: "Product Designer / UX/UI Designer",
 
     problem:
-      "Oilfield calculations can be scattered across spreadsheets, notes, and manuals, which slows down field workflows and increases the chance of input mistakes.",
+      "Oilfield workers often rely on scattered formulas, notes, spreadsheets, unit converters, photos, and team messages while working in conditions where service can be unreliable. This slows down field work, increases the chance of wrong formulas or units, and makes it harder to save, repeat, or share calculation context.",
     solution:
-      "A structured calculator app with formula categories, guided inputs, unit conversion, saved history, and learning/reference content.",
+      "A mobile field-support app that organizes formulas by asset and workflow context, guides users through calculation inputs, supports unit conversion, saves results with notes/assets, and keeps core tools available offline. The broader concept also includes reference content, photo sharing/markup, chat, and future team/company account features.",
     designProcess:
-      "I planned WildcatWorks as a practical field-focused calculator app for oilfield workflows. The design direction started from organizing complex formulas into clearer categories, reducing manual lookup, and making calculations easier to access during real work situations.",
+      "I started with the core calculator idea, then expanded the product into a broader mobile workflow tool for field use. The wireframes and high-fidelity screens cover dashboard access, formula lookup, calculation inputs, saved results, unit conversion flows, asset management, account settings, photo sharing, chat, subscription/payment planning, and online/offline states.",
     uxDecisions: [
-      "Grouped formulas by asset type and workflow context to make lookup faster.",
-      "Planned guided calculation flows to reduce input mistakes.",
-      "Included saved history planning so users can review previous calculations.",
-      "Added unit conversion as a core feature because field data often uses mixed units.",
-      "Planned offline and online usage because field conditions may not always have reliable connection.",
+      "Grouped formulas by asset type and workflow context so users can find relevant calculations faster in the field.",
+      "Planned labeled calculation inputs so each formula is broken into clear required values instead of forcing users to interpret the formula manually.",
+      "Added unit conversion as a core feature because oilfield work often involves mixed units and repeated conversions.",
+      "Planned saved results with notes and asset connections so users can review, repeat, or share past calculations.",
+      "Included offline-friendly behavior because field locations may have weak or unreliable service.",
+      "Planned photo capture, markup, and sharing for cases where workers need to show equipment issues or field conditions.",
+      "Added glossary/reference planning to support newer workers as well as experienced users who need quick confirmation.",
     ],
 
     nextSteps: [
-      "Refine formula categories and calculation flows.",
-      "Validate formulas and edge cases before development.",
-      "Create updated mobile UI screens.",
-      "Build a first MVP with core calculators and unit conversion.",
-      "Add saved history, reference content, and offline support later.",
+      "Collect and organize a reliable formula library by asset type and workflow.",
+      "Validate formulas, units, and edge cases with reliable sources or experienced oilfield workers.",
+      "Refine MVP scope around core calculators, unit conversion, saved results, and offline behavior.",
+      "Update mobile UI screens where needed before development.",
+      "Build a first mobile MVP with core formula calculation and unit conversion.",
+      "Plan backend calculation logic, account storage, team/company features, and cloud sync.",
+      "Add photo sharing, chat, reference content, and advanced company features in later phases.",
     ],
 
+    outcome:
+      "The final concept presents a practical mobile product direction for oilfield fieldwork: a calculator-first app that expands into unit conversion, saved results, asset-based organization, offline use, and communication support. The design gives the future MVP a clear starting point while leaving room for formula validation, backend calculation logic, and team/company features before development.",
+
     uxPlanning:
-      "The app is planned around formula discovery, guided inputs, unit conversion, calculation history, and reference material. The goal is to make technical oilfield calculations easier to find, repeat, and understand without relying on scattered notes or spreadsheets.",
+      "The app concept was shaped around real oilfield workflow feedback, especially the need for quick formula access, reliable unit conversion, saved calculation history, and offline-friendly use. Planning focused on reducing manual lookup, helping users find the right formula faster, and keeping important field tools in one place instead of spread across spreadsheets, notes, search results, and messaging apps.",
     keyFeatures: [
-      "Formula lookup",
-      "Calculation flow",
-      "Asset-based formula categories",
-      "Unit conversion",
-      "Saved history planning",
-      "Offline/online workflow planning",
-      "Learning/reference section planning",
+      "Formula lookup by asset type",
+      "Guided calculation inputs",
+      "Single and batch unit conversion",
+      "Interactive unit conversion chart",
+      "Saved calculation results",
+      "Notes and asset connections",
+      "Online/offline workflow planning",
+      "Photo capture and sharing planning",
+      "Chat and team communication planning",
+      "Glossary and reference content",
+      "Account, subscription, and company/team planning",
     ],
 
     techStack: [
       "Adobe XD",
       "UX Research",
-      "UI Design",
       "Product Planning",
+      "Wireframing",
+      "UX/UI Design",
+      "Visual Design",
       "Python planned",
     ],
 

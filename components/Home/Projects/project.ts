@@ -8,7 +8,8 @@ export type ProjectType =
   | "Landing page"
   | "UX case study"
   | "Concept app"
-  | "E-commerce concept";
+  | "E-commerce concept"
+  | "Oilfield calculator concept";
 
 export type Project = {
   id: string;
