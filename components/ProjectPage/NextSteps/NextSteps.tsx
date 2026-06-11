@@ -33,6 +33,7 @@ function NextSteps({ project }: NextStepsProps) {
               width={1920}
               height={1920}
               className={styles.img}
+              sizes="(max-width: 767px) 100vw, (max-width: 1439px) 768px, 1438px"
             />
           </div>
         )}

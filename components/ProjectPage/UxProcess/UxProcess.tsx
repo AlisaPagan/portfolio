@@ -10,6 +10,10 @@ function UxProcess({ project }: UxProcessProps) {
   const isUx = project.categories.includes("ux");
   const isGoRaiding = project.id === "go-raiding";
 
+  const wireframeImageSizes = isGoRaiding
+    ? "(max-width: 767px) 100vw, (max-width: 1439px) 366px, 698px"
+    : "(max-width: 767px) 100vw, (max-width: 1439px) 362px, 688px";
+
   return (
     <section className={`${styles.uxProcess} section`}>
       <div className={styles.glow}></div>
@@ -25,6 +29,7 @@ function UxProcess({ project }: UxProcessProps) {
             slidesPerView={1}
             slidesPerViewTablet={isGoRaiding ? 2 : 1}
             slidesPerViewDesktop={isGoRaiding ? 2 : 1}
+            imageSizes={wireframeImageSizes}
           />
         )}
 

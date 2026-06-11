@@ -15,7 +15,7 @@ function About() {
               alt="Alisa Pagan sitting at her desk"
               width={1920}
               height={1920}
-              priority
+              sizes="(max-width: 767px) 100vw, (max-width: 1439px) 768px, 689px"
             ></Image>
           </div>
 

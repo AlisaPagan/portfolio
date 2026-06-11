@@ -16,6 +16,9 @@ function Intro({ project }: IntroProps) {
     alt: project.imageAlt,
   };
 
+  const introImageSizes =
+    "(max-width: 767px) 100vw, (max-width: 1439px) 364px, 700px";
+
   return (
     <section className={`${styles.intro} section`}>
       <div className={`${styles.sectionWrapper} container`}>
@@ -40,6 +43,7 @@ function Intro({ project }: IntroProps) {
                   width={1920}
                   height={1920}
                   className={styles.img}
+                  sizes={introImageSizes}
                 />
               </div>
             )}

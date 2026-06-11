@@ -30,6 +30,7 @@ type ImageSliderProps = {
   slidesPerView?: number;
   slidesPerViewTablet?: number;
   slidesPerViewDesktop?: number;
+  imageSizes?: string;
 
   speed?: number;
   modules?: SwiperModule[];
@@ -49,6 +50,7 @@ function ImageSlider({
   slidesPerView = 1,
   slidesPerViewTablet = 2,
   slidesPerViewDesktop = 3,
+  imageSizes = "(max-width: 767px) 100vw, (max-width: 1439px) 364px, 696px",
 
   speed = 450,
   modules = [Navigation],
@@ -89,15 +91,14 @@ function ImageSlider({
         >
           {images.map((image) => (
             <SwiperSlide key={image.src}>
-              <div
-                className={`${frameClass} ${slideClassName ?? ""}`.trim()}
-              >
+              <div className={`${frameClass} ${slideClassName ?? ""}`.trim()}>
                 <Image
                   src={image.src}
                   alt={image.alt}
                   width={1920}
                   height={1920}
                   className={imgClass}
+                  sizes={imageSizes}
                 ></Image>
               </div>
             </SwiperSlide>

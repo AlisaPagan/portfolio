@@ -11,6 +11,12 @@ function Gallery({ project }: GalleryProps) {
   const isGoRaiding = project.id === "go-raiding";
   const galleryVariant = isUx || isGoRaiding ? "scroll" : "cover";
 
+  const galleryImageSizes = isGoRaiding
+    ? "(max-width: 767px) 100vw, (max-width: 1439px) 364px, 415px"
+    : isUx
+      ? "(max-width: 767px) 100vw, (max-width: 1439px) 364px, 450px"
+      : "(max-width: 767px) 100vw, (max-width: 1439px) 364px, 696px";
+
   return (
     <section
       className={`${isUx ? styles.uxWrapper : ""}
@@ -37,6 +43,7 @@ function Gallery({ project }: GalleryProps) {
             slidesPerView={1}
             slidesPerViewTablet={2}
             slidesPerViewDesktop={isUx ? 3 : 2}
+            imageSizes={galleryImageSizes}
           />
         )}
       </div>
