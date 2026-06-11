@@ -60,7 +60,9 @@ function OngoingAndLearning() {
                       <span className={styles.goalLabel}>Problem: </span>
                       {ongoingProject.problem}
                     </li>
-                    <hr className="divider" />
+                    <li className={styles.dividerItem} aria-hidden="true">
+                      <hr className="divider" />
+                    </li>
 
                     <li className={styles.goalItem}>
                       <span className={styles.goalLabel}>Solution: </span>

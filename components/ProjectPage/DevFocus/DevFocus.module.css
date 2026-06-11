@@ -46,6 +46,11 @@
   opacity: 0.7;
 }
 
+.dividerItem {
+  width: 100%;
+  list-style: none;
+}
+
 @media only screen and (min-width: 768px) {
   .sectionWrapper {
     padding-top: 90px;

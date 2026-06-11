@@ -101,6 +101,11 @@
   opacity: 0.7;
 }
 
+.dividerItem {
+  width: 100%;
+  list-style: none;
+}
+
 .tagList {
   display: flex;
   align-items: center;
