@@ -1,5 +1,5 @@
 import ProjectCard from "@/components/UI/ProjectCard/ProjectCard";
-import { Project } from "../Projects/project";
+import type { ProjectPreview } from "../Projects/project";
 import styles from "./ProjectsSlider.module.css";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation } from "swiper/modules";
@@ -11,7 +11,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 type ProjectsGridProps = {
-  projects: Project[];
+  projects: ProjectPreview[];
 };
 
 function ProjectGrid({ projects }: ProjectsGridProps) {

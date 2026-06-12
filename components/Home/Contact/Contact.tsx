@@ -8,7 +8,7 @@ import {
 } from "react-icons/pi";
 import { CiLocationOn } from "react-icons/ci";
 import Link from "next/link";
-import ContactForm from "../ContactForm/ContactForm";
+import ContactForm from "../ContactForm/ContactFormClient";
 
 function Contact() {
   return (

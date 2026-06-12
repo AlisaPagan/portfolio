@@ -1,13 +1,13 @@
 import Image from "next/image";
 import styles from "./FeaturedProject.module.css";
-import { Project } from "../Projects/project";
+import type { ProjectPreview } from "../Projects/project";
 import Tag from "@/components/UI/Tag/Tag";
 import Icon from "@/components/UI/Icon/Icon";
 import { GoDotFill } from "react-icons/go";
 import LinkButton from "@/components/UI/LinkButton/LinkButton";
 
 type FeaturedProjectProps = {
-  project: Project;
+  project: ProjectPreview;
 };
 
 function FeaturedProject({ project }: FeaturedProjectProps) {

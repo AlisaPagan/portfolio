@@ -61,3 +61,20 @@ export type Project = {
     backend?: string;
   };
 };
+
+export type ProjectPreview = Pick<
+  Project,
+  | "id"
+  | "title"
+  | "year"
+  | "type"
+  | "status"
+  | "categories"
+  | "shortDescription"
+  | "role"
+  | "featuredRole"
+  | "techStack"
+  | "image"
+  | "imageAlt"
+  | "links"
+>;

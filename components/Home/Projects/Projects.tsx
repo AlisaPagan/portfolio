@@ -1,37 +1,31 @@
-"use client";
-
-import styles from "./Projects.module.css";
-import ProjectGrid from "../ProjectsSlider/ProjectsSlider";
-import type { ProjectFilter } from "./project";
-import { useState } from "react";
 import projects, { featuredProject } from "./projectsInfo";
-import ProjectsFilter from "../ProjectsFilter/ProjectsFilter";
-import FeaturedProject from "../FeaturedProject/FeaturedProject";
+import type { Project, ProjectPreview } from "./project";
+import ProjectsClient from "./ProjectsClient";
+
+const toProjectPreview = (project: Project): ProjectPreview => ({
+  id: project.id,
+  title: project.title,
+  year: project.year,
+  type: project.type,
+  status: project.status,
+  categories: project.categories,
+  shortDescription: project.shortDescription,
+  role: project.role,
+  featuredRole: project.featuredRole,
+  techStack: project.techStack,
+  image: project.image,
+  imageAlt: project.imageAlt,
+  links: project.links,
+});
 
 function Projects() {
-  const [activeFilter, setActiveFilter] = useState<ProjectFilter>("all");
-
-  const visibleProjects =
-    activeFilter === "all"
-      ? projects
-      : projects.filter((project) => project.categories.includes(activeFilter));
-
   return (
-    <section id="projects" className={`section ${styles.projects}`}>
-      <div className={`container ${styles.sectionWrapper}`}>
-        <h2 className={styles.heading}>Projects</h2>
-        {featuredProject && <FeaturedProject project={featuredProject} />}
-
-        <ProjectsFilter
-          activeFilter={activeFilter}
-          onFilterChange={setActiveFilter}
-        />
-
-        <div className={styles.projectGrid}>
-          <ProjectGrid projects={visibleProjects} />
-        </div>
-      </div>
-    </section>
+    <ProjectsClient
+      projects={projects.map(toProjectPreview)}
+      featuredProject={
+        featuredProject ? toProjectPreview(featuredProject) : null
+      }
+    />
   );
 }
 

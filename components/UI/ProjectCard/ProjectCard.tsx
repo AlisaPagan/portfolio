@@ -1,4 +1,4 @@
-import { Project } from "@/components/Home/Projects/project";
+import type { ProjectPreview } from "@/components/Home/Projects/project";
 import styles from "./ProjectCard.module.css";
 import Image from "next/image";
 import Tag from "../Tag/Tag";
@@ -10,7 +10,7 @@ import Link from "next/link";
 import LinkButton from "../LinkButton/LinkButton";
 
 type projectCardProps = {
-  project: Project;
+  project: ProjectPreview;
 };
 
 export function ProjectCard({ project }: projectCardProps) {
