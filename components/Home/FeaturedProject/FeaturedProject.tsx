@@ -23,6 +23,7 @@ function FeaturedProject({ project }: FeaturedProjectProps) {
             width={1080}
             height={1080}
             sizes="(max-width: 767px) 375px, (max-width: 1439px) 362px, 614px"
+            loading="eager"
           ></Image>
           <span className={styles.labelFeat}>Featured Project</span>
         </div>
