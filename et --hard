@@ -1,0 +1,254 @@
+[33mcommit 10fbe99247f71b1903c5c254d1c7d954f5467eb2[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Fri Jun 12 17:31:41 2026 -0600
+
+    testing lcp fix for mobile
+
+[33mcommit bc299b56ceae7bae643a63c419e81f2965c8bba7[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Fri Jun 12 17:09:55 2026 -0600
+
+    FIX: reduce logo size on mobile to improve LCP
+
+[33mcommit e8b347c2fd1506801abc05a28738fa38e6372709[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Fri Jun 12 16:52:26 2026 -0600
+
+    testing features for performance
+
+[33mcommit 3dabe93065a0578ec7e4cff73d9214803665bd9f[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Fri Jun 12 15:35:39 2026 -0600
+
+    test for optim
+
+[33mcommit b7ec9024d3f774c31595428fb992f6a6e0ef247f[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Fri Jun 12 15:24:32 2026 -0600
+
+    replace dynamic date in footer with static to test
+
+[33mcommit 97f03bbe7d2f62feadd699999118306106c377a9[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Fri Jun 12 15:05:40 2026 -0600
+
+    OPTIM: add min height to form container to optimize
+    Cumulative Layout Shift
+
+[33mcommit 4da91ac8dc5a9305b3d58eeb35a46646753972dc[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Fri Jun 12 13:57:34 2026 -0600
+
+    OPTIM: optimize code for desktop performance
+
+[33mcommit cd801eeae86976fb725261f5894f205ba042f49d[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Fri Jun 12 13:31:10 2026 -0600
+
+    OPTIMIZE: optimize code to impove performance
+
+[33mcommit 257aacf7de0a6347c76b94a76ef6679d4e4815fd[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Fri Jun 12 08:16:58 2026 -0600
+
+    change optimization on some images to test the speed
+
+[33mcommit 8409a3a88d810733fa3f4ba6161de2cdc3c4cf2f[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Thu Jun 11 11:53:45 2026 -0600
+
+    update sizes for retina
+
+[33mcommit d64cc61e991e97741994579551b5c71c547442b2[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Thu Jun 11 09:30:02 2026 -0600
+
+    add size prop to images to optimize retina
+
+[33mcommit 21ca43d4b92f5df642f1db3e7939e5dff5ea82ce[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Wed Jun 10 21:30:53 2026 -0600
+
+    UPDATE: update OG and seo descriptions
+
+[33mcommit 68400ae594668b7a24b153286778c9f7588413c8[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Wed Jun 10 19:24:17 2026 -0600
+
+    UPDATE: update seo and add OG image
+
+[33mcommit 2bc3e7db9e70d21dda232b090a0b796be7c42ec0[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Wed Jun 10 19:04:10 2026 -0600
+
+    FIX: heading hierarchy in hero on home
+
+[33mcommit 044897e042590788eef5cc80ceeb4da0379e0f13[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Wed Jun 10 18:54:56 2026 -0600
+
+    FIX: wrap in-list <hr> elements in <li>
+
+[33mcommit d8d4bf6d47c6f35890c787d42df7369428a13575[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Wed Jun 10 18:39:50 2026 -0600
+
+    CONTENT: add wildcatworks content
+
+[33mcommit 6f9907e8a288b6103f73a217b7f0b97145b8b0e8[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Wed Jun 10 14:28:34 2026 -0600
+
+    CONTENT: add artisan shop content
+    optimize some images
+
+[33mcommit a807de96cf9b5f98676d891bfeeac2458fd28750[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Wed Jun 10 09:45:18 2026 -0600
+
+    Add vercel analytics
+
+[33mcommit 82dd0781a3237de2a809ff1ef25876054b5d0596[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Wed Jun 10 08:28:01 2026 -0600
+
+    FIX: fix bullet icon color in DevProcess on prod
+
+[33mcommit 60a638e990c55179d8b6af57d9aee572778381bb[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Wed Jun 10 08:23:23 2026 -0600
+
+    FIX: fix image width on mobile in DevProcess section
+
+[33mcommit 74f5b2693bafaffe5b09623d15a635c2fa70caa1[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Tue Jun 9 21:31:31 2026 -0600
+
+    CONTENT: update tagline in footer
+
+[33mcommit 507dd9b6af8eba23012485fe48707f1e4a325d9f[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Tue Jun 9 21:26:58 2026 -0600
+
+    CONTENT: replace placeholder headshot in About
+    update content in contacts and experience
+    add favicon
+
+[33mcommit cae0efe7d8e958a5eb81d6df0d321bdd463e1f05[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Tue Jun 9 14:38:11 2026 -0600
+
+    CONTENT: add refined content to relaxmap, goraiding
+    mebleria and yogabloom
+
+[33mcommit 2f1c1924207107a4dd3ef094e2504fa1b3e05862[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Fri Jun 5 14:00:27 2026 -0600
+
+    Cleanup config, add SEO
+
+[33mcommit d7b235b63b75cf17d03aabef48cc6c5f12520c15[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Fri Jun 5 09:55:04 2026 -0600
+
+    UI: update img slider display with variants, fix
+    intro layout in ux pages
+
+[33mcommit c4f5dc900fa7f5226bd7f75564b1ede48a0683ba[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Wed Jun 3 09:53:14 2026 -0600
+
+    FIX: fix image slider img display on tablet
+
+[33mcommit 70642528e977144f5066faab2b94019f6b229796[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Mon Jun 1 20:55:20 2026 -0600
+
+    CONFIG: update next config to prevent auto download
+    of images on "open in new tab"
+
+[33mcommit ee761426f7b1b376cd3c29d6d2212d640f9052ed[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Mon Jun 1 20:38:47 2026 -0600
+
+    UI: add wildcatworks screens and mockup
+    improve screens quality in goraiding
+
+[33mcommit 516847f3b05e92e333f77fcaaf02d4daa320e80b[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Mon Jun 1 13:19:52 2026 -0600
+
+    UI: replace goraiding screens
+
+[33mcommit 112f06720a7b3b1632cf682ed575f1af99f0f922[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Fri May 29 10:52:13 2026 -0600
+
+    UI: add wildcatworks wireframes
+    replace goraiding wireframes
+
+[33mcommit cb23f6c7610b2f4994da7829927991c35bc38def[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Thu May 28 21:07:30 2026 -0600
+
+    UI: add wildcatworks imgs and wireframes
+
+[33mcommit fd385197d08746632c83b5ff87892a1f95d30d0e[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Thu May 28 12:11:53 2026 -0600
+
+    UI: add screens on go raiding
+    replace placeholders on artisan shop
+
+[33mcommit 82d9812e717885626dd80757d91111bc23dba14b[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Wed May 27 20:02:32 2026 -0600
+
+    UI: add goraiding screens preview and change the
+    size of gallery pics on goraiding and wildcatworks
+
+[33mcommit 1e638f520b223e0540b9a3c59f4b58f6b00187a4[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Wed May 27 11:45:46 2026 -0600
+
+    UI: add goraiding gallery imgs
+
+[33mcommit 55378f8835cc26030933b9c4c1acb80ca8e50c99[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Tue May 26 21:23:42 2026 -0600
+
+    UI: add yogabloom images, some goraiding images
+
+[33mcommit ad3a88ae078d89c8de70fb53f09457cc636cefda[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Mon May 25 20:54:17 2026 -0600
+
+    UI: replace mebleria images and flowbloom hero img
+
+[33mcommit 6f9252fc37083ca794f39071bf02793c960182e4[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Mon May 25 13:00:48 2026 -0600
+
+    UI: adjust gallery imgs styles
+
+[33mcommit 6688d2374a8b3b7c651c24c0e2319af5d825532f[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Mon May 25 12:57:37 2026 -0600
+
+    UI: replace placeholder images for relaxmap
+    adjust images preview
+
+[33mcommit 856cdccf408e787b2f61faa6447e3b281ae7fd8a[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Mon May 25 07:18:44 2026 -0600
+
+    UI: add padding for ProjectHeader
+
+[33mcommit 04a09ed44734cf3cac5babb73a498c5fd343b4dc[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
+Date:   Mon May 25 07:12:23 2026 -0600
+
+    FIX: fix meta box height bug
+
+[33mcommit 3eb6964d5edbaf5a6145ef5dcf9d949a00f0869f[m
+Author: Your Name <alisapodgaynaya023@gmail.com>
