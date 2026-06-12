@@ -65,8 +65,11 @@ function Header() {
   //active link
 
   const [activeSection, setActiveSection] = useState("");
+  const activeSectionRef = useRef("");
   const pendingSectionRef = useRef<SectionId | "">("");
   const pendingTimeoutRef = useRef<number | null>(null);
+  const scrollFrameRef = useRef<number | null>(null);
+  const isScrollTickingRef = useRef(false);
 
   useEffect(() => {
     const getHashSection = () => {
@@ -112,7 +115,12 @@ function Header() {
     };
 
     const updateActiveSection = () => {
-      setActiveSection(getHashSection());
+      const hashSection = getHashSection();
+
+      if (activeSectionRef.current !== hashSection) {
+        activeSectionRef.current = hashSection;
+        setActiveSection(hashSection);
+      }
     };
 
     updateActiveSection();
@@ -129,23 +137,43 @@ function Header() {
         }
       }
 
-      setActiveSection(visibleSection);
+      if (activeSectionRef.current !== visibleSection) {
+        activeSectionRef.current = visibleSection;
+        setActiveSection(visibleSection);
+      }
+
       updateUrl(visibleSection);
     };
 
-    window.addEventListener("scroll", updateSectionFromScroll, {
+    const scheduleSectionUpdate = () => {
+      if (isScrollTickingRef.current) return;
+
+      isScrollTickingRef.current = true;
+      scrollFrameRef.current = window.requestAnimationFrame(() => {
+        updateSectionFromScroll();
+        isScrollTickingRef.current = false;
+        scrollFrameRef.current = null;
+      });
+    };
+
+    window.addEventListener("scroll", scheduleSectionUpdate, {
       passive: true,
     });
-    window.addEventListener("resize", updateSectionFromScroll);
+    window.addEventListener("resize", scheduleSectionUpdate);
 
     window.addEventListener("hashchange", updateActiveSection);
 
     return () => {
+      if (scrollFrameRef.current !== null) {
+        window.cancelAnimationFrame(scrollFrameRef.current);
+      }
+
       if (pendingTimeoutRef.current) {
         window.clearTimeout(pendingTimeoutRef.current);
       }
-      window.removeEventListener("scroll", updateSectionFromScroll);
-      window.removeEventListener("resize", updateSectionFromScroll);
+
+      window.removeEventListener("scroll", scheduleSectionUpdate);
+      window.removeEventListener("resize", scheduleSectionUpdate);
       window.removeEventListener("hashchange", updateActiveSection);
     };
   }, []);
@@ -161,12 +189,19 @@ function Header() {
       pendingSectionRef.current = "";
     }, 1200);
 
-    setActiveSection(sectionId);
+    if (activeSectionRef.current !== sectionId) {
+      activeSectionRef.current = sectionId;
+      setActiveSection(sectionId);
+    }
   };
 
   const handleHomeClick = () => {
     pendingSectionRef.current = "";
-    setActiveSection("");
+
+    if (activeSectionRef.current !== "") {
+      activeSectionRef.current = "";
+      setActiveSection("");
+    }
   };
 
   const getDesktopLinkClassName = (sectionId: SectionId) =>
