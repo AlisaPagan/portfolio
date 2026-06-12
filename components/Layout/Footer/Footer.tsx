@@ -86,8 +86,8 @@ function Footer() {
         <hr className="divider" />
         <div className={styles.footerBottom}>
           <p className={styles.copyrightLine}>
-            &copy; {/* {new Date().getFullYear()} */}2026 Designed and coded by
-            Alisa Pagan. All rights reserved.
+            &copy; {new Date().getFullYear()} Designed and coded by Alisa Pagan.
+            All rights reserved.
           </p>
 
           <p className={styles.builtLine}>Built with Next.js and React.</p>
