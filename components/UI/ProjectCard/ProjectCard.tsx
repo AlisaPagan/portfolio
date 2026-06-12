@@ -24,6 +24,7 @@ export function ProjectCard({ project }: projectCardProps) {
           height={1920}
           className={styles.cardImage}
           sizes="(max-width: 767px) 373px, (max-width: 1439px) 366px, 451px"
+          unoptimized
         />
         <div className={styles.labelWrapper}>
           <span className={styles.labelType}>{project.type}</span>

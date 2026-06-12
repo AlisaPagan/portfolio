@@ -44,6 +44,7 @@ function Intro({ project }: IntroProps) {
                   height={1920}
                   className={styles.img}
                   sizes={introImageSizes}
+                  unoptimized
                 />
               </div>
             )}
