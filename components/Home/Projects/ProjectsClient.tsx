@@ -31,9 +31,9 @@ function ProjectsClient({ projects, featuredProject }: ProjectsClientProps) {
           onFilterChange={setActiveFilter}
         />
 
-        {/* <div className={styles.projectGrid}>
+        <div className={styles.projectGrid}>
           <ProjectGrid projects={visibleProjects} />
-        </div> */}
+        </div>
       </div>
     </section>
   );
