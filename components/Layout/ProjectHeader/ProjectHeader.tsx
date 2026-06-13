@@ -109,7 +109,7 @@ function ProjectHeader({ currentProjectId }: projectHeaderProps) {
         </div>
       </header>
 
-      <div className={`${styles.projectNav} container`}>
+      <div className={`${styles.projectNav} ${styles.projectNavLoaded} container`}>
         <div className={`${styles.navBtnsWrap} `}>
           <LinkButton
             href={`/projects/${prevProject.id}`}

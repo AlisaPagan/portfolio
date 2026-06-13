@@ -15,7 +15,7 @@ function NextSteps({ project }: NextStepsProps) {
   const showOutcomeImage = !isGoraiding && galleryImage;
 
   return (
-    <section className={`${styles.NextStepsSection} section `}>
+    <section className={`${styles.NextStepsSection} section reveal`} data-reveal>
       <div
         className={`${styles.sectionWrapper} container ${isGoraiding ? styles.grWrapper : ""}`}
       >

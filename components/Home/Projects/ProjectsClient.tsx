@@ -21,7 +21,11 @@ function ProjectsClient({ projects, featuredProject }: ProjectsClientProps) {
       : projects.filter((project) => project.categories.includes(activeFilter));
 
   return (
-    <section id="projects" className={`section ${styles.projects}`}>
+    <section
+      id="projects"
+      className={`section ${styles.projects} reveal`}
+      data-reveal
+    >
       <div className={`container ${styles.sectionWrapper}`}>
         <h2 className={styles.heading}>Projects</h2>
         {featuredProject && <FeaturedProject project={featuredProject} />}

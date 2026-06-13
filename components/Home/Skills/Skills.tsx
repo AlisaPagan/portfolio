@@ -7,14 +7,22 @@ import skillGroups from "./skillGroups";
 
 function Skills() {
   return (
-    <section id="skills" className={`section ${styles.skillsSection}`}>
+    <section
+      id="skills"
+      className={`section ${styles.skillsSection} reveal`}
+      data-reveal
+    >
       <div className={styles.glow}></div>
       <div className={`${styles.sectionWrapper} container`}>
         <h2 className={styles.heading}>Skills</h2>
 
         <div className={styles.skillsGridWrapper}>
-          {skillGroups.map((group) => (
-            <div key={group.title} className={styles.listWrapper}>
+          {skillGroups.map((group, index) => (
+            <div
+              key={group.title}
+              className={`${styles.listWrapper} reveal reveal-up reveal-delay-${Math.min(index + 1, 4)}`}
+              data-reveal
+            >
               <div className={styles.subheadingWrapper}>
                 <Icon
                   icon={group.icon}

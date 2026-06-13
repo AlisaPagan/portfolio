@@ -7,13 +7,21 @@ import { GoDotFill } from "react-icons/go";
 
 function Experience() {
   return (
-    <section id="experience" className={`${styles.experienceSection} section`}>
+    <section
+      id="experience"
+      className={`${styles.experienceSection} section reveal`}
+      data-reveal
+    >
       <div className={styles.glow}></div>
       <div className={`container ${styles.sectionWrapper}`}>
         <h2 className={styles.heading}>Experience</h2>
         <div className={styles.experienceCardsWrapper}>
-          {jobs.map((job) => (
-            <article key={job.id} className={styles.jobCard}>
+          {jobs.map((job, index) => (
+            <article
+              key={job.id}
+              className={`${styles.jobCard} reveal reveal-up reveal-delay-${Math.min(index + 1, 4)}`}
+              data-reveal
+            >
               <div className={styles.topWrapper}>
                 <h3 className={styles.companyName}>{job.company}</h3>
                 <hr className="divider" />
@@ -53,8 +61,12 @@ function Experience() {
         <div className={styles.certsificationsWrapper}>
           <h3 className={styles.certHeading}>Certifications</h3>
           <div className={styles.certWrapper}>
-            {certifications.map((certification) => (
-              <article key={certification.id} className={styles.certItem}>
+            {certifications.map((certification, index) => (
+              <article
+                key={certification.id}
+                className={`${styles.certItem} reveal reveal-up reveal-delay-${Math.min(index + 1, 4)}`}
+                data-reveal
+              >
                 <ul className={styles.certList}>
                   <li>
                     <p className={styles.certYear}>{certification.year}</p>

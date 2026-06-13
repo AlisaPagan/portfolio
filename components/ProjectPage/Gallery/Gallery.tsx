@@ -21,7 +21,8 @@ function Gallery({ project }: GalleryProps) {
     <section
       className={`${isUx ? styles.uxWrapper : ""}
 
-    ${styles.gallerySection} section`}
+    ${styles.gallerySection} section reveal`}
+      data-reveal
     >
       {!isUx && <div className={styles.glow}></div>}
       <div
@@ -44,6 +45,8 @@ function Gallery({ project }: GalleryProps) {
             slidesPerViewTablet={2}
             slidesPerViewDesktop={isUx ? 3 : 2}
             imageSizes={galleryImageSizes}
+            reveal
+            revealClassName="reveal-up reveal-delay-2"
           />
         )}
       </div>

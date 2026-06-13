@@ -80,6 +80,11 @@
   padding: 8px 20px;
 }
 
+.projectNavLoaded {
+  opacity: 0;
+  animation: projectNavFadeUp 0.5s ease-out 0.15s forwards;
+}
+
 .navBtnsWrap {
   display: flex;
   align-items: center;
@@ -143,6 +148,25 @@
 
 .icon {
   fill: var(--primary-btn-text);
+}
+
+@keyframes projectNavFadeUp {
+  from {
+    opacity: 0;
+    transform: translate(-50%, 10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translate(-50%, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .projectNavLoaded {
+    opacity: 1;
+    animation: none;
+  }
 }
 
 @media only screen and (min-width: 768px) {

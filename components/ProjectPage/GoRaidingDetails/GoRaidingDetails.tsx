@@ -8,7 +8,10 @@ type GoRaidingDetailsProps = { project: Project };
 
 function GoRaidingDetails({ project }: GoRaidingDetailsProps) {
   return (
-    <section className={`${styles.goRaidingDetailsSection} section`}>
+    <section
+      className={`${styles.goRaidingDetailsSection} section reveal`}
+      data-reveal
+    >
       <div className={styles.glow}></div>
 
       <div className={`${styles.sectionWrapper} container`}>

@@ -4,7 +4,11 @@ import Icon from "@/components/UI/Icon/Icon";
 import { MdOutlineFileDownload } from "react-icons/md";
 function About() {
   return (
-    <section className={`${styles.about} section`} id="about">
+    <section
+      className={`${styles.about} section reveal`}
+      id="about"
+      data-reveal
+    >
       <div className={`${styles.sectionWrapper} container`}>
         <h2 className={styles.heading}>About me</h2>
         <div className={styles.sectionInner}>

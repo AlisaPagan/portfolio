@@ -17,7 +17,8 @@ function OngoingAndLearning() {
   return (
     <section
       id="ongoing-and-learning"
-      className={`${styles.ongloingSection} section`}
+      className={`${styles.ongloingSection} section reveal`}
+      data-reveal
     >
       <div className={`${styles.sectionWrapper} container`}>
         <h2 className={styles.heading}>Ongoing Projects & Learning</h2>
@@ -30,7 +31,10 @@ function OngoingAndLearning() {
 
           <div className={styles.cardAndLearning}>
             {ongoingProject && (
-              <article className={styles.projectCard}>
+              <article
+                className={`${styles.projectCard} reveal reveal-up reveal-delay-1`}
+                data-reveal
+              >
                 <div className={styles.galleryBlock}>
                   {ongoingProject.gallery && (
                     <ImageSlider
@@ -130,7 +134,10 @@ function OngoingAndLearning() {
               </div>
 
               <div className={styles.learningCards}>
-                <article className={styles.learningCard}>
+                <article
+                  className={`${styles.learningCard} reveal reveal-up reveal-delay-2`}
+                  data-reveal
+                >
                   <div className={styles.techWrap}>
                     <Icon
                       icon={FaPython}
@@ -148,7 +155,10 @@ function OngoingAndLearning() {
                   </p>
                 </article>
 
-                <article className={styles.learningCard}>
+                <article
+                  className={`${styles.learningCard} reveal reveal-up reveal-delay-3`}
+                  data-reveal
+                >
                   <div className={styles.techWrap}>
                     <Icon
                       icon={IoLogoReact}

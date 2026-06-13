@@ -19,7 +19,7 @@ function DevProcess({ project }: DevProcessProps) {
   const isGoRaiding = project.id === "go-raiding";
 
   return (
-    <section className={`${styles.devProcessSection} section`}>
+    <section className={`${styles.devProcessSection} section reveal`} data-reveal>
       <div className={`${styles.glow} ${isUx ? styles.glowUx : ""}`}></div>
 
       <div className={`${styles.sectionWrapper} container`}>

@@ -3,6 +3,7 @@ import { Poppins, Roboto, Roboto_Mono } from "next/font/google";
 import "./globals.css";
 import Footer from "@/components/Layout/Footer/Footer";
 import { Analytics } from "@vercel/analytics/next";
+import RevealObserver from "@/components/UI/RevealObserver/RevealObserver";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -71,6 +72,7 @@ export default function RootLayout({
       className={`${poppins.variable} ${roboto.variable} ${robotoMono.variable}`}
     >
       <body>
+        <RevealObserver />
         {children}
         <Footer />
         <Analytics />

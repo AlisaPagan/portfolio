@@ -219,6 +219,60 @@ button:focus-visible {
   background-color: var(--accent);
 }
 
+.reveal {
+  --reveal-delay: 0ms;
+  opacity: 1;
+  transform: none;
+}
+
+html.reveal-ready .reveal {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity 0.6s ease,
+    transform 0.6s ease;
+  transition-delay: var(--reveal-delay);
+  will-change: opacity, transform;
+}
+
+html.reveal-ready .reveal.reveal-down {
+  transform: translateY(-18px);
+}
+
+html.reveal-ready .reveal.reveal-visible {
+  opacity: 1;
+  transform: translateY(0);
+  will-change: auto;
+}
+
+.reveal-delay-1 {
+  --reveal-delay: 90ms;
+}
+
+.reveal-delay-2 {
+  --reveal-delay: 180ms;
+}
+
+.reveal-delay-3 {
+  --reveal-delay: 270ms;
+}
+
+.reveal-delay-4 {
+  --reveal-delay: 360ms;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html.reveal-ready .reveal,
+  html.reveal-ready .reveal.reveal-down,
+  html.reveal-ready .reveal.reveal-visible {
+    opacity: 1;
+    transform: none;
+    transition: none;
+    animation: none;
+    will-change: auto;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;

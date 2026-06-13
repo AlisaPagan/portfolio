@@ -15,7 +15,7 @@ function UxProcess({ project }: UxProcessProps) {
     : "(max-width: 767px) 375px, (max-width: 1439px) 362px, 688px";
 
   return (
-    <section className={`${styles.uxProcess} section`}>
+    <section className={`${styles.uxProcess} section reveal`} data-reveal>
       <div className={styles.glow}></div>
       <div
         className={`${isGoRaiding ? styles.sectionWrapperGoRaiding : ""} ${styles.sectionWrapper} container`}
@@ -30,6 +30,8 @@ function UxProcess({ project }: UxProcessProps) {
             slidesPerViewTablet={isGoRaiding ? 2 : 1}
             slidesPerViewDesktop={isGoRaiding ? 2 : 1}
             imageSizes={wireframeImageSizes}
+            reveal
+            revealClassName="reveal-up reveal-delay-1"
           />
         )}
 

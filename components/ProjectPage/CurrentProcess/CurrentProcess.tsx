@@ -10,7 +10,7 @@ type CurrentProcessProps = {
 
 function CurrentProcess({ project }: CurrentProcessProps) {
   return (
-    <section className={`${styles.processSection} section`}>
+    <section className={`${styles.processSection} section reveal`} data-reveal>
       <div className={`${styles.sectionWrapper} container`}>
         {project.gallery && (
           <ImageSlider
@@ -22,6 +22,8 @@ function CurrentProcess({ project }: CurrentProcessProps) {
             slidesPerViewTablet={1}
             slidesPerViewDesktop={1}
             imageSizes="(max-width: 767px) 373px, (max-width: 1439px) 364px, 696px"
+            reveal
+            revealClassName="reveal-up reveal-delay-1"
           />
         )}
 

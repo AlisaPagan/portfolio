@@ -20,7 +20,7 @@ function Intro({ project }: IntroProps) {
     "(max-width: 767px) 375px, (max-width: 1439px) 364px, 700px";
 
   return (
-    <section className={`${styles.intro} section`}>
+    <section className={`${styles.intro} section reveal`} data-reveal>
       <div className={`${styles.sectionWrapper} container`}>
         <div
           className={`${styles.content} ${isGoRaiding ? styles.goRaidingContent : ""}`}

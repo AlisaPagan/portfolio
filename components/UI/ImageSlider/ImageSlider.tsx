@@ -31,6 +31,8 @@ type ImageSliderProps = {
   slidesPerViewTablet?: number;
   slidesPerViewDesktop?: number;
   imageSizes?: string;
+  reveal?: boolean;
+  revealClassName?: string;
 
   speed?: number;
   modules?: SwiperModule[];
@@ -51,6 +53,8 @@ function ImageSlider({
   slidesPerViewTablet = 2,
   slidesPerViewDesktop = 3,
   imageSizes = "(max-width: 767px) 375px, (max-width: 1439px) 364px, 696px",
+  reveal = false,
+  revealClassName = "reveal-up",
 
   speed = 450,
   modules = [Navigation],
@@ -69,7 +73,10 @@ function ImageSlider({
 
   return (
     <>
-      <div className={styles.slider}>
+      <div
+        className={`${styles.slider} ${reveal ? `reveal ${revealClassName}` : ""}`.trim()}
+        data-reveal={reveal ? true : undefined}
+      >
         <Swiper
           className={className}
           slidesPerView={slidesPerView}
@@ -91,7 +98,9 @@ function ImageSlider({
         >
           {images.map((image) => (
             <SwiperSlide key={image.src}>
-              <div className={`${frameClass} ${slideClassName ?? ""}`.trim()}>
+              <div
+                className={`${frameClass} ${slideClassName ?? ""}`.trim()}
+              >
                 <Image
                   src={image.src}
                   alt={image.alt}

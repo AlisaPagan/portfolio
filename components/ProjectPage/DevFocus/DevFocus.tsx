@@ -6,7 +6,7 @@ type DevFocusProps = {
 };
 function DevFocus({ project }: DevFocusProps) {
   return (
-    <section className={`${styles.devFocusSeciton} section`}>
+    <section className={`${styles.devFocusSeciton} section reveal`} data-reveal>
       <div className={`${styles.sectionWrapper} container`}>
         <h2 className={styles.title}>Development Focus</h2>
         <div className={styles.content}>

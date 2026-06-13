@@ -12,7 +12,11 @@ import ContactForm from "../ContactForm/ContactFormClient";
 
 function Contact() {
   return (
-    <section id="contact" className={`section ${styles.contactsSection}`}>
+    <section
+      id="contact"
+      className={`section ${styles.contactsSection} reveal`}
+      data-reveal
+    >
       <div className={styles.glow}></div>
       <div className={`${styles.sectionWrapper} container`}>
         <h2 className={styles.heading}>Contacts</h2>

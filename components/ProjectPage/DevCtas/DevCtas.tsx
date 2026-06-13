@@ -8,7 +8,7 @@ type DevCtasProps = {
 
 function DevCtas({ project }: DevCtasProps) {
   return (
-    <div className={`${styles.ctasSection} section`}>
+    <div className={`${styles.ctasSection} section reveal`} data-reveal>
       <div className={`${styles.ctasWrapper} container`}>
         {project.links?.live && (
           <LinkButton

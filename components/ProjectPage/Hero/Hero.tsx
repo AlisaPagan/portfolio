@@ -26,12 +26,15 @@ function Hero({ project }: HeroProps) {
       style={heroBackground}
     >
       <div className={`${styles.sectionWrapper} container`}>
-        <div className={styles.heroTop}>
-          <h1 className={styles.title}> {project.title}</h1>
+        <div className={`${styles.heroTop} reveal reveal-down`} data-reveal>
+          <h1 className={styles.title}>{project.title}</h1>
           <p className={styles.description}>{project.shortDescription}</p>
         </div>
 
-        <div className={styles.metaGrid}>
+        <div
+          className={`${styles.metaGrid} reveal reveal-up reveal-delay-1`}
+          data-reveal
+        >
           <div className={styles.gridSide}>
             <div className={styles.metaGridCell}>
               <p className={styles.metaItem}>
@@ -75,7 +78,10 @@ function Hero({ project }: HeroProps) {
             </div>
           </div>
         </div>
-        <div className={styles.ctaWrapper}>
+        <div
+          className={`${styles.ctaWrapper} reveal reveal-up reveal-delay-1`}
+          data-reveal
+        >
           {isGoRaiding && gitLink && (
             <LinkButton
               href={gitLink}
