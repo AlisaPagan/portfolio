@@ -89,8 +89,8 @@ function About() {
                   Express, MongoDB, and REST APIs.
                 </p>
                 <a
-                  href="/Alisa_Pagan_Fullstack_Developer.pdf"
-                  download="Alisa_Pagan_Fullstack_Developer.pdf"
+                  href="/Alisa_Pagan_Front-End_Developer.pdf"
+                  download="Alisa_Pagan_Front-End_Developer.pdf"
                   className={styles.btn}
                 >
                   Download resume
