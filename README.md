@@ -1,13 +1,15 @@
 # Alisa Pagan Portfolio
 
 Personal portfolio website built with **Next.js**, **React**, **TypeScript**, and **CSS Modules**.
-It presents my front-end projects, UX case studies, work experience, skills, and contact information.
+It presents my front-end projects, UX/UI case studies, work experience, skills, and contact information.
 
 **Live site:** https://alisapagan.dev
 
 ## Overview
 
 This portfolio was designed and developed to support my transition into front-end development. It combines my background in UX/UI and graphic design with modern front-end implementation, responsive layouts, accessibility improvements, and performance optimization.
+<img width="1498" height="1047" alt="image" src="https://github.com/user-attachments/assets/ecd39a78-72c9-4c17-8414-01a4be5ba601" />
+
 
 ## Features
 
@@ -44,9 +46,12 @@ This portfolio was designed and developed to support my transition into front-en
 ## Featured Work
 
 * **Relax Map** — team-built full-stack platform for discovering and reviewing relaxation locations
-* **GoRaiding** — in-progress mobile-first raid organization app concept for World of Warcraft players
+* **GoRaiding** — in-progress mobile-first full-stack raid organization app for World of Warcraft players
 * **Mebleria** — responsive furniture store web app built as a JavaScript team project
 * **UX case studies** — product concepts, wireframes, and design process examples
+
+<img width="1515" height="811" alt="image" src="https://github.com/user-attachments/assets/52d21430-9a86-4e44-96d8-71e66e8699be" />
+
 
 ## What I Focused On
 
