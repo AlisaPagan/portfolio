@@ -10,7 +10,11 @@ const copies = [0, 1, 2, 3];
 
 function Hero() {
   return (
-    <section className={`${styles.hero} section`} id="hero">
+    <section
+      className={`${styles.hero} section`}
+      id="hero"
+      style={{ minHeight: "100vh" }}
+    >
       <div className={styles.particles}>
         {particles.map((particle) => (
           <span
