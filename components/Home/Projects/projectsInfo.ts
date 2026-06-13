@@ -213,10 +213,10 @@ const projects: Project[] = [
     techStack: [
       "Next.js",
       "React",
-      "Node.js planned",
+      "Node.js",
       "TypeScript",
-      "Express.js planned",
-      "MongoDB planned",
+      "Express.js",
+      "MongoDB",
       "TanStack Query",
       "Axios",
       "Figma",
