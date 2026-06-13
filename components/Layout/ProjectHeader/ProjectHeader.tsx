@@ -66,6 +66,21 @@ function ProjectHeader({ currentProjectId }: projectHeaderProps) {
     };
   }, []);
 
+  // back to top
+
+  const handleToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+
+    window.history.replaceState(
+      null,
+      "",
+      `${window.location.pathname}${window.location.search}`,
+    );
+  };
+
   // prev & next navigation
   const currentIndex = projects.findIndex(
     (project) => project.id === currentProjectId,
@@ -109,7 +124,9 @@ function ProjectHeader({ currentProjectId }: projectHeaderProps) {
         </div>
       </header>
 
-      <div className={`${styles.projectNav} ${styles.projectNavLoaded} container`}>
+      <div
+        className={`${styles.projectNav} ${styles.projectNavLoaded} container`}
+      >
         <div className={`${styles.navBtnsWrap} `}>
           <LinkButton
             href={`/projects/${prevProject.id}`}
@@ -130,8 +147,9 @@ function ProjectHeader({ currentProjectId }: projectHeaderProps) {
           </LinkButton>
         </div>
 
-        <Link
-          href="#top"
+        <button
+          type="button"
+          onClick={handleToTop}
           aria-label="Back to top"
           className={`${styles.topLink} ${showLink ? styles.linkVisible : ""}`}
         >
@@ -140,7 +158,7 @@ function ProjectHeader({ currentProjectId }: projectHeaderProps) {
             size={24}
             className={styles.iconUp}
           ></Icon>
-        </Link>
+        </button>
       </div>
     </>
   );

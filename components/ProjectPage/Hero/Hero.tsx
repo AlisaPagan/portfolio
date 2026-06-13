@@ -103,7 +103,10 @@ function Hero({ project }: HeroProps) {
           )}
 
           {isUx && !isGoRaiding && (
-            <LinkButton href={"/#goals"} className={styles.ctaLink}>
+            <LinkButton
+              href={`/projects/${project.id}#goals`}
+              className={styles.ctaLink}
+            >
               View More
             </LinkButton>
           )}

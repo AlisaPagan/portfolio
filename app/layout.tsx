@@ -4,6 +4,7 @@ import "./globals.css";
 import Footer from "@/components/Layout/Footer/Footer";
 import { Analytics } from "@vercel/analytics/next";
 import RevealObserver from "@/components/UI/RevealObserver/RevealObserver";
+import ToasterProvider from "@/components/UI/ToasterProvider/Toaster";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -76,6 +77,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <Analytics />
+        <ToasterProvider />
       </body>
     </html>
   );
