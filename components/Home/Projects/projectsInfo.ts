@@ -118,8 +118,8 @@ const projects: Project[] = [
 
     links: {
       live: "https://chillscape-frontend.vercel.app/",
-      frontend: "https://github.com/AlisaPagan/chillscape-frontend",
-      backend: "https://github.com/AlisaPagan/chillscape-backend",
+      frontend: "https://github.com/AlisaPagan/relax-map-frontend",
+      backend: "https://github.com/AlisaPagan/relax-map-backend",
     },
   },
 
@@ -463,8 +463,8 @@ const projects: Project[] = [
     ],
 
     links: {
-      github: "https://github.com/AlisaPagan/QuantumJS",
-      live: "https://alisapagan.github.io/QuantumJS/",
+      github: "https://github.com/AlisaPagan/mebleria",
+      live: "https://alisapagan.github.io/mebleria/",
     },
   },
 
