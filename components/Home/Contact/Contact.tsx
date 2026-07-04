@@ -52,20 +52,7 @@ function Contact() {
                     alisapodgaynaya023@gmail.com
                   </Link>
                 </li>
-                <li className={styles.contactsItem}>
-                  <Link
-                    href={"tel:+15757065572"}
-                    className={styles.contact}
-                    aria-label="Call Alisa"
-                  >
-                    <Icon
-                      icon={PiPhoneThin}
-                      size={24}
-                      className={styles.contactIcon}
-                    />
-                    (575) 706-5572
-                  </Link>
-                </li>
+
                 <li
                   className={styles.contactsItem}
                   aria-label="Alisa's location"
