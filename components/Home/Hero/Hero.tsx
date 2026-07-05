@@ -36,7 +36,7 @@ function Hero() {
       <div className={`container ${styles.sectionWrapper}`}>
         <h1 className={styles.homeHeading}>Alisa Pagan</h1>
         <h2 className={styles.homeSubheading}>
-          Junior <span>Front-End Developer</span> & UX/UI Designer
+          <span>Front-End Developer</span> & UX/UI Designer
         </h2>
         <div
           className={styles.scroller}

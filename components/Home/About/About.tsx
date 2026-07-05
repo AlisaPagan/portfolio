@@ -68,10 +68,10 @@ function About() {
               </ul>
               <div className={styles.descriptionWrapper}>
                 <p className={styles.description}>
-                  Junior front-end developer with a background in UX/UI, web
-                  design, and visual design. Development became the next step
-                  because I wanted to build the products behind the designs, not
-                  only design them.
+                  Front-end developer with a background in UX/UI, web design,
+                  and visual design. Development became the next step because I
+                  wanted to build the products behind the designs, not only
+                  design them.
                 </p>
 
                 <p className={styles.description}>
