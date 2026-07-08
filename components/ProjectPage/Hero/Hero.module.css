@@ -102,6 +102,9 @@
   text-transform: capitalize;
 }
 
+.note {
+  font-style: italic;
+}
 @media only screen and (min-width: 768px) {
   .sectionWrapper {
     padding-top: 90px;

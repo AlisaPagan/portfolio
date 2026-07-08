@@ -11,6 +11,7 @@ function Hero({ project }: HeroProps) {
   const isDev = project.categories.includes("dev");
   const isUx = project.categories.includes("ux");
   const isGoRaiding = project.id === "go-raiding";
+  const isWildCat = project.id === "wildcatworks";
 
   const liveLink = project.links?.live;
   const gitLink = project.links?.github;
@@ -29,6 +30,11 @@ function Hero({ project }: HeroProps) {
         <div className={`${styles.heroTop} reveal reveal-down`} data-reveal>
           <h1 className={styles.title}>{project.title}</h1>
           <p className={styles.description}>{project.shortDescription}</p>
+          {isWildCat && (
+            <p className={styles.note}>
+              * Designed in 2023, still on my list to build.
+            </p>
+          )}
         </div>
 
         <div
