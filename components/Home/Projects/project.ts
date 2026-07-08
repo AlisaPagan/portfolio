@@ -1,10 +1,6 @@
 export type ProjectCategory = "dev" | "ux" | "ongoing" | "learning";
 export type ProjectFilter = ProjectCategory | "all";
-export type ProjectStatus =
-  | "completed"
-  | "in progress"
-  | "planned"
-  | "code planned";
+export type ProjectStatus = "completed" | "in progress" | "planned";
 
 export type ProjectType =
   | "Full-stack app"

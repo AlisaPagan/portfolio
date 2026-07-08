@@ -1,7 +1,5 @@
 import Image from "next/image";
 import styles from "./About.module.css";
-import Icon from "@/components/UI/Icon/Icon";
-import { MdOutlineFileDownload } from "react-icons/md";
 function About() {
   return (
     <section
@@ -89,16 +87,11 @@ function About() {
                   Express, MongoDB, and REST APIs.
                 </p>
                 <a
-                  href="/Alisa_Pagan_Front-End_Developer.pdf"
-                  download="Alisa_Pagan_Front-End_Developer.pdf"
+                  href="https://www.linkedin.com/in/alisa-pagan/"
+                  target="_blank"
                   className={styles.btn}
                 >
-                  Download resume
-                  <Icon
-                    icon={MdOutlineFileDownload}
-                    size={24}
-                    className={styles.icon}
-                  ></Icon>
+                  Connect on LinkedIn
                 </a>
               </div>
             </div>
