@@ -30,13 +30,13 @@ const robotoMono = Roboto_Mono({
 export const metadata: Metadata = {
   metadataBase: new URL("https://alisapagan.dev"),
   title: {
-    default: "Alisa Pagan | Junior Front-End Developer & UX/UI Designer",
+    default: "Alisa Pagan | Front-End Developer & UX/UI Designer",
     template: "%s | Alisa Pagan",
   },
   description:
-    "Portfolio of Alisa Pagan, a junior front-end developer and UX/UI designer building responsive web applications with React, Next.js, TypeScript, Node.js, and modern UI/UX practices.",
+    "Portfolio of Alisa Pagan, a front-end developer and UX/UI designer building responsive web applications with React, Next.js, TypeScript, Node.js, and modern UI/UX practices.",
   openGraph: {
-    title: "Alisa Pagan | Junior Front-End Developer & UX/UI Designer",
+    title: "Alisa Pagan | Front-End Developer & UX/UI Designer",
     description:
       "Portfolio featuring front-end development, UX/UI design, and full-stack project work.",
     url: "https://alisapagan.dev",
@@ -54,7 +54,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Alisa Pagan | Junior Front-End Developer & UX/UI Designer",
+    title: "Alisa Pagan | Front-End Developer & UX/UI Designer",
     description:
       "Portfolio featuring front-end development, UX/UI design, and full-stack project work.",
     images: ["/Alisa_Pagan_OG_image.webp"],

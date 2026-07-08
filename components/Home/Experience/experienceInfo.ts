@@ -16,6 +16,19 @@ export type Certification = {
 
 export const jobs: Experience[] = [
   {
+    id: "front-end-developer",
+    company: "Independent",
+    position: "Front-End Developer",
+    years: "2025 - present",
+    location: "Remote",
+    responsibilities: [
+      "Developed frontend projects focused on reusable components, responsive layouts, API-connected interfaces.",
+      "Built projects using React, Next.js, TypeScript, Node.js, Express, MongoDB, and REST API workflows.",
+      "Applied UX/UI design experience to create clean user flows, accessible layouts, mobile-first interfaces, and polished visual systems.",
+    ],
+  },
+
+  {
     id: "graphic-designer",
     company: "Enjoy Games",
     position: "Graphic Designer / Level Designer",

@@ -62,7 +62,7 @@ function About() {
                 <li className={styles.highlightsItem}>
                   <p className={styles.itemLabel}>Availability:</p>
                   <p className={styles.itemValue}>
-                    Open to junior front-end and web developer roles
+                    Open to front-end and web developer roles
                   </p>
                 </li>
               </ul>
@@ -82,8 +82,8 @@ function About() {
                 </p>
 
                 <p className={styles.description}>
-                  I’m looking for junior front-end and web developer roles where
-                  I can help build clean, responsive, user-facing interfaces. My
+                  I’m looking for front-end and web developer roles where I can
+                  help build clean, responsive, user-facing interfaces. My
                   strongest tools are HTML, CSS, JavaScript, React, and Next.js,
                   alongside current full-stack project work with Node.js,
                   Express, MongoDB, and REST APIs.

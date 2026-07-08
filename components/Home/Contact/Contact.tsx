@@ -4,7 +4,6 @@ import {
   PiEnvelopeSimpleThin,
   PiGithubLogo,
   PiLinkedinLogoLight,
-  PiPhoneThin,
 } from "react-icons/pi";
 import { CiLocationOn } from "react-icons/ci";
 import Link from "next/link";
@@ -24,8 +23,8 @@ function Contact() {
         <div className={styles.topInfo}>
           <h3 className={styles.subheading}>Get in Touch with Me</h3>
           <p className={styles.intro}>
-            Looking for a junior front-end developer with strong design sense?
-            Send me a message and let’s talk.
+            Looking for a front-end developer with strong design sense? Send me
+            a message and let’s talk.
           </p>
         </div>
         <hr className="divider" />

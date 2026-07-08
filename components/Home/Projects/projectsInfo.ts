@@ -763,7 +763,7 @@ const projects: Project[] = [
     title: "WildcatWorks",
     year: "2023",
     type: "Oilfield calculator concept",
-    status: "planned",
+    status: "code planned",
     categories: ["ux", "ongoing"],
     featured: false,
 
